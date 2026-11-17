@@ -1,0 +1,369 @@
+/* Success - for 'published' status */
+.badge.success {
+    background-color: rgb(23 186 58 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(23 186 58 / var(--tw-text-opacity, 1));
+}
+
+/* Secondary - for 'draft' and default status */
+.badge.secondary {
+    background-color: rgb(107 114 128 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+/* Info - for 'scheduled' status */
+.badge.info {
+    background-color: rgb(31 97 236 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(31 97 236 / var(--tw-text-opacity, 1));
+}
+
+/* Warning - for 'archived' status */
+.badge.warning {
+    background-color: rgb(255 195 1 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(255 195 1 / var(--tw-text-opacity, 1));
+}
+
+/* Danger - for 'trash' status */
+.badge.danger {
+    background-color: rgb(220 53 69 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(220 53 69 / var(--tw-text-opacity, 1));
+}
+
+/* Additional styles from your original CSS */
+.badge.pending {
+    background-color: rgb(255 195 1 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(255 195 1 / var(--tw-text-opacity, 1));
+}
+
+.badge.error {
+    background-color: rgb(220 53 69 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(220 53 69 / var(--tw-text-opacity, 1));
+}
+
+.badge.processing {
+    background-color: rgb(31 97 236 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(31 97 236 / var(--tw-text-opacity, 1));
+}
+
+.data-table-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ratting i {
+    color: #424242;
+}
+
+.ratting i.active {
+    color: #FFC107;
+}
+
+/* datable css  */
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 0 !important;
+    white-space: nowrap;
+}
+
+.table-responsive .dataTables_wrapper .dataTables_length select {
+    padding: 5px 25px 5px 10px;
+}
+
+.table-responsive table.dataTable.no-footer {
+    border-bottom: 1px solid transparent;
+}
+
+table.dataTable.no-footer {
+    border-color: transparent !important;
+}
+
+@media screen and (max-width: 640px) {
+
+    .dataTables_wrapper .dataTables_length {
+        float: left !important;
+    }
+
+    .dataTables_wrapper .dataTables_filter {
+        float: right !important;
+    }
+}
+
+.filter-view-show{
+    z-index: 1;
+}
+
+/* Datatable Fixes */
+
+/* Fix horizontal scrollbar in datatable - remove double scrolling */
+.dataTables_wrapper {
+    overflow: visible;
+}
+
+.dataTables_scrollBody {
+    overflow-x: visible !important;
+    max-width: 100%;
+}
+
+/* Only enable horizontal scroll on smaller screens */
+@media (max-width: 1024px) {
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+
+    .dataTables_scrollBody {
+        overflow-x: auto !important;
+    }
+}
+
+/* Fix custom-select alignment and margin issues */
+.custom-select.min-w-36 {
+    min-width: 9rem !important;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select.min-w-36 select {
+    width: 100%;
+    padding-right: 2.5rem !important;
+}
+
+.custom-select.min-w-36 svg {
+    position: absolute;
+    right: 0.5rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Fix duplicate sorting icons */
+table.dataTable thead th .sort-icon {
+    display: none;
+}
+
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    display: none !important;
+}
+
+table.dataTable thead th.sorting::before,
+table.dataTable thead th.sorting_asc::before,
+table.dataTable thead th.sorting_desc::before {
+    display: none !important;
+}
+
+
+/* Custom sort icons to prevent duplication */
+.custom-sort-icon {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+th:hover .custom-sort-icon,
+th.sorting_asc .custom-sort-icon,
+th.sorting_desc .custom-sort-icon {
+    opacity: 1;
+}
+
+/* Fix broken image placeholder */
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    border-radius: 0.375rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.image-placeholder svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Fix table responsiveness */
+@media (max-width: 768px) {
+    .dataTables_wrapper .dataTables_scrollBody {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-select.min-w-36 {
+        min-width: 8rem !important;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Hide less important columns on mobile */
+    .dt-hide-sm {
+        display: none !important;
+    }
+}
+
+/* Fix empty state styling */
+.dataTables_empty {
+    text-align: center !important;
+    padding: 2rem 1rem !important;
+}
+
+/* Fix pagination alignment */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+    .pagination-controls {
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        justify-content: flex-start;
+        padding: 0.5rem 0;
+    }
+
+    .pagination-controls::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Loading state improvements */
+.dataTables_processing {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #1f2937 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem 2rem !important;
+}
+
+/* Filter dropdown improvements */
+.filter-dropdown {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.filter-dropdown .custom-select {
+    width: 100%;
+    min-width: unset;
+}
+
+/* Status filter tab improvements */
+.status-filter-tabs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.75rem;
+}
+
+.status-filter-tab {
+    position: relative;
+    padding: 0.5rem 0;
+    color: #6b7280;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.status-filter-tab:hover,
+.status-filter-tab.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.status-filter-tab .count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    height: 1.25rem;
+    padding: 0 0.375rem;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border-radius: 0.375rem;
+}
+
+/* Bulk action button improvements */
+.bulk-action-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.bulk-action-btn.hidden {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+    pointer-events: none;
+}
+
+/* Column visibility improvements */
+.column-visibility-panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 18rem;
+    z-index: 50;
+}
+
+.column-visibility-panel h3 {
+    color: #7c3aed;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.column-visibility-panel .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.column-visibility-panel .show-all-btn {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.column-visibility-panel .show-all-btn:hover {
+    color: #1f2937;
+    text-decoration: underline;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+}
+
+.select2-results .select2-results__option {
+    padding: 10px;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.invalid-feedback{
+    color: red;
+}
