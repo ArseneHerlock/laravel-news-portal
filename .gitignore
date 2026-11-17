@@ -5,6 +5,10 @@ Thumbs.db
 .idea/
 *.log
 
+# Security: Never commit plaintext database password files
+Cloude/**/password.txt
+**/password.txt
+
 # Laravel Backend (Src/NewsWebsite)
 Src/NewsWebsite/vendor/
 Src/NewsWebsite/node_modules/

@@ -4,10 +4,11 @@
 
 **A modern, multi-role News & Magazine publishing platform built with PHP / Laravel, TiDB Cloud (MySQL-compatible), and Bootstrap 5.**
 
-![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-Backend-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![TiDB Cloud](https://img.shields.io/badge/TiDB%20Cloud-NewsDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)
 
 </div>
 
@@ -65,10 +66,10 @@ PHP-Project/
 
 | Layer               | Technology                                                 |
 | ------------------- | ---------------------------------------------------------- |
-| **Backend**         | PHP 8.2+, Laravel Framework                                |
-| **Database**        | TiDB Cloud (`NewsDB`, MySQL-compatible over TLS)           |
-| **Frontend**        | HTML5, CSS3, Bootstrap 5, Font Awesome, Minimal Vanilla JS |
-| **Version Control** | Git & GitHub                                               |
+| **Backend**         | PHP 8.3+, Laravel 13 Framework                             |
+| **Database**        | TiDB Cloud (`NewsDB`, MySQL-compatible over TLS) or SQLite |
+| **Frontend**        | Blade Views, HTML5, CSS3, Bootstrap 5.3, Vanilla JS        |
+| **Version Control** | Git & GitHub (Conventional Commits)                        |
 
 ---
 
@@ -77,22 +78,23 @@ PHP-Project/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/zaira-news-laravel.git
-cd zaira-news-laravel
+git clone https://github.com/ArseneHerlock/laravel-news-portal.git
+cd laravel-news-portal
 ```
 
-### 2. Install Laravel dependencies
+### 2. Install Laravel dependencies & Seed Demo Data
 
 ```bash
 cd Src/NewsWebsite
 composer install
 cp .env.example .env
 php artisan key:generate
+php artisan migrate --seed
 ```
 
-### 3. Configure TiDB Cloud (`NewsDB`) Connection
+### 3. Configure TiDB Cloud (`NewsDB`) Connection (Optional / Team Shared DB)
 
-Update `Src/NewsWebsite/.env` with the shared **TiDB Cloud** parameters (TLS is required):
+By default, `.env.example` works out-of-the-box with local SQLite (`php artisan migrate --seed`). To connect to the shared **TiDB Cloud** database over TLS, update `Src/NewsWebsite/.env`:
 
 ```env
 DB_CONNECTION=mysql
@@ -100,19 +102,29 @@ DB_HOST=gateway01.ap-southeast-1.prod.aws.tidbcloud.com
 DB_PORT=4000
 DB_DATABASE=NewsDB
 DB_USERNAME=3AnYdBThXPvmUxi.root
-DB_PASSWORD=<see Cloude/TiDB CLoud/password.txt>
-
+DB_PASSWORD=<ask-team-lead-for-tidb-password>
+MYSQL_ATTR_SSL_CA="../../Cloude/TiDB CLoud/isrgrootx1.pem"
 ```
 
-> **Note:** Replace `<your-local-path>` with the absolute path to your cloned repository (e.g., `Cloude/TiDB CLoud/isrgrootx1.pem`). If your IP is not yet allowlisted on TiDB Cloud, ask the team lead to allow your IP or connect via the local schema `Database/zaira_schema.sql`.
+> **Security Note:** Never commit plaintext database passwords or `.env` files to Git.
 
-### 4. Run the Laravel Server
+### 4. Run the Laravel Server & Automated Tests
 
 ```bash
 php artisan serve
+# Run the automated feature & unit test suite:
+php artisan test
 ```
 
 Open `http://127.0.0.1:8000` in your browser.
+
+### 🔑 Demo Accounts (Seeded by `php artisan migrate --seed`)
+
+| Role | Portal URL | Email | Password |
+| :--- | :--- | :--- | :--- |
+| **Admin** | `http://127.0.0.1:8000/admin/login` | `admin@gmail.com` | `password` |
+| **Author** | `http://127.0.0.1:8000/author/login` | `author@gmail.com` | `password` |
+| **Reader** | `http://127.0.0.1:8000/login` | `user@gmail.com` | `password` |
 
 ### 5. Preview Static UI Templates
 
