@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Create Blog - Zaira</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://zaira.themedox.com/uploads/logo/favicon-2025-09-29-02-37-20-4293.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/backend/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../assets/backend/css/sweetalert2.min.css" rel="stylesheet">
+  <link href="../assets/backend/css/toastr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/backend/css/flowbite.min.css">
+  <link rel="stylesheet" href="../assets/backend/css/swiper-bundle.min.css">
+  <link rel="preload" as="style" href="../assets/backend/css/app-V2aRcIkD.css" /><link rel="modulepreload" href="https://zaira.themedox.com/build/assets/app-Cs0QkU1O.js" /><link rel="stylesheet" href="../assets/backend/css/app-V2aRcIkD.css" data-navigate-track="reload" />
+  <link rel="stylesheet" href="../assets/backend/css/style.css">
+  <link rel="stylesheet" href="../assets/backend/css/custom.css">
+  </head>
+<body class="flex flex-col-reverse sm:flex-row max-h-screen overflow-hidden">
+      <section id="main-sidebar"
+  class="left-side-bar h-screen group absolute xl:static bg-gray z-50 -left-[266px] collapse-sidebar:left-0 transition-all duration-300">
+  <div id="sidebar-toggler-3"
+    class="fixed bg-black/50 w-full h-full z-10 hidden xl:collapse-sidebar:hidden collapse-sidebar:block collapse-sidebar:right-0">
+  </div>
+  <div
+    class="relative bg-gray z-20 flex flex-col xl:collapse-sidebar:w-[90px] w-[265px] items-start h-full border-r border-border transition-all duration-300">
+    <div class="flex justify-between items-center p-6 border-b border-border w-full max-w-full overflow-hidden">
+      <a href="dashboard.html">
+                <div class="max-w-[200px] max-h-[100px]">
+            <img class="w-full h-full object-cover" src="https://zaira.themedox.com/uploads/logo/dashboard_logo-2025-09-29-02-37-20-1113.png" />
+          </div>
+              </a>
+      <button id="sidebar-toggler-2" class="text-headline hover:text-main xl:hidden">
+        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.66797 6.3335H18.668" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 14.5H23.3346" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 22.6665H14.0013" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+      </button>
+    </div>
+    <div class="xl:collapse-sidebar:py-3 py-5 flex flex-col gap-6 w-full flex-1 thin-scrollbar overflow-y-auto">
+      <div class="">
+        <a href="dashboard.html"
+          class="nav-item ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3333 18.3332V14.9998C13.3333 13.1589 11.8409 11.6665 10 11.6665C8.15905 11.6665 6.66667 13.1589 6.66667 14.9998V18.3332M17.5 8.45845V14.9722C17.5 16.8284 16.0076 18.3332 14.1667 18.3332H5.83333C3.99238 18.3332 2.5 16.8284 2.5 14.9722V8.45845C2.5 7.44931 2.9497 6.49359 3.72488 5.85527L7.89155 2.42429C9.11859 1.41391 10.8814 1.41391 12.1084 2.42429L16.2751 5.85527C17.0503 6.49358 17.5 7.44931 17.5 8.45845Z" stroke="currentColor" stroke-width="1.5" /> </svg>
+          <span>Dashboard</span>
+        </a>
+      </div>
+      <div class="dropdown  open ">
+        <div class="have-dropdown">
+          <div class="nav-item justify-between dropdown-btn  active ">
+            <div class="flex gap-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.75 6.6665H15.4167M8.75 9.99984H10.8333M15.4167 9.99984H13.3333M8.75 13.3332H10.8333M15.4167 13.3332H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.83268 6.25H4.99935C3.428 6.25 2.64232 6.25 2.15417 6.73816C1.66602 7.22631 1.66602 8.01198 1.66602 9.58333V15C1.66602 16.1506 2.59876 17.0833 3.74935 17.0833C4.89994 17.0833 5.83268 16.1506 5.83268 15V6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.3333 2.9165H9.16667C8.39167 2.9165 8.0042 2.9165 7.68628 3.00169C6.82356 3.23285 6.14968 3.90673 5.91852 4.76945C5.83333 5.08737 5.83333 5.47486 5.83333 6.24984V14.9998C5.83333 16.1504 4.90059 17.0832 3.75 17.0832H13.3333C15.6903 17.0832 16.8688 17.0832 17.6011 16.3509C18.3333 15.6187 18.3333 14.4402 18.3333 12.0832V7.9165C18.3333 5.55948 18.3333 4.38097 17.6011 3.64874C16.8688 2.9165 15.6903 2.9165 13.3333 2.9165Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+              <span>Blog</span>
+            </div>
+            <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+          </div>
+          <div
+            class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300 ">
+            <a href="posts.html"
+              class="nav-item ">
+              <span>All Posts</span>
+            </a>
+            <a href="posts.html"
+              class="nav-item ">
+              <span>Comments</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown ">
+        <div class="have-dropdown">
+          <div class="nav-item justify-between dropdown-btn ">
+            <div class="flex gap-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 4V2a2 2 0 012-2h6a2 2 0 012 2v2M7 4H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-3M7 4h6" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Products</span>
+            </div>
+            <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+          </div>
+          <div
+            class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300  height-0 ">
+            <a href="https://zaira.themedox.com/author/product"
+              class="nav-item ">
+              <span>All Products</span>
+            </a>
+            <a href="https://zaira.themedox.com/author/product-reviews"
+              class="nav-item ">
+              <span>Review</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown ">
+        <div class="have-dropdown">
+          <div
+            class="nav-item justify-between dropdown-btn ">
+            <div class="flex gap-2">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5.83333 9.16667H14.1667M5.83333 12.5H10.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> <path d="M14.1667 17.5H5.83333C4.44928 17.5 3.75726 17.5 3.25449 17.1782C2.99237 17.0138 2.77951 16.7843 2.63612 16.5106C2.33333 15.9812 2.33333 15.2449 2.33333 13.7778V6.22222C2.33333 4.75508 2.33333 4.02151 2.63612 3.49215C2.77951 3.21841 2.99237 2.98886 3.25449 2.82448C3.75726 2.5 4.44928 2.5 5.83333 2.5H14.1667C15.5507 2.5 16.2428 2.5 16.7455 2.82448C17.0076 2.98886 17.2205 3.21841 17.3639 3.49215C17.6667 4.02151 17.6667 4.75508 17.6667 6.22222V13.7778C17.6667 15.2449 17.6667 15.9812 17.3639 16.5106C17.2205 16.7843 17.0076 17.0138 16.7455 17.1782C16.2428 17.5 15.5507 17.5 14.1667 17.5Z" stroke="currentColor" stroke-width="1.5" /> <path d="M5.83333 2.5L6.24861 1.66944C6.54259 1.08148 6.68958 0.787498 6.91644 0.596099C7.11642 0.427865 7.35476 0.311224 7.61008 0.256331C7.90062 0.194444 8.22485 0.194444 8.87331 0.194444H11.1267C11.7752 0.194444 12.0994 0.194444 12.3899 0.256331C12.6452 0.311224 12.8836 0.427865 13.0836 0.596099C13.3104 0.787498 13.4574 1.08148 13.7514 1.66944L14.1667 2.5" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Orders</span>
+            </div>
+            <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+          </div>
+          <div
+            class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300
+                height-0 ">
+            <a href="https://zaira.themedox.com/author/orders"
+              class="nav-item ">
+              <span>Orders</span>
+            </a>
+            <a href="https://zaira.themedox.com/author/order-items"
+              class="nav-item ">
+              <span>Order Items</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <a href="https://zaira.themedox.com/author/wishlist"
+          class="nav-item ">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5 c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="currentColor" stroke-width="1.5" fill="none" /> </svg>
+          <span>Wishlist</span>
+        </a>
+      </div>
+      <div class="">
+        <a href="dashboard.html"
+          class="nav-item ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2243_2627)"> <path d="M12.5 5C12.5 2.2425 10.2575 0 7.5 0C4.7425 0 2.5 2.2425 2.5 5C2.5 7.7575 4.7425 10 7.5 10C10.2575 10 12.5 7.7575 12.5 5ZM7.5 8.33333C5.66167 8.33333 4.16667 6.83833 4.16667 5C4.16667 3.16167 5.66167 1.66667 7.5 1.66667C9.33833 1.66667 10.8333 3.16167 10.8333 5C10.8333 6.83833 9.33833 8.33333 7.5 8.33333ZM18.3333 14.1667C18.3333 13.7067 18.2583 13.265 18.12 12.8508L19.6367 11.9767L18.805 10.5325L17.2858 11.4075C16.6975 10.7433 15.9008 10.2675 15 10.0833V8.3325H13.3333V10.0833C12.4317 10.2675 11.6358 10.7433 11.0475 11.4075L9.52833 10.5325L8.69667 11.9767L10.2133 12.8508C10.075 13.265 10 13.7067 10 14.1667C10 14.6267 10.075 15.0683 10.2133 15.4825L8.69667 16.3567L9.52833 17.8008L11.0475 16.9258C11.6358 17.59 12.4325 18.0658 13.3333 18.25V20.0008H15V18.25C15.9017 18.0658 16.6975 17.59 17.2858 16.9258L18.805 17.8008L19.6367 16.3567L18.12 15.4825C18.2583 15.0683 18.3333 14.6267 18.3333 14.1667ZM14.1667 16.6667C12.7883 16.6667 11.6667 15.545 11.6667 14.1667C11.6667 12.7883 12.7883 11.6667 14.1667 11.6667C15.545 11.6667 16.6667 12.7883 16.6667 14.1667C16.6667 15.545 15.545 16.6667 14.1667 16.6667ZM4.16667 11.6667H6.66667V13.3333H4.16667C2.78833 13.3333 1.66667 14.455 1.66667 15.8333V20H0V15.8333C0 13.5358 1.86917 11.6667 4.16667 11.6667Z" fill="currentColor"></path> </g> <defs> <clipPath id="clip0_2243_2627"> <rect width="20" height="20" fill="white"></rect> </clipPath> </defs> </svg>
+          <span>My Profile</span>
+        </a>
+      </div>
+      <div class="">
+        <a href="dashboard.html"
+          class="nav-item ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2243_2627)"> <path d="M12.5 5C12.5 2.2425 10.2575 0 7.5 0C4.7425 0 2.5 2.2425 2.5 5C2.5 7.7575 4.7425 10 7.5 10C10.2575 10 12.5 7.7575 12.5 5ZM7.5 8.33333C5.66167 8.33333 4.16667 6.83833 4.16667 5C4.16667 3.16167 5.66167 1.66667 7.5 1.66667C9.33833 1.66667 10.8333 3.16167 10.8333 5C10.8333 6.83833 9.33833 8.33333 7.5 8.33333ZM18.3333 14.1667C18.3333 13.7067 18.2583 13.265 18.12 12.8508L19.6367 11.9767L18.805 10.5325L17.2858 11.4075C16.6975 10.7433 15.9008 10.2675 15 10.0833V8.3325H13.3333V10.0833C12.4317 10.2675 11.6358 10.7433 11.0475 11.4075L9.52833 10.5325L8.69667 11.9767L10.2133 12.8508C10.075 13.265 10 13.7067 10 14.1667C10 14.6267 10.075 15.0683 10.2133 15.4825L8.69667 16.3567L9.52833 17.8008L11.0475 16.9258C11.6358 17.59 12.4325 18.0658 13.3333 18.25V20.0008H15V18.25C15.9017 18.0658 16.6975 17.59 17.2858 16.9258L18.805 17.8008L19.6367 16.3567L18.12 15.4825C18.2583 15.0683 18.3333 14.6267 18.3333 14.1667ZM14.1667 16.6667C12.7883 16.6667 11.6667 15.545 11.6667 14.1667C11.6667 12.7883 12.7883 11.6667 14.1667 11.6667C15.545 11.6667 16.6667 12.7883 16.6667 14.1667C16.6667 15.545 15.545 16.6667 14.1667 16.6667ZM4.16667 11.6667H6.66667V13.3333H4.16667C2.78833 13.3333 1.66667 14.455 1.66667 15.8333V20H0V15.8333C0 13.5358 1.86917 11.6667 4.16667 11.6667Z" fill="currentColor"></path> </g> <defs> <clipPath id="clip0_2243_2627"> <rect width="20" height="20" fill="white"></rect> </clipPath> </defs> </svg>
+          <span>Password Change</span>
+        </a>
+      </div>
+      <div class="">
+        <a href="https://zaira.themedox.com/author/conversations"
+          class="nav-item ">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8082 16.9919C15.294 16.7603 18.0707 13.9442 18.2992 10.4089C18.3438 9.71709 18.3438 9.00059 18.2992 8.30875C18.0707 4.77349 15.294 1.95745 11.8082 1.72573C10.6189 1.64668 9.37735 1.64685 8.19051 1.72573C4.70467 1.95745 1.92802 4.77349 1.69955 8.30875C1.65484 9.00059 1.65484 9.71709 1.69955 10.4089C1.78276 11.6965 2.35221 12.8887 3.02261 13.8953C3.41186 14.6001 3.15496 15.4797 2.74952 16.248C2.45719 16.802 2.31102 17.079 2.42838 17.2791C2.54575 17.4792 2.8079 17.4856 3.33221 17.4983C4.36907 17.5236 5.06825 17.2296 5.62325 16.8203C5.93801 16.5883 6.09541 16.4722 6.20388 16.4588C6.31235 16.4455 6.52582 16.5334 6.95269 16.7093C7.33635 16.8673 7.78181 16.9648 8.19051 16.9919C9.37735 17.0708 10.6189 17.071 11.8082 16.9919Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> <path d="M7.08398 11.6667H12.9173M7.08398 7.5H10.0007" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+          <span>Support Tickets</span>
+        </a>
+      </div>
+      <div class="">
+        <form class="" method="POST" action="https://zaira.themedox.com/logout">
+          <input type="hidden" name="_token" value="ZFXCmv7phYK2iRxpPd86VFn8TJzwUFehZVljG7Xw" autocomplete="off">                    <button class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.36111 3.5C4.13273 3.5 3.9137 3.59072 3.75221 3.75221C3.59072 3.9137 3.5 4.13273 3.5 4.36111V15.6389C3.5 15.8673 3.59072 16.0863 3.75221 16.2478C3.9137 16.4093 4.13273 16.5 4.36111 16.5H7.58333C7.99755 16.5 8.33333 16.8358 8.33333 17.25C8.33333 17.6642 7.99755 18 7.58333 18H4.36111C3.73491 18 3.13435 17.7512 2.69155 17.3084C2.24876 16.8657 2 16.2651 2 15.6389V4.36111C2 3.73491 2.24876 3.13435 2.69155 2.69155C3.13435 2.24876 3.73491 2 4.36111 2H7.58333C7.99755 2 8.33333 2.33579 8.33333 2.75C8.33333 3.16421 7.99755 3.5 7.58333 3.5H4.36111ZM12.6919 5.4419C12.9848 5.14901 13.4597 5.14901 13.7526 5.4419L17.7803 9.46968C17.8597 9.54903 17.9175 9.64175 17.9539 9.74058C17.9765 9.80199 17.9914 9.86718 17.9972 9.93494C18.0065 10.042 17.9928 10.1507 17.9562 10.253C17.9201 10.3542 17.8614 10.4493 17.7803 10.5303L13.7526 14.5581C13.4597 14.851 12.9848 14.851 12.6919 14.5581C12.399 14.2652 12.399 13.7903 12.6919 13.4975L15.4394 10.75H7.58331C7.1691 10.75 6.83331 10.4142 6.83331 10C6.83331 9.58579 7.1691 9.25 7.58331 9.25H15.4393L12.6919 6.50256C12.399 6.20967 12.399 5.73479 12.6919 5.4419Z" fill="currentColor" /> </svg>
+            <span class="text-16">Log Out</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="main-container flex flex-col h-[calc(100vh-80px)] sm:h-screen flex-1">
+    <div
+      class="header-wrapper w-full bg-gray border-b border-border py-5.5 px-6 flex gap-4 justify-between items-center print:hidden">
+<div class="flex items-center gap-3.5 flex-1">
+  <button id="sidebar-toggler"
+    class="text-headline hover:text-main transition-all duration-300 cursor-pointer">
+    <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.66797 6.33301H18.668" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 14.5H23.3346" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 22.667H14.0013" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+  </button>
+  <div class="both-sides-icon-input max-w-[364px] !hidden sm:flex">
+    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0625 8.125C2.0625 11.7494 5.00063 14.6875 8.625 14.6875C12.2494 14.6875 15.1875 11.7494 15.1875 8.125C15.1875 4.50063 12.2494 1.5625 8.625 1.5625C5.00063 1.5625 2.0625 4.50063 2.0625 8.125ZM8.625 15.8125C4.37931 15.8125 0.9375 12.3707 0.9375 8.125C0.9375 3.87931 4.37931 0.4375 8.625 0.4375C12.8707 0.4375 16.3125 3.87931 16.3125 8.125C16.3125 10.0454 15.6083 11.8013 14.4441 13.1487L16.8977 15.6023C17.1174 15.8219 17.1174 16.1781 16.8977 16.3977C16.6781 16.6174 16.3219 16.6174 16.1023 16.3977L13.6487 13.9441C12.3013 15.1083 10.5454 15.8125 8.625 15.8125Z" fill="currentColor" /> </svg>
+    <input type="text" placeholder="Search or type a Command" />
+    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 13.0625H6C5.6925 13.0625 5.4375 12.8075 5.4375 12.5V6.5C5.4375 6.1925 5.6925 5.9375 6 5.9375H12C12.3075 5.9375 12.5625 6.1925 12.5625 6.5V12.5C12.5625 12.8075 12.3075 13.0625 12 13.0625ZM6.5625 11.9375H11.4375V7.0625H6.5625V11.9375Z" fill="currentColor" /> <path d="M3.75 17.5625C2.1975 17.5625 0.9375 16.3025 0.9375 14.75C0.9375 13.1975 2.1975 11.9375 3.75 11.9375H6C6.3075 11.9375 6.5625 12.1925 6.5625 12.5V14.75C6.5625 16.3025 5.3025 17.5625 3.75 17.5625ZM3.75 13.0625C2.82 13.0625 2.0625 13.82 2.0625 14.75C2.0625 15.68 2.82 16.4375 3.75 16.4375C4.68 16.4375 5.4375 15.68 5.4375 14.75V13.0625H3.75Z" fill="currentColor" /> <path d="M6 7.0625H3.75C2.1975 7.0625 0.9375 5.8025 0.9375 4.25C0.9375 2.6975 2.1975 1.4375 3.75 1.4375C5.3025 1.4375 6.5625 2.6975 6.5625 4.25V6.5C6.5625 6.8075 6.3075 7.0625 6 7.0625ZM3.75 2.5625C2.82 2.5625 2.0625 3.32 2.0625 4.25C2.0625 5.18 2.82 5.9375 3.75 5.9375H5.4375V4.25C5.4375 3.32 4.68 2.5625 3.75 2.5625Z" fill="currentColor" /> <path d="M14.25 7.0625H12C11.6925 7.0625 11.4375 6.8075 11.4375 6.5V4.25C11.4375 2.6975 12.6975 1.4375 14.25 1.4375C15.8025 1.4375 17.0625 2.6975 17.0625 4.25C17.0625 5.8025 15.8025 7.0625 14.25 7.0625ZM12.5625 5.9375H14.25C15.18 5.9375 15.9375 5.18 15.9375 4.25C15.9375 3.32 15.18 2.5625 14.25 2.5625C13.32 2.5625 12.5625 3.32 12.5625 4.25V5.9375Z" fill="currentColor" /> <path d="M14.25 17.5625C12.6975 17.5625 11.4375 16.3025 11.4375 14.75V12.5C11.4375 12.1925 11.6925 11.9375 12 11.9375H14.25C15.8025 11.9375 17.0625 13.1975 17.0625 14.75C17.0625 16.3025 15.8025 17.5625 14.25 17.5625ZM12.5625 13.0625V14.75C12.5625 15.68 13.32 16.4375 14.25 16.4375C15.18 16.4375 15.9375 15.68 15.9375 14.75C15.9375 13.82 15.18 13.0625 14.25 13.0625H12.5625Z" fill="currentColor" /> </svg>
+  </div>
+</div>
+      <div class="flex items-center gap-5.5">
+        <div class="flex items-center gap-3.5">
+          <a title="View Site" href="https://zaira.themedox.com" target="_blank"
+            class="h-10 w-10 flex justify-center items-center text-main bg-main/10 p-1 rounded-full z-40">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <ellipse cx="11" cy="11" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"></ellipse> <path d="M20.9962 10.7205C19.1938 12.2016 15.3949 13.2222 11 13.2222C6.60511 13.2222 2.80619 12.2016 1.00383 10.7205M20.9962 10.7205C20.8482 5.32691 16.4294 1 11 1C5.57061 1 1.15183 5.32691 1.00383 10.7205M20.9962 10.7205C20.9987 10.8134 21 10.9065 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 10.9065 1.00128 10.8134 1.00383 10.7205" stroke="currentColor" stroke-width="1.5"></path> </svg>
+          </a>
+          <div class="relative group z-30 hover:z-20">
+    <button class="btn-notification">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8082 17.4919C15.294 17.2603 18.0707 14.4442 18.2992 10.9089C18.3438 10.2171 18.3438 9.50059 18.2992 8.80875C18.0707 5.27349 15.294 2.45745 11.8082 2.22573C10.6189 2.14668 9.37735 2.14685 8.19051 2.22573C4.70467 2.45745 1.92802 5.27349 1.69955 8.80875C1.65484 9.50059 1.65484 10.2171 1.69955 10.9089C1.78276 12.1965 2.35221 13.3887 3.02261 14.3953C3.41186 15.1001 3.15496 15.9797 2.74952 16.748C2.45719 17.302 2.31102 17.579 2.42838 17.7791C2.54575 17.9792 2.8079 17.9856 3.33221 17.9983C4.36907 18.0236 5.06825 17.7296 5.62325 17.3203C5.93801 17.0883 6.09541 16.9722 6.20388 16.9588C6.31235 16.9455 6.52582 17.0334 6.95269 17.2093C7.33635 17.3673 7.78181 17.4648 8.19051 17.4919C9.37735 17.5708 10.6189 17.571 11.8082 17.4919Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" /> <path d="M7.08398 12.1667H12.9173M7.08398 8H10.0007" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+    </button>
+    <div
+      class="absolute bg-transparent border-none left-auto -right-24 sm:right-0 top-0 hidden group-hover:block inAnim pt-11">
+      <div class="shadow-popover bg-white rounded-lg overflow-hidden max-w-[90vw] w-[432px]">
+        <div class="flex justify-between items-center py-5 px-5 border-b border-border">
+          <p class="text-20 font-medium">Messages</p>
+          <p class="size-5 rounded bg-main text-white text-12 font-medium flex justify-center items-center">1</p>
+        </div>
+        <ul class="py-4 px-6 thin-scrollbar overflow-y-auto max-h-[60vh]">
+                <li class="">
+                <a href="https://zaira.themedox.com/author/conversations/2"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/378/team_img03.jpg"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">there have some issue with my product</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                </ul>
+        <div class="flex justify-center pt-4 pb-5 px-5 border-t border-border">
+          <a href="https://zaira.themedox.com/author/conversations"
+            class="text-14 font-medium text-paragraph hover:underline transition-all duration-300">View
+            all Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+        <div class="relative group z-50">
+          <button class="flex items-center gap-3.5 text-left">
+            <div class="flex items-center gap-2.5">
+              <div
+                class="size-10 rounded-full bg-white relative after:absolute after:content-[''] after:bottom-1 after:right-0 after:size-2 after:rounded-full after:bg-success after:border after:border-white">
+                <img src="https://zaira.themedox.com//uploads/media/378/team_img03.jpg" class="rounded-full" />
+              </div>
+              <div class="hidden sm:block text-sm font-medium">
+                <h3 class="text-primary pb-1">Author</h3>
+                <p class="text-12m">author@gmail.com</p>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-sm bg-border text-headline flex justify-center items-center p-1.5">
+              <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833984 0.833496L5.00065 4.16683L9.16732 0.833496" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+            </div>
+          </button>
+          <div
+            class="absolute bg-transparent border-none left-auto right-0 top-0 hidden group-hover:block inAnim pt-14">
+            <div class="shadow-popover bg-white rounded-lg overflow-hidden w-[244px]">
+              <ul class="p-3 border-b border-border">
+                <li class="">
+                <a href="dashboard.html"
+                class="flex rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2243_2627)"> <path d="M12.5 5C12.5 2.2425 10.2575 0 7.5 0C4.7425 0 2.5 2.2425 2.5 5C2.5 7.7575 4.7425 10 7.5 10C10.2575 10 12.5 7.7575 12.5 5ZM7.5 8.33333C5.66167 8.33333 4.16667 6.83833 4.16667 5C4.16667 3.16167 5.66167 1.66667 7.5 1.66667C9.33833 1.66667 10.8333 3.16167 10.8333 5C10.8333 6.83833 9.33833 8.33333 7.5 8.33333ZM18.3333 14.1667C18.3333 13.7067 18.2583 13.265 18.12 12.8508L19.6367 11.9767L18.805 10.5325L17.2858 11.4075C16.6975 10.7433 15.9008 10.2675 15 10.0833V8.3325H13.3333V10.0833C12.4317 10.2675 11.6358 10.7433 11.0475 11.4075L9.52833 10.5325L8.69667 11.9767L10.2133 12.8508C10.075 13.265 10 13.7067 10 14.1667C10 14.6267 10.075 15.0683 10.2133 15.4825L8.69667 16.3567L9.52833 17.8008L11.0475 16.9258C11.6358 17.59 12.4325 18.0658 13.3333 18.25V20.0008H15V18.25C15.9017 18.0658 16.6975 17.59 17.2858 16.9258L18.805 17.8008L19.6367 16.3567L18.12 15.4825C18.2583 15.0683 18.3333 14.6267 18.3333 14.1667ZM14.1667 16.6667C12.7883 16.6667 11.6667 15.545 11.6667 14.1667C11.6667 12.7883 12.7883 11.6667 14.1667 11.6667C15.545 11.6667 16.6667 12.7883 16.6667 14.1667C16.6667 15.545 15.545 16.6667 14.1667 16.6667ZM4.16667 11.6667H6.66667V13.3333H4.16667C2.78833 13.3333 1.66667 14.455 1.66667 15.8333V20H0V15.8333C0 13.5358 1.86917 11.6667 4.16667 11.6667Z" fill="currentColor" /> </g> <defs> <clipPath id="clip0_2243_2627"> <rect width="20" height="20" fill="white" /> </clipPath> </defs> </svg>
+                <span class="text-16">My Profile</span>
+                </a>
+                </li>
+              </ul>
+              <ul class="p-3">
+                <li>
+    <a href="dashboard.html"
+      class="flex items-center gap-3.5 px-3.5 py-2 rounded-lg hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph bg-main/5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.862 4.487a2.25 2.25 0 113.182 3.182L7.5 20.213l-4.5 1.125 1.125-4.5L16.862 4.487z" /> </svg>
+      <span class="text-16">Author Dashboard</span>
+    </a>
+  </li>
+                <li class="">
+                <form class="w-full" method="POST" action="https://zaira.themedox.com/logout">
+                <input type="hidden" name="_token" value="ZFXCmv7phYK2iRxpPd86VFn8TJzwUFehZVljG7Xw" autocomplete="off">                                        <button
+                class="flex w-full rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.36111 3.5C4.13273 3.5 3.9137 3.59072 3.75221 3.75221C3.59072 3.9137 3.5 4.13273 3.5 4.36111V15.6389C3.5 15.8673 3.59072 16.0863 3.75221 16.2478C3.9137 16.4093 4.13273 16.5 4.36111 16.5H7.58333C7.99755 16.5 8.33333 16.8358 8.33333 17.25C8.33333 17.6642 7.99755 18 7.58333 18H4.36111C3.73491 18 3.13435 17.7512 2.69155 17.3084C2.24876 16.8657 2 16.2651 2 15.6389V4.36111C2 3.73491 2.24876 3.13435 2.69155 2.69155C3.13435 2.24876 3.73491 2 4.36111 2H7.58333C7.99755 2 8.33333 2.33579 8.33333 2.75C8.33333 3.16421 7.99755 3.5 7.58333 3.5H4.36111ZM12.6919 5.4419C12.9848 5.14901 13.4597 5.14901 13.7526 5.4419L17.7803 9.46968C17.8597 9.54903 17.9175 9.64175 17.9539 9.74058C17.9765 9.80199 17.9914 9.86718 17.9972 9.93494C18.0065 10.042 17.9928 10.1507 17.9562 10.253C17.9201 10.3542 17.8614 10.4493 17.7803 10.5303L13.7526 14.5581C13.4597 14.851 12.9848 14.851 12.6919 14.5581C12.399 14.2652 12.399 13.7903 12.6919 13.4975L15.4394 10.75H7.58331C7.1691 10.75 6.83331 10.4142 6.83331 10C6.83331 9.58579 7.1691 9.25 7.58331 9.25H15.4393L12.6919 6.50256C12.399 6.20967 12.399 5.73479 12.6919 5.4419Z" fill="currentColor" /> </svg>
+                <span class="text-16">Log Out</span>
+                </button>
+                </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 thin-scrollbar overflow-y-auto p-4 sm:p-8">
+  <div class="flex items-center justify-between mb-6">
+    <h1 class="text-2xl font-semibold">Create Blog</h1>
+    <a href="posts.html" class="btn btn-primary">
+      <i class="fas fa-arrow-left mr-2"></i> Back to Blogs
+    </a>
+  </div>
+  <div class="card">
+    <form action="https://zaira.themedox.com/author/blog" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_token" value="ZFXCmv7phYK2iRxpPd86VFn8TJzwUFehZVljG7Xw" autocomplete="off">            <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-8 lg:divide-x divide-border border-b border-border pb-10">
+        <div class="col-span-2">
+          <div class="mb-10">
+            <h5 class="text-lg font-medium mb-4">Basic Information</h5>
+            <div class="mb-4 input-with-label">
+              <label>Title <span class="text-red-500">*</span></label>
+              <input type="text" name="title" id="title" value=""
+                class="" required>
+                </div>
+            <div class="mb-4 input-with-label">
+              <label>Slug</label>
+              <input type="text" name="slug" id="slug" value=""
+                class="">
+                <p class="text-xs mt-1">Leave empty to auto-generate from title</p>
+            </div>
+            <div class="mb-4 input-with-label">
+              <label>Reading Time</label>
+              <input type="text" name="reading_time" value=""
+                class="">
+                </div>
+            <div class="mb-4 input-with-label">
+              <label>Short Description</label>
+              <textarea name="excerpt" rows="3" class="rich-editor "></textarea>
+                </div>
+            <div class="mb-4 input-with-label">
+              <label>Full Description</label>
+              <textarea name="content" class="rich-editor tinymce "></textarea>
+                </div>
+          </div>
+          <div>
+            <h5 class="text-lg font-medium mb-4">SEO</h5>
+            <div class="mb-4 input-with-label">
+              <label>Title</label>
+              <input type="text" name="seo_meta[title]" value=""
+                class="">
+                </div>
+            <div class="mb-4 input-with-label">
+              <label>Description</label>
+              <textarea name="seo_meta[description]" class="tinymce "></textarea>
+                </div>
+            <div class="mb-4 input-with-label">
+              <label>Keywords</label>
+              <input type="text" name="seo_meta[keywords]" value=""
+                class=""
+                placeholder="Enter comma separated keywords">
+                </div>
+          </div>
+        </div>
+        <div class="flex flex-col col-span-full lg:col-span-1 lg:pl-8">
+          <div class="mb-10">
+            <h3 class="mb-2">Publishing Options</h3>
+            <div class="mb-4 input-with-label">
+              <label>Status <span class="text-red-500">*</span></label>
+              <select name="status" class="form-select" required
+                class="">
+                <option value="draft" >Draft</option>
+                <option value="published" >Published
+                </option>
+              </select>
+                </div>
+            <div class="flex flex-col gap-3 mt-4">
+              <h3>Blog Highlights</h3>
+              <div>
+                <input type="checkbox" name="is_featured" value="1" id="is_featured"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+                <label for="is_featured" class="ml-2 text-sm">Featured Blog</label>
+              </div>
+              <div>
+                <input type="checkbox" name="is_popular" value="1" id="is_popular"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+                <label for="is_popular" class="ml-2 text-sm">Popular Blog</label>
+              </div>
+              <div>
+                <input type="checkbox" name="is_weacklybest" value="1" id="is_weacklybest"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+                <label for="is_weacklybest" class="ml-2 text-sm">Weekly Best</label>
+              </div>
+              <div>
+                <input type="checkbox" name="is_trending" value="1" id="is_trending"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+                <label for="is_trending" class="ml-2 text-sm">Trending</label>
+              </div>
+              <div>
+                <input type="checkbox" name="is_hotnews" value="1" id="is_hotnews"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+                <label for="is_hotnews" class="ml-2 text-sm">Hot News</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-10">
+            <div class="mb-4">
+              <h3 class="mb-2">Is Video Blog (Support for theme2, theme6)</h3>
+              <input type="checkbox" name="is_video_blog" id="is_video_blog"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded"
+                >
+              <label for="is_video_blog" class="ml-2 text-sm">Video Blog</label>
+            </div>
+            <div class="mb-4 input-with-label hidden" id="video_url">
+              <input type="text" name="video_url" value=""
+                class=""
+                placeholder="Enter youtube video url">
+                </div>
+          </div>
+          <div class="mb-10">
+            <h3 class="mb-2">Categories</h3>
+            <div class="max-h-48 overflow-y-auto space-y-2">
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="1"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Trending</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="2"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Community</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="3"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Updates</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="4"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Opinion</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="5"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Featured</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="6"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Insights</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="42"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>الأكثر رواجًا</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="43"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>مجتمع</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="44"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>التحديثات</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="45"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>رأي</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="46"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>مميز</span>
+                </label>
+                </div>
+                <div>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="47"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>رؤى</span>
+                </label>
+                </div>
+                </div>
+          </div>
+          <div class="mb-10">
+            <h3 class="mb-2">Tags</h3>
+            <div class="max-h-48 overflow-y-auto space-y-2">
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="7"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Recent News</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="8"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Adventure</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="9"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Art And Design</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="10"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Travel</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="11"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Technology</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="12"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Food And Recipes</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="13"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Education</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="14"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Sports</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="15"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Health And Fitness</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                <input type="checkbox" name="taxonomies[]" value="16"
+                class="rounded border-gray-300 text-blue-600"
+                >
+                <span>Science And Innovation</span>
+                </label>
+                </div>
+          </div>
+                <div class="mb-10">
+              <h3 class="mb-2">Associated Theme</h3>
+              <div class="input-with-label">
+                <select name="blog_theme"
+                class="form-select ">
+                <option value="">Select Theme (Optional)</option>
+                <option value="theme1"
+                >Theme One (Default)</option>
+                <option value="theme2"
+                >Theme Two (Gaming)</option>
+                <option value="theme3"
+                >Theme Three (Technology)</option>
+                <option value="theme4"
+                >Theme Four (Travel)</option>
+                <option value="theme5"
+                >Theme Five (Crypto)</option>
+                <option value="theme6"
+                >Theme Six (Newspaper)</option>
+                </select>
+                <p class="text-xs mt-1 text-gray-600">Select which theme this blog should be associated
+                with</p>
+              </div>
+            </div>
+          <div>
+            <div class="image-input w-full max-w-[360px]">
+              <h3 class="mb-2">Featured Image</h3>
+              <label for="cover-image" class="aspect-[360/157]">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2161_7517)"> <path d="M20 10.6665H20.0133" stroke="#1F61EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <path d="M22.6673 5.3335H9.33398C7.12485 5.3335 5.33398 7.12436 5.33398 9.3335V22.6668C5.33398 24.876 7.12485 26.6668 9.33398 26.6668H22.6673C24.8765 26.6668 26.6673 24.876 26.6673 22.6668V9.3335C26.6673 7.12436 24.8765 5.3335 22.6673 5.3335Z" stroke="#1F61EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <path d="M5.33398 19.9999L10.6673 14.6666C11.2754 14.0815 11.9652 13.7734 12.6673 13.7734C13.3695 13.7734 14.0592 14.0815 14.6673 14.6666L21.334 21.3333" stroke="#1F61EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <path d="M18.666 18.6664L19.9993 17.3331C20.6074 16.748 21.2972 16.4399 21.9993 16.4399C22.7015 16.4399 23.3913 16.748 23.9993 17.3331L26.666 19.9998" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </g> <defs> <clipPath id="clip0_2161_7517"> <rect width="32" height="32" fill="white" /> </clipPath> </defs> </svg>
+                <div class="flex gap-2">
+                <p><span>Choose file</span></p>
+                </div>
+                <p class="text-14 text-paragraph">JPEG, PNG, JPG, GIF, WEBP</p>
+              </label>
+              <input type="file" name="featured_image" accept="image/*" id="cover-image" />
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-full flex-col sm:flex-row flex justify-end gap-4 mt-5">
+        <a class="btn-secondary" href="posts.html">Cancel</a>
+        <button type="submit" class="btn btn-primary">Save &amp; New</button>
+      </div>
+    </form>
+  </div>
+    </div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/js/zaira-lite.js"></script>
+</body>
+</html>

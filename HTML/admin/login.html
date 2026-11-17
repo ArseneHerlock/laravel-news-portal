@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Admin Login - Zaira</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://zaira.themedox.com/uploads/logo/favicon-2025-09-29-02-37-20-4293.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/backend/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../assets/backend/css/sweetalert2.min.css" rel="stylesheet">
+  <link href="../assets/backend/css/toastr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/backend/css/flowbite.min.css">
+  <link rel="stylesheet" href="../assets/backend/css/swiper-bundle.min.css">
+  <link rel="preload" as="style" href="../assets/backend/css/app-V2aRcIkD.css" /><link rel="modulepreload" href="https://zaira.themedox.com/build/assets/app-Cs0QkU1O.js" /><link rel="stylesheet" href="../assets/backend/css/app-V2aRcIkD.css" data-navigate-track="reload" />
+  <link rel="stylesheet" href="../assets/backend/css/style.css">
+  <link rel="stylesheet" href="../assets/backend/css/custom.css">
+  </head>
+<body class="!overflow-y-auto bg-white sm:bg-bg">
+    <div class="min-h-screen sm:p-6 grid lg:grid-cols-2 gap-6 overflow-y-auto">
+    <div class="hidden lg:flex bg-headline flex-col justify-between rounded-2xl overflow-hidden">
+      <div class="h-full">
+        <div class="w-[180px] m-6">
+          <a href="https://zaira.themedox.com">
+            <img src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png" alt="Zaira" />
+          </a>
+        </div>
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <div class="w-full max-w-[468px] mb-[72px]">
+            <h1 class="text-[36px] leading-[120%] text-white font-semibold text-center mb-5">Sign In to Continue</h1>
+            <p class="text-opacity text-center">Access your content and manage your blog effortlessly.</p>
+          </div>
+                <div class="w-full max-w-[626px]">
+              <img src="https://zaira.themedox.com/uploads/img/admin-2025-10-13-10-57-03-7915.png" />
+            </div>
+                </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-center sm:p-6">
+      <div class="w-full max-w-[592px] h-fit bg-white p-5 sm:p-10 rounded-2xl">
+        <div class="mb-8">
+          <h1 class="mb-6 text-28">Login to your account</h1>
+        </div>
+        <form method="POST" action="https://zaira.themedox.com/login">
+          <input type="hidden" name="_token" value="V9V2K1txDzZvlZNxA8WV1WeXplPK7EkPtJQGOxOu" autocomplete="off">                    <div class="space-y-4">
+            <div class="input-with-label col-span-full sm:col-span-2 mb-4">
+              <label class="!text-16" for="email">Email</label>
+              <div class="flex relative items-center">
+                <svg class="absolute left-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="1.6665" y="2.5" width="16.6667" height="15" rx="4" stroke="#667085" stroke-width="1.5" /> <path d="M1.6665 5.83301L7.50106 10.5007C8.96193 11.6693 11.0377 11.6694 12.4986 10.5007L18.3332 5.83301" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                <input name="email" id="email" type="text" class="!pl-12"
+                placeholder="Enter your email"
+                value="" />
+              </div>
+            </div>
+            <div class="input-with-label col-span-full sm:col-span-2 mb-4">
+              <label class="!text-16" for="password">Password</label>
+              <div class="flex relative items-center">
+                <svg class="absolute left-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_231_3867)"> <rect x="1.66669" y="5" width="16.6667" height="13.3333" rx="4" stroke="#667085" stroke-width="1.5" /> <ellipse cx="9.99998" cy="11.6667" rx="1.66667" ry="1.66667" stroke="#667085" stroke-width="1.5" /> <path d="M13.3334 5.00033C13.3334 3.15938 11.841 1.66699 10 1.66699C8.15907 1.66699 6.66669 3.15938 6.66669 5.00033" stroke="#667085" stroke-width="1.5" /> </g> <defs> <clipPath id="clip0_231_3867"> <rect width="20" height="20" fill="white" /> </clipPath> </defs> </svg>
+                <input type="password" name="password" id="password"
+                placeholder="Enter your password" class="!pl-12" />
+                <button type="button" class="absolute active right-4 text-headline text-14"
+                onclick="togglePassword()">
+                <svg class="pointer-events-none active:block hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 3L21 21" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M10.584 10.5869C10.2087 10.9619 9.99775 11.4707 9.99756 12.0012C9.99737 12.5317 10.2079 13.0406 10.583 13.4159C10.958 13.7912 11.4667 14.0021 11.9973 14.0023C12.5278 14.0025 13.0367 13.7919 13.412 13.4169" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M9.363 5.36506C10.2204 5.11978 11.1082 4.9969 12 5.00006C16 5.00006 19.333 7.33306 22 12.0001C21.222 13.3611 20.388 14.5241 19.497 15.4881M17.357 17.3491C15.726 18.4491 13.942 19.0001 12 19.0001C8 19.0001 4.667 16.6671 2 12.0001C3.369 9.60506 4.913 7.82506 6.632 6.65906" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                <svg class="pointer-events-none active:hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 3L21 21" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M10.584 10.5869C10.2087 10.9619 9.99775 11.4707 9.99756 12.0012C9.99737 12.5317 10.2079 13.0406 10.583 13.4159C10.958 13.7912 11.4667 14.0021 11.9973 14.0023C12.5278 14.0025 13.0367 13.7919 13.412 13.4169" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M9.363 5.36506C10.2204 5.11978 11.1082 4.9969 12 5.00006C16 5.00006 19.333 7.33306 22 12.0001C21.222 13.3611 20.388 14.5241 19.497 15.4881M17.357 17.3491C15.726 18.4491 13.942 19.0001 12 19.0001C8 19.0001 4.667 16.6671 2 12.0001C3.369 9.60506 4.913 7.82506 6.632 6.65906" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary w-full mt-6">Login</button>
+                <div class="text-center mt-4">
+              <p class="text-red-400 mb-0 ttn">Email: admin@gmail.com</p>
+              <p class="text-red-400 mb-0 ttn">Password: password</p>
+            </div> </form>
+      </div>
+    </div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/js/zaira-lite.js"></script>
+</body>
+</html>

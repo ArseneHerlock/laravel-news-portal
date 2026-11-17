@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>All Blogs - Zaira</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://zaira.themedox.com/uploads/logo/favicon-2025-09-29-02-37-20-4293.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/backend/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../assets/backend/css/sweetalert2.min.css" rel="stylesheet">
+  <link href="../assets/backend/css/toastr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/backend/css/flowbite.min.css">
+  <link rel="stylesheet" href="../assets/backend/css/swiper-bundle.min.css">
+  <link rel="preload" as="style" href="../assets/backend/css/app-V2aRcIkD.css" /><link rel="modulepreload" href="https://zaira.themedox.com/build/assets/app-Cs0QkU1O.js" /><link rel="stylesheet" href="../assets/backend/css/app-V2aRcIkD.css" data-navigate-track="reload" />
+  <link rel="stylesheet" href="../assets/backend/css/style.css">
+  <link rel="stylesheet" href="../assets/backend/css/custom.css">
+  <link href="../assets/backend/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col-reverse sm:flex-row max-h-screen overflow-hidden">
+  <section id="main-sidebar"
+  class="left-side-bar h-screen group absolute xl:static bg-gray z-50 -left-[266px] collapse-sidebar:left-0 transition-all duration-300">
+  <div id="sidebar-toggler-3"
+    class="fixed bg-black/50 w-full h-full z-10 hidden xl:collapse-sidebar:hidden collapse-sidebar:block collapse-sidebar:right-0">
+  </div>
+  <div
+    class="relative bg-gray z-20 flex flex-col xl:collapse-sidebar:w-[90px] w-[265px] items-start h-full border-r border-border transition-all duration-300">
+    <div class="flex justify-between items-center p-6 border-b border-border w-full max-w-full overflow-hidden">
+      <a href="dashboard.html">
+                <div class="max-w-[200px] max-h-[100px]">
+            <img class="w-full h-full object-cover" src="https://zaira.themedox.com/uploads/logo/dashboard_logo-2025-09-29-02-37-20-1113.png" />
+          </div>
+              </a>
+      <button id="sidebar-toggler-2" class="text-headline hover:text-main xl:hidden">
+        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.66797 6.3335H18.668" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 14.5H23.3346" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 22.6665H14.0013" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+      </button>
+    </div>
+    <div class="xl:collapse-sidebar:py-3 py-5 flex flex-col gap-6 w-full flex-1 thin-scrollbar overflow-y-auto pb-10">
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">Overview
+        </p>
+        <div class="grid gap-3">
+          <div class="">
+            <a href="dashboard.html"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.3333 18.3332V14.9998C13.3333 13.1589 11.8409 11.6665 10 11.6665C8.15905 11.6665 6.66667 13.1589 6.66667 14.9998V18.3332M17.5 8.45845V14.9722C17.5 16.8284 16.0076 18.3332 14.1667 18.3332H5.83333C3.99238 18.3332 2.5 16.8284 2.5 14.9722V8.45845C2.5 7.44931 2.9497 6.49359 3.72488 5.85527L7.89155 2.42429C9.11859 1.41391 10.8814 1.41391 12.1084 2.42429L16.2751 5.85527C17.0503 6.49358 17.5 7.44931 17.5 8.45845Z" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Dashboard</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">Content</p>
+        <div class="grid gap-3">
+          <div class="dropdown  open ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn  active ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.75 6.6665H15.4167M8.75 9.99984H10.8333M15.4167 9.99984H13.3333M8.75 13.3332H10.8333M15.4167 13.3332H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M5.83268 6.25H4.99935C3.428 6.25 2.64232 6.25 2.15417 6.73816C1.66602 7.22631 1.66602 8.01198 1.66602 9.58333V15C1.66602 16.1506 2.59876 17.0833 3.74935 17.0833C4.89994 17.0833 5.83268 16.1506 5.83268 15V6.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.3333 2.9165H9.16667C8.39167 2.9165 8.0042 2.9165 7.68628 3.00169C6.82356 3.23285 6.14968 3.90673 5.91852 4.76945C5.83333 5.08737 5.83333 5.47486 5.83333 6.24984V14.9998C5.83333 16.1504 4.90059 17.0832 3.75 17.0832H13.3333C15.6903 17.0832 16.8688 17.0832 17.6011 16.3509C18.3333 15.6187 18.3333 14.4402 18.3333 12.0832V7.9165C18.3333 5.55948 18.3333 4.38097 17.6011 3.64874C16.8688 2.9165 15.6903 2.9165 13.3333 2.9165Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+                <span>Blog</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300 ">
+                <a href="posts.html"
+                class="nav-item  active ">
+                <span>All Posts</span>
+                </a>
+                <a href="posts.html"
+                class="nav-item ">
+                <span>Categories</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/blog-tags"
+                class="nav-item ">
+                <span>Tags</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/blog-comments"
+                class="nav-item ">
+                <span>Comments</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/menus"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 6h14M3 12h14M3 18h14" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Menu Builder</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/site-configuration"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2 3h16v14H2zM6 7h8M6 11h8M6 15h4" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Site Configuration</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/page"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M14 2V8H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+              <span>Pages</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">E-Commerce
+        </p>
+        <div class="grid gap-3">
+          <div class="dropdown ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7 4V2a2 2 0 012-2h6a2 2 0 012 2v2M7 4H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-3M7 4h6" stroke="currentColor" stroke-width="1.5" /> </svg>
+                <span>Products</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300  height-0 ">
+                <a href="https://zaira.themedox.com/admin/product"
+                class="nav-item ">
+                <span>All Products</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/product-categories"
+                class="nav-item ">
+                <span>Categories</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/product-brands"
+                class="nav-item ">
+                <span>Brands</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/product-tags"
+                class="nav-item ">
+                <span>Tags</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/product-reviews"
+                class="nav-item ">
+                <span>Review</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5.83333 9.16667H14.1667M5.83333 12.5H10.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> <path d="M14.1667 17.5H5.83333C4.44928 17.5 3.75726 17.5 3.25449 17.1782C2.99237 17.0138 2.77951 16.7843 2.63612 16.5106C2.33333 15.9812 2.33333 15.2449 2.33333 13.7778V6.22222C2.33333 4.75508 2.33333 4.02151 2.63612 3.49215C2.77951 3.21841 2.99237 2.98886 3.25449 2.82448C3.75726 2.5 4.44928 2.5 5.83333 2.5H14.1667C15.5507 2.5 16.2428 2.5 16.7455 2.82448C17.0076 2.98886 17.2205 3.21841 17.3639 3.49215C17.6667 4.02151 17.6667 4.75508 17.6667 6.22222V13.7778C17.6667 15.2449 17.6667 15.9812 17.3639 16.5106C17.2205 16.7843 17.0076 17.0138 16.7455 17.1782C16.2428 17.5 15.5507 17.5 14.1667 17.5Z" stroke="currentColor" stroke-width="1.5" /> <path d="M5.83333 2.5L6.24861 1.66944C6.54259 1.08148 6.68958 0.787498 6.91644 0.596099C7.11642 0.427865 7.35476 0.311224 7.61008 0.256331C7.90062 0.194444 8.22485 0.194444 8.87331 0.194444H11.1267C11.7752 0.194444 12.0994 0.194444 12.3899 0.256331C12.6452 0.311224 12.8836 0.427865 13.0836 0.596099C13.3104 0.787498 13.4574 1.08148 13.7514 1.66944L14.1667 2.5" stroke="currentColor" stroke-width="1.5" /> </svg>
+                <span>Orders</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300
+                height-0 ">
+                <a href="https://zaira.themedox.com/admin/orders"
+                class="nav-item ">
+                <span>Orders</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/order-items"
+                class="nav-item ">
+                <span>Order Items</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/currency"
+              class="nav-item ">
+              <svg fill="currentColor" width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none" /> </g> <g id="Q3_icons" data-name="Q3 icons"> <path d="M44,7.1V14a2,2,0,0,1-2,2H35a2,2,0,0,1-2-2.3A2.1,2.1,0,0,1,35.1,12h2.3A18,18,0,0,0,6.1,22.2a2,2,0,0,1-2,1.8h0a2,2,0,0,1-2-2.2A22,22,0,0,1,40,8.9V7a2,2,0,0,1,2.3-2A2.1,2.1,0,0,1,44,7.1Z" /> <path d="M4,40.9V34a2,2,0,0,1,2-2h7a2,2,0,0,1,2,2.3A2.1,2.1,0,0,1,12.9,36H10.6A18,18,0,0,0,41.9,25.8a2,2,0,0,1,2-1.8h0a2,2,0,0,1,2,2.2A22,22,0,0,1,8,39.1V41a2,2,0,0,1-2.3,2A2.1,2.1,0,0,1,4,40.9Z" /> <path d="M24.7,22c-3.5-.7-3.5-1.3-3.5-1.8s.2-.6.5-.9a3.4,3.4,0,0,1,1.8-.4,6.3,6.3,0,0,1,3.3.9,1.8,1.8,0,0,0,2.7-.5,1.9,1.9,0,0,0-.4-2.8A9.1,9.1,0,0,0,26,15.3V13a2,2,0,0,0-4,0v2.2c-3,.5-5,2.5-5,5.2s3.3,4.9,6.5,5.5,3.3,1.3,3.3,1.8-1.1,1.4-2.5,1.4h0a6.7,6.7,0,0,1-4.1-1.3,2,2,0,0,0-2.8.6,1.8,1.8,0,0,0,.3,2.6A10.9,10.9,0,0,0,22,32.8V35a2,2,0,0,0,4,0V32.8a6.3,6.3,0,0,0,3-1.3,4.9,4.9,0,0,0,2-4h0C31,23.8,27.6,22.6,24.7,22Z" /> </g> </g> </svg>
+              <span>Currency</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/payment-methods"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="1.66667" y="4.16667" width="16.6667" height="11.6667" rx="2" stroke="currentColor" stroke-width="1.5" /> <path d="M1.66667 7.5H18.3333" stroke="currentColor" stroke-width="1.5" /> <path d="M5 12.5H7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> <path d="M10 12.5H11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> </svg>
+              <span>Payment Methods</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/payment/analytics"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.5 15L6.25 10.8333L9.16667 13.3333L13.75 8.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M11.25 8.33333H13.75V10.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <circle cx="15.4167" cy="4.58333" r="3.33333" stroke="currentColor" stroke-width="1.5" /> <path d="M15.4167 3.75V3.33333M15.4167 5.83333V5.41667M14.8958 4.16667C14.8958 3.89052 15.1406 3.66667 15.4531 3.66667C15.7657 3.66667 16.0104 3.89052 16.0104 4.16667C16.0104 4.44281 15.7657 4.66667 15.4531 4.66667H15.4167M15.4167 4.66667V5.08333M15.4167 4.66667C15.1406 4.66667 14.8958 4.89052 14.8958 5.16667C14.8958 5.44281 15.1406 5.66667 15.4167 5.66667H15.4531C15.7657 5.66667 16.0104 5.44281 16.0104 5.16667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" /> <path d="M1.66667 17.5H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> </svg>
+              <span>Payment analysis</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">
+          Communication</p>
+        <div class="grid gap-3">
+          <div class="dropdown ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" /> </svg>
+                <span>Newsletter</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300  height-0 ">
+                <a href="https://zaira.themedox.com/admin/send-newsletter"
+                class="nav-item ">
+                <span>Send Newsletter</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/newsletters"
+                class="nav-item ">
+                <span>Newsletter History</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/subscribers"
+                class="nav-item ">
+                <span>Subscribers</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/contact-messages"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" /> <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Contact Messages</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/notifications"
+              class="nav-item ">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.26249 11.4047C3.57506 11.0921 3.75065 10.6682 3.75065 10.2262V8.4165C3.75065 4.96472 6.54887 2.1665 10.0007 2.1665C13.4524 2.1665 16.2507 4.96472 16.2507 8.4165V10.2262C16.2507 10.6682 16.4262 11.0921 16.7388 11.4047L17.9173 12.5832V13.7348C17.9173 14.0504 17.7405 14.3408 17.4527 14.4703C16.1526 15.0555 13.6686 15.9165 10.0007 15.9165C6.33275 15.9165 3.84875 15.0555 2.54867 14.4703C2.26083 14.3408 2.08398 14.0504 2.08398 13.7348V12.5832L3.26249 11.4047Z" stroke="#121C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M7.5 18C8.16344 18.5177 9.03958 18.8324 10 18.8324C10.9604 18.8324 11.8366 18.5177 12.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+              <span>Notifications</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/conversations"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8082 16.9919C15.294 16.7603 18.0707 13.9442 18.2992 10.4089C18.3438 9.71709 18.3438 9.00059 18.2992 8.30875C18.0707 4.77349 15.294 1.95745 11.8082 1.72573C10.6189 1.64668 9.37735 1.64685 8.19051 1.72573C4.70467 1.95745 1.92802 4.77349 1.69955 8.30875C1.65484 9.00059 1.65484 9.71709 1.69955 10.4089C1.78276 11.6965 2.35221 12.8887 3.02261 13.8953C3.41186 14.6001 3.15496 15.4797 2.74952 16.248C2.45719 16.802 2.31102 17.079 2.42838 17.2791C2.54575 17.4792 2.8079 17.4856 3.33221 17.4983C4.36907 17.5236 5.06825 17.2296 5.62325 16.8203C5.93801 16.5883 6.09541 16.4722 6.20388 16.4588C6.31235 16.4455 6.52582 16.5334 6.95269 16.7093C7.33635 16.8673 7.78181 16.9648 8.19051 16.9919C9.37735 17.0708 10.6189 17.071 11.8082 16.9919Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> <path d="M7.08398 11.6667H12.9173M7.08398 7.5H10.0007" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+              <span>Support Tickets</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">Team &
+          Users</p>
+        <div class="grid gap-3">
+          <div class="dropdown ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_users)"> <path d="M3.75 8.55442V5H16.25V8.55442C16.25 11.2001 16.25 12.5229 15.4364 13.3448C14.6228 14.1667 13.3133 14.1667 10.6944 14.1667H9.30558C6.68664 14.1667 5.37718 14.1667 4.56359 13.3448C3.75 12.5229 3.75 11.2001 3.75 8.55442Z" stroke="currentColor" stroke-width="1.5" /> <path d="M3.75 4.99984L4.35096 3.71779C4.81704 2.72349 5.05008 2.22634 5.52243 1.94642C5.99479 1.6665 6.6007 1.6665 7.8125 1.6665H12.1875C13.3993 1.6665 14.0052 1.6665 14.4776 1.94642C14.9499 2.22634 15.183 2.72349 15.649 3.71779L16.25 4.99984" stroke="currentColor" stroke-width="1.5" /> <path d="M8.75 7.5H11.25" stroke="currentColor" stroke-width="1.5" /> </g> <defs> <clipPath id="clip0_users"> <rect width="20" height="20" fill="white" /> </clipPath> </defs> </svg>
+                <span>Users & Roles</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300  height-0 ">
+                <a href="dashboard.html"
+                class="nav-item ">
+                <span>All Users</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/user/create"
+                class="nav-item ">
+                <span>Add User</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/roles"
+                class="nav-item ">
+                <span>All Roles</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/roles/create"
+                class="nav-item ">
+                <span>Add Role</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/profile"
+                class="nav-item ">
+                <span>My Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/requested/authors"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M13 7a4 4 0 11-8 0 4 4 0 018 0zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Requested Authors</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/team"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M13 7a4 4 0 11-8 0 4 4 0 018 0zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" /> </svg>
+              <span>Team Members</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">Appearance
+        </p>
+        <div class="grid gap-3">
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/themes"
+              class="nav-item ">
+              <svg fill="currentColor" height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <g> <g> <path d="M475.691,0.021c-14.656,0-27.776,8.725-33.451,22.251l-32.64,77.973c-9.728-9.152-22.421-14.933-36.267-14.933h-320 C23.936,85.312,0,109.248,0,138.645v320c0,29.397,23.936,53.333,53.333,53.333h320c29.397,0,53.333-23.936,53.333-53.333V225.152 l81.92-172.821c2.24-4.757,3.413-10.048,3.413-16.043C512,16.299,495.701,0.021,475.691,0.021z M405.333,458.645 c0,17.643-14.357,32-32,32h-320c-17.643,0-32-14.357-32-32v-320c0-17.643,14.357-32,32-32h320 c11.243,0,21.312,6.101,27.072,15.573l-37.739,90.197v-52.437c0-5.888-4.779-10.667-10.667-10.667H74.667 c-5.888,0-10.667,4.779-10.667,10.667v85.333c0,5.888,4.779,10.667,10.667,10.667h269.76l-8.939,21.333h-90.155 c-5.888,0-10.667,4.779-10.667,10.667v128c0,0.277,0.128,0.512,0.149,0.789c-8.768,7.787-14.144,10.389-14.528,10.539 c-3.371,1.259-5.888,4.096-6.699,7.616c-0.811,3.584,0.256,7.339,2.859,9.941c15.445,15.445,36.757,21.333,57.6,21.333 c26.645,0,52.48-9.643,64.128-21.333c16.768-16.768,29.056-50.005,19.776-74.773l47.381-99.925V458.645z M270.635,397.525 c2.944-9.685,5.739-18.859,14.229-27.349c15.083-15.083,33.835-15.083,48.917,0c13.504,13.504,3.2,45.717-10.667,59.584 c-11.563,11.541-52.672,22.677-80.256,8.256c3.669-2.859,7.893-6.549,12.672-11.328 C264.448,417.749,267.605,407.467,270.635,397.525z M256,375.339v-76.672h70.571l-16.363,39.083 c-14.251-0.256-28.565,5.483-40.448,17.387C263.125,361.771,259.008,368.661,256,375.339z M331.264,342.741l28.715-68.629 l16.128,7.915l-32.555,68.651C339.605,347.477,335.531,344.747,331.264,342.741z M341.333,170.645v64h-256v-64H341.333z M489.28,43.243l-104.064,219.52l-17.003-8.341l54.08-129.237l39.616-94.677c2.325-5.568,7.744-9.152,13.803-9.152 c8.235,0,14.933,6.699,14.933,15.659C490.645,39.147,490.176,41.344,489.28,43.243z" /> </g> </g> <g> <g> <path d="M181.333,277.312H74.667c-5.888,0-10.667,4.779-10.667,10.667v149.333c0,5.888,4.779,10.667,10.667,10.667h106.667 c5.888,0,10.667-4.779,10.667-10.667V287.979C192,282.091,187.221,277.312,181.333,277.312z M170.667,426.645H85.333v-128h85.333 V426.645z" /> </g> </g> </svg>
+              <span>Theme Manager</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/language"
+              class="nav-item ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none" /> <path d="M4 5h7" /> <path d="M9 3v2c0 4.418 -2.239 8 -5 8" /> <path d="M5 9c0 2.144 2.952 3.908 6.7 4" /> <path d="M12 20l4 -9l4 9" /> <path d="M19.1 18h-6.2" /> </svg>
+              <span>Languages</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="dashboard.html"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.9173 10.0002C12.9173 11.611 11.6115 12.9168 10.0007 12.9168C8.38982 12.9168 7.08398 11.611 7.08398 10.0002C7.08398 8.38933 8.38982 7.0835 10.0007 7.0835C11.6115 7.0835 12.9173 8.38933 12.9173 10.0002Z" stroke="currentColor" stroke-width="1.5"></path> <path d="M8.1428 2.23631L7.4994 4.1665L6.19953 4.98864L4.0727 4.46239C3.71614 4.37417 3.34387 4.5298 3.1562 4.84554L2.01936 6.75811C1.81451 7.10278 1.88412 7.54447 2.18507 7.8094L3.67685 9.12267V10.877L2.18554 12.1903C1.88466 12.4552 1.81508 12.8968 2.01992 13.2414L3.1568 15.1541C3.34447 15.4698 3.71675 15.6255 4.0733 15.5373L6.20014 15.011L7.43155 15.7016L8.01935 17.7316C8.12252 18.0879 8.44882 18.3332 8.81982 18.3332H11.1796C11.5506 18.3332 11.8769 18.0879 11.9801 17.7316L12.5679 15.7016L13.7986 15.011L15.9255 15.5373C16.2821 15.6255 16.6543 15.4698 16.842 15.1541L18.0003 13.2053C18.1954 12.8772 18.1425 12.4583 17.872 12.189L16.3668 10.6904L16.3674 9.30925L17.8726 7.81065C18.1431 7.54129 18.1961 7.12251 18.001 6.79433L16.8426 4.84554C16.6549 4.5298 16.2826 4.37417 15.9261 4.46239L13.7992 4.98864L12.4994 4.1665L11.856 2.23631C11.7426 1.89603 11.4241 1.6665 11.0654 1.6665H8.9334C8.57465 1.6665 8.25622 1.89603 8.1428 2.23631Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+              <span>Settings</span>
+            </a>
+          </div>
+          <div class="">
+            <a href="https://zaira.themedox.com/admin/updater"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C12.0711 2.5 13.9461 3.35714 15.3033 4.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M17.5 3.33333V7.5H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M10 6.66667V10L12.5 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+              <span>Updater</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden">
+        <p class="text-12m mb-2 xl:collapse-sidebar:px-3 px-5 text-gray-500 uppercase tracking-wide">System</p>
+        <div class="grid gap-3">
+          <div class="">
+            <a href="dashboard.html"
+              class="nav-item ">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.9173 10.0002C12.9173 11.611 11.6115 12.9168 10.0007 12.9168C8.38982 12.9168 7.08398 11.611 7.08398 10.0002C7.08398 8.38933 8.38982 7.0835 10.0007 7.0835C11.6115 7.0835 12.9173 8.38933 12.9173 10.0002Z" stroke="currentColor" stroke-width="1.5"></path> <path d="M8.1428 2.23631L7.4994 4.1665L6.19953 4.98864L4.0727 4.46239C3.71614 4.37417 3.34387 4.5298 3.1562 4.84554L2.01936 6.75811C1.81451 7.10278 1.88412 7.54447 2.18507 7.8094L3.67685 9.12267V10.877L2.18554 12.1903C1.88466 12.4552 1.81508 12.8968 2.01992 13.2414L3.1568 15.1541C3.34447 15.4698 3.71675 15.6255 4.0733 15.5373L6.20014 15.011L7.43155 15.7016L8.01935 17.7316C8.12252 18.0879 8.44882 18.3332 8.81982 18.3332H11.1796C11.5506 18.3332 11.8769 18.0879 11.9801 17.7316L12.5679 15.7016L13.7986 15.011L15.9255 15.5373C16.2821 15.6255 16.6543 15.4698 16.842 15.1541L18.0003 13.2053C18.1954 12.8772 18.1425 12.4583 17.872 12.189L16.3668 10.6904L16.3674 9.30925L17.8726 7.81065C18.1431 7.54129 18.1961 7.12251 18.001 6.79433L16.8426 4.84554C16.6549 4.5298 16.2826 4.37417 15.9261 4.46239L13.7992 4.98864L12.4994 4.1665L11.856 2.23631C11.7426 1.89603 11.4241 1.6665 11.0654 1.6665H8.9334C8.57465 1.6665 8.25622 1.89603 8.1428 2.23631Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+              <span>Settings</span>
+            </a>
+          </div>
+          <div class="dropdown ">
+            <div class="have-dropdown">
+              <div
+                class="nav-item justify-between dropdown-btn ">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <defs> <style> .cls-1 { fill: none; stroke: currentColor; stroke-miterlimit: 10; stroke-width: 1.91px; } </style> </defs> <path class="cls-1" d="M19.64,11.05h-1V5.32H13v-1a2.86,2.86,0,1,0-5.72,0v1H1.5v5.73h1a2.86,2.86,0,1,1,0,5.72h-1V22.5H7.23v-.95a2.86,2.86,0,1,1,5.72,0v.95h5.73V16.77h1a2.86,2.86,0,0,0,0-5.72Z" /> </svg>
+                <span>Plugins</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+              </div>
+              <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300  height-0 ">
+                <a href="https://zaira.themedox.com/admin/plugins"
+                class="nav-item ">
+                <span>All Plugins</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/plugins/upload"
+                class="nav-item ">
+                <span>Upload Plugin</span>
+                </a>
+              </div>
+            </div>
+          </div>
+                <div class="dropdown">
+                <div class="have-dropdown">
+                <div class="nav-item justify-between dropdown-btn">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18.3346 8.33317V12.4998C18.3346 16.6665 16.668 18.3332 12.5013 18.3332H7.5013C3.33464 18.3332 1.66797 16.6665 1.66797 12.4998V7.49984C1.66797 3.33317 3.33464 1.6665 7.5013 1.6665H11.668" stroke="currentColor" stroke-width="1.5" /> </svg>
+                <span>Ecommerce</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+                </div>
+                <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300 height-0">
+                <a href="https://zaira.themedox.com/admin/orders" class="nav-item">
+                <span>Orders</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/order-items" class="nav-item">
+                <span>Order Items</span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="dropdown">
+                <div class="have-dropdown">
+                <div class="nav-item justify-between dropdown-btn">
+                <div class="flex gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18.3346 8.33317V12.4998C18.3346 16.6665 16.668 18.3332 12.5013 18.3332H7.5013C3.33464 18.3332 1.66797 16.6665 1.66797 12.4998V7.49984C1.66797 3.33317 3.33464 1.6665 7.5013 1.6665H11.668" stroke="currentColor" stroke-width="1.5" /> </svg>
+                <span>Payment Methods</span>
+                </div>
+                <svg class="xl:collapse-sidebar:hidden dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833008 1.33337L4.99967 4.66671L9.16634 1.33337" stroke="currentColor" stroke-width="1.5" /> </svg>
+                </div>
+                <div
+                class="grid gap-2 pl-4 xl:collapse-sidebar:hidden dropdown-data overflow-hidden transition-all duration-300 height-0">
+                <a href="https://zaira.themedox.com/admin/payment-methods" class="nav-item">
+                <span>Payment Methods</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/payment/analytics" class="nav-item">
+                <span>Payment Analytics</span>
+                </a>
+                <a href="https://zaira.themedox.com/admin/payment/transactions" class="nav-item">
+                <span>Payment Transactions</span>
+                </a>
+                </div>
+                </div>
+                </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="main-container flex flex-col h-[calc(100vh-80px)] sm:h-screen flex-1">
+    <div
+      class="header-wrapper w-full bg-gray border-b border-border py-5.5 px-6 flex gap-4 justify-between items-center print:hidden">
+<div class="flex items-center gap-3.5 flex-1">
+  <button id="sidebar-toggler"
+    class="text-headline hover:text-main transition-all duration-300 cursor-pointer">
+    <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.66797 6.33301H18.668" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 14.5H23.3346" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4.66797 22.667H14.0013" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+  </button>
+  <div class="both-sides-icon-input max-w-[364px] !hidden sm:flex">
+    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0625 8.125C2.0625 11.7494 5.00063 14.6875 8.625 14.6875C12.2494 14.6875 15.1875 11.7494 15.1875 8.125C15.1875 4.50063 12.2494 1.5625 8.625 1.5625C5.00063 1.5625 2.0625 4.50063 2.0625 8.125ZM8.625 15.8125C4.37931 15.8125 0.9375 12.3707 0.9375 8.125C0.9375 3.87931 4.37931 0.4375 8.625 0.4375C12.8707 0.4375 16.3125 3.87931 16.3125 8.125C16.3125 10.0454 15.6083 11.8013 14.4441 13.1487L16.8977 15.6023C17.1174 15.8219 17.1174 16.1781 16.8977 16.3977C16.6781 16.6174 16.3219 16.6174 16.1023 16.3977L13.6487 13.9441C12.3013 15.1083 10.5454 15.8125 8.625 15.8125Z" fill="currentColor" /> </svg>
+    <input type="text" placeholder="Search or type a Command" />
+    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12 13.0625H6C5.6925 13.0625 5.4375 12.8075 5.4375 12.5V6.5C5.4375 6.1925 5.6925 5.9375 6 5.9375H12C12.3075 5.9375 12.5625 6.1925 12.5625 6.5V12.5C12.5625 12.8075 12.3075 13.0625 12 13.0625ZM6.5625 11.9375H11.4375V7.0625H6.5625V11.9375Z" fill="currentColor" /> <path d="M3.75 17.5625C2.1975 17.5625 0.9375 16.3025 0.9375 14.75C0.9375 13.1975 2.1975 11.9375 3.75 11.9375H6C6.3075 11.9375 6.5625 12.1925 6.5625 12.5V14.75C6.5625 16.3025 5.3025 17.5625 3.75 17.5625ZM3.75 13.0625C2.82 13.0625 2.0625 13.82 2.0625 14.75C2.0625 15.68 2.82 16.4375 3.75 16.4375C4.68 16.4375 5.4375 15.68 5.4375 14.75V13.0625H3.75Z" fill="currentColor" /> <path d="M6 7.0625H3.75C2.1975 7.0625 0.9375 5.8025 0.9375 4.25C0.9375 2.6975 2.1975 1.4375 3.75 1.4375C5.3025 1.4375 6.5625 2.6975 6.5625 4.25V6.5C6.5625 6.8075 6.3075 7.0625 6 7.0625ZM3.75 2.5625C2.82 2.5625 2.0625 3.32 2.0625 4.25C2.0625 5.18 2.82 5.9375 3.75 5.9375H5.4375V4.25C5.4375 3.32 4.68 2.5625 3.75 2.5625Z" fill="currentColor" /> <path d="M14.25 7.0625H12C11.6925 7.0625 11.4375 6.8075 11.4375 6.5V4.25C11.4375 2.6975 12.6975 1.4375 14.25 1.4375C15.8025 1.4375 17.0625 2.6975 17.0625 4.25C17.0625 5.8025 15.8025 7.0625 14.25 7.0625ZM12.5625 5.9375H14.25C15.18 5.9375 15.9375 5.18 15.9375 4.25C15.9375 3.32 15.18 2.5625 14.25 2.5625C13.32 2.5625 12.5625 3.32 12.5625 4.25V5.9375Z" fill="currentColor" /> <path d="M14.25 17.5625C12.6975 17.5625 11.4375 16.3025 11.4375 14.75V12.5C11.4375 12.1925 11.6925 11.9375 12 11.9375H14.25C15.8025 11.9375 17.0625 13.1975 17.0625 14.75C17.0625 16.3025 15.8025 17.5625 14.25 17.5625ZM12.5625 13.0625V14.75C12.5625 15.68 13.32 16.4375 14.25 16.4375C15.18 16.4375 15.9375 15.68 15.9375 14.75C15.9375 13.82 15.18 13.0625 14.25 13.0625H12.5625Z" fill="currentColor" /> </svg>
+  </div>
+</div>
+      <div class="flex items-center gap-5.5">
+        <div class="flex items-center gap-3.5">
+          <a title="View Site" href="https://zaira.themedox.com" target="_blank" class="h-10 w-10 flex justify-center items-center text-main bg-main/10 p-1 rounded-full z-40">
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <ellipse cx="11" cy="11" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"></ellipse> <path d="M20.9962 10.7205C19.1938 12.2016 15.3949 13.2222 11 13.2222C6.60511 13.2222 2.80619 12.2016 1.00383 10.7205M20.9962 10.7205C20.8482 5.32691 16.4294 1 11 1C5.57061 1 1.15183 5.32691 1.00383 10.7205M20.9962 10.7205C20.9987 10.8134 21 10.9065 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 10.9065 1.00128 10.8134 1.00383 10.7205" stroke="currentColor" stroke-width="1.5"></path> </svg>
+          </a>
+          <div class="relative group z-30 hover:z-20 ">
+  <button class="btn-notification after:bg-warning">
+    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3.26249 11.4047C3.57506 11.0921 3.75065 10.6682 3.75065 10.2262V8.4165C3.75065 4.96472 6.54887 2.1665 10.0007 2.1665C13.4524 2.1665 16.2507 4.96472 16.2507 8.4165V10.2262C16.2507 10.6682 16.4262 11.0921 16.7388 11.4047L17.9173 12.5832V13.7348C17.9173 14.0504 17.7405 14.3408 17.4527 14.4703C16.1526 15.0555 13.6686 15.9165 10.0007 15.9165C6.33275 15.9165 3.84875 15.0555 2.54867 14.4703C2.26083 14.3408 2.08398 14.0504 2.08398 13.7348V12.5832L3.26249 11.4047Z" stroke="#121C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M7.5 18C8.16344 18.5177 9.03958 18.8324 10 18.8324C10.9604 18.8324 11.8366 18.5177 12.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+  </button>
+  <div
+    class="absolute bg-transparent border-none left-auto -right-36 sm:right-0 top-0 hidden group-hover:block inAnim pt-11">
+        <div class="shadow-popover bg-white rounded-lg overflow-hidden max-w-[90vw] w-[432px] ">
+      <div class="flex justify-between items-center py-5 px-5 border-b border-border">
+        <p class="text-20 font-medium">Notifications</p>
+        <p class="size-5 rounded bg-main text-white text-12 font-medium flex justify-center items-center">183</p>
+      </div>
+      <ul class="py-4 px-6 thin-scrollbar overflow-y-auto max-h-[60vh]">
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;Implementing Okta Authentication In&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;A Complete Guide To Live Validation UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;A Complete Guide To Live Validation UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;A Complete Guide To Live Validation UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;Designing Better Error Messages UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;Designing Better Error Messages UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;Designing Better Error Messages UX&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;WAI-ARIA A Comprehensive Guide&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;WAI-ARIA A Comprehensive Guide&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+                <li>
+            <a href="#" class="p-3 rounded hover:bg-main/5 transition-all duration-300 w-full block">
+              <p class="text-headline font-medium mb-1">Blog &#039;WAI-ARIA A Comprehensive Guide&#039; has been updated.</p>
+              <p class="text-14 text-gray-500">1 year ago</p>
+            </a>
+          </li>
+              </ul>
+      <div class="flex justify-center pt-4 pb-5 px-5 border-t border-border">
+        <a href="https://zaira.themedox.com/admin/notifications"
+          class="text-14 font-medium text-paragraph hover:underline transition-all duration-300">View
+          all Notifications</a>
+      </div>
+    </div>
+      </div>
+</div>
+          <div class="relative group z-30 hover:z-20">
+    <button class="btn-notification">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.8082 17.4919C15.294 17.2603 18.0707 14.4442 18.2992 10.9089C18.3438 10.2171 18.3438 9.50059 18.2992 8.80875C18.0707 5.27349 15.294 2.45745 11.8082 2.22573C10.6189 2.14668 9.37735 2.14685 8.19051 2.22573C4.70467 2.45745 1.92802 5.27349 1.69955 8.80875C1.65484 9.50059 1.65484 10.2171 1.69955 10.9089C1.78276 12.1965 2.35221 13.3887 3.02261 14.3953C3.41186 15.1001 3.15496 15.9797 2.74952 16.748C2.45719 17.302 2.31102 17.579 2.42838 17.7791C2.54575 17.9792 2.8079 17.9856 3.33221 17.9983C4.36907 18.0236 5.06825 17.7296 5.62325 17.3203C5.93801 17.0883 6.09541 16.9722 6.20388 16.9588C6.31235 16.9455 6.52582 17.0334 6.95269 17.2093C7.33635 17.3673 7.78181 17.4648 8.19051 17.4919C9.37735 17.5708 10.6189 17.571 11.8082 17.4919Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" /> <path d="M7.08398 12.1667H12.9173M7.08398 8H10.0007" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+    </button>
+    <div
+      class="absolute bg-transparent border-none left-auto -right-24 sm:right-0 top-0 hidden group-hover:block inAnim pt-11">
+      <div class="shadow-popover bg-white rounded-lg overflow-hidden max-w-[90vw] w-[432px]">
+        <div class="flex justify-between items-center py-5 px-5 border-b border-border">
+          <p class="text-20 font-medium">Messages</p>
+          <p class="size-5 rounded bg-main text-white text-12 font-medium flex justify-center items-center">6</p>
+        </div>
+        <ul class="py-4 px-6 thin-scrollbar overflow-y-auto max-h-[60vh]">
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/2"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/378/team_img03.jpg"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">there have some issue with my product</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/1"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/356/user-2025-06-24-06-52-58-9741.png"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">Ok No problem.</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/1"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/1/author.png"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">Hello</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/1"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/356/user-2025-06-24-06-52-58-9741.png"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">Hello Admin, I need help with my account.</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/1"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/1/author.png"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">Sure, I can help you. What seems to be the problem?</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                <li class="">
+                <a href="https://zaira.themedox.com/admin/conversations/1"
+                class="flex gap-3 p-3 rounded hover:bg-main/5 transition-all duration-300 w-full">
+                <img src="https://zaira.themedox.com//uploads/media/356/user-2025-06-24-06-52-58-9741.png"
+                class="mt-2 w-8 h-8 rounded-full">
+                <div>
+                <p class="text-headline font-medium mb-1">I forgot my password and cannot log in.</p>
+                <p class="text-14">1 year ago</p>
+                </div>
+                </a>
+              </li>
+                </ul>
+        <div class="flex justify-center pt-4 pb-5 px-5 border-t border-border">
+          <a href="https://zaira.themedox.com/admin/conversations"
+            class="text-14 font-medium text-paragraph hover:underline transition-all duration-300">View
+            all Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+<div class="relative group z-50">
+  <button class="flex items-center gap-3.5 text-left">
+    <div class="flex items-center gap-2.5">
+      <div
+        class="size-10 rounded-full bg-white relative after:absolute after:content-[''] after:bottom-1 after:right-0 after:size-2 after:rounded-full after:bg-success after:border after:border-white">
+        <img src="https://zaira.themedox.com//uploads/media/1/author.png" class="rounded-full" />
+      </div>
+      <div class="hidden sm:block text-sm font-medium">
+        <h3 class="text-primary pb-1">Admin</h3>
+        <p class="text-12m">admin@gmail.com</p>
+      </div>
+    </div>
+    <div class="aspect-square rounded-sm bg-border text-headline flex justify-center items-center p-1.5">
+      <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.833984 0.833496L5.00065 4.16683L9.16732 0.833496" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+    </div>
+  </button>
+  <div class="absolute bg-transparent border-none left-auto right-0 top-0 hidden group-hover:block inAnim pt-14">
+    <div class="shadow-popover bg-white rounded-lg overflow-hidden w-[244px]">
+      <ul class="p-3 border-b border-border">
+        <li class="">
+          <a href="https://zaira.themedox.com/admin/profile"
+            class="flex rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2243_2627)"> <path d="M12.5 5C12.5 2.2425 10.2575 0 7.5 0C4.7425 0 2.5 2.2425 2.5 5C2.5 7.7575 4.7425 10 7.5 10C10.2575 10 12.5 7.7575 12.5 5ZM7.5 8.33333C5.66167 8.33333 4.16667 6.83833 4.16667 5C4.16667 3.16167 5.66167 1.66667 7.5 1.66667C9.33833 1.66667 10.8333 3.16167 10.8333 5C10.8333 6.83833 9.33833 8.33333 7.5 8.33333ZM18.3333 14.1667C18.3333 13.7067 18.2583 13.265 18.12 12.8508L19.6367 11.9767L18.805 10.5325L17.2858 11.4075C16.6975 10.7433 15.9008 10.2675 15 10.0833V8.3325H13.3333V10.0833C12.4317 10.2675 11.6358 10.7433 11.0475 11.4075L9.52833 10.5325L8.69667 11.9767L10.2133 12.8508C10.075 13.265 10 13.7067 10 14.1667C10 14.6267 10.075 15.0683 10.2133 15.4825L8.69667 16.3567L9.52833 17.8008L11.0475 16.9258C11.6358 17.59 12.4325 18.0658 13.3333 18.25V20.0008H15V18.25C15.9017 18.0658 16.6975 17.59 17.2858 16.9258L18.805 17.8008L19.6367 16.3567L18.12 15.4825C18.2583 15.0683 18.3333 14.6267 18.3333 14.1667ZM14.1667 16.6667C12.7883 16.6667 11.6667 15.545 11.6667 14.1667C11.6667 12.7883 12.7883 11.6667 14.1667 11.6667C15.545 11.6667 16.6667 12.7883 16.6667 14.1667C16.6667 15.545 15.545 16.6667 14.1667 16.6667ZM4.16667 11.6667H6.66667V13.3333H4.16667C2.78833 13.3333 1.66667 14.455 1.66667 15.8333V20H0V15.8333C0 13.5358 1.86917 11.6667 4.16667 11.6667Z" fill="currentColor" /> </g> <defs> <clipPath id="clip0_2243_2627"> <rect width="20" height="20" fill="white" /> </clipPath> </defs> </svg>
+            <span class="text-16">My Profile</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="p-3 border-b border-border">
+        <li>
+    <a href="dashboard.html"
+      class="flex items-center gap-3.5 px-3.5 py-2 rounded-lg hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph bg-main/5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h7V3H3v9zm0 9h7v-7H3v7zm11 0h7v-9h-7v9zm0-18v7h7V3h-7z" /> </svg>
+      <span class="text-16">Admin Dashboard</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://zaira.themedox.com/author/dashboard"
+      class="flex items-center gap-3.5 px-3.5 py-2 rounded-lg hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.862 4.487a2.25 2.25 0 113.182 3.182L7.5 20.213l-4.5 1.125 1.125-4.5L16.862 4.487z" /> </svg>
+      <span class="text-16">Author Dashboard</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://zaira.themedox.com/user/dashboard"
+      class="flex items-center gap-3.5 px-3.5 py-2 rounded-lg hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 7.5a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" /> </svg>
+      <span class="text-16">User Dashboard</span>
+    </a>
+  </li>
+        <li class="">
+          <a href="dashboard.html"
+            class="flex rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.30924 6.77161C1.57234 7.98318 2.27635 9.23475 3.12525 9.69965L3.29948 9.79476C3.29681 9.86409 3.29503 9.93343 3.29414 10.0001C3.29503 10.0668 3.29681 10.1361 3.29948 10.2054L3.12525 10.3005C2.27635 10.7654 1.57234 12.017 2.30924 13.2286L3.29325 14.8446C3.98126 15.9744 5.32172 16.0251 6.14129 15.5762L6.29951 15.489C6.49685 15.6171 6.70218 15.7362 6.91196 15.8464V15.8766C6.91196 16.9628 7.76975 18.0002 9.01599 18.0002H10.984C12.2302 18.0002 13.088 16.9628 13.088 15.8766V15.8464C13.2978 15.7362 13.5032 15.6171 13.7005 15.489L13.8587 15.5762C14.6783 16.0251 16.0187 15.9744 16.7067 14.8446L17.6908 13.2286C18.4277 12.017 17.7236 10.7654 16.8747 10.3005L16.7005 10.2054C16.7032 10.1361 16.705 10.0668 16.7059 10.0001C16.705 9.93343 16.7032 9.86409 16.7005 9.79476L16.8747 9.69965C17.7236 9.23475 18.4277 7.98318 17.6908 6.77161L16.7067 5.15559C16.0187 4.0258 14.6783 3.97602 13.8587 4.42403L13.7005 4.51114C13.5032 4.38314 13.2978 4.26403 13.088 4.1538V4.12358C13.088 3.03735 12.2302 2 10.984 2H9.01599C7.76975 2 6.91196 3.03735 6.91196 4.12358V4.1538C6.70218 4.26403 6.49685 4.38314 6.29951 4.51114L6.14129 4.42403C5.32172 3.97602 3.98126 4.0258 3.29325 5.15559L2.30924 6.77161ZM6.46396 6.62761L5.28972 5.98405C5.1155 5.88894 4.90038 5.9316 4.80972 6.08094L3.8257 7.69696C3.73504 7.84629 3.80259 8.04363 3.97682 8.13963L5.21772 8.81875C5.12172 9.19653 5.07016 9.59298 5.07016 10.0001C5.07016 10.4072 5.12172 10.8037 5.21772 11.1814L3.97682 11.8606C3.80259 11.9566 3.73504 12.1539 3.8257 12.3032L4.80972 13.9193C4.90038 14.0686 5.1155 14.1113 5.28972 14.0161L6.46396 13.3726C7.06663 13.9815 7.8302 14.4348 8.68798 14.6668V15.8766C8.68798 16.0677 8.83465 16.2224 9.01599 16.2224H10.984C11.1653 16.2224 11.312 16.0677 11.312 15.8766V14.6668C12.1698 14.4348 12.9334 13.9815 13.536 13.3726L14.7103 14.0161C14.8845 14.1113 15.0996 14.0686 15.1903 13.9193L16.1743 12.3032C16.265 12.1539 16.1974 11.9566 16.0232 11.8606L14.7823 11.1814C14.8783 10.8037 14.9298 10.4072 14.9298 10.0001C14.9298 9.59298 14.8783 9.19653 14.7823 8.81875L16.0232 8.13963C16.1974 8.04363 16.265 7.84629 16.1743 7.69696L15.1903 6.08094C15.0996 5.9316 14.8845 5.88894 14.7103 5.98405L13.536 6.62761C12.9334 6.01871 12.1698 5.56538 11.312 5.33426V4.12358C11.312 3.93247 11.1653 3.7778 10.984 3.7778H9.01599C8.83465 3.7778 8.68798 3.93247 8.68798 4.12358V5.33426C7.8302 5.56538 7.06663 6.01871 6.46396 6.62761ZM9.99654 12.6668C11.4677 12.6668 12.6597 11.473 12.6597 10.0001C12.6597 8.52719 11.4677 7.3334 9.99654 7.3334C8.52541 7.3334 7.3334 8.52719 7.3334 10.0001C7.3334 11.473 8.52541 12.6668 9.99654 12.6668ZM11 10C11 10.552 10.5526 11 10 11C9.44745 11 9 10.552 9 10C9 9.448 9.44745 9 10 9C10.5526 9 11 9.448 11 10Z" fill="currentColor" /> </svg>
+            <span class="text-16">Settings</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="https://zaira.themedox.com/admin/currency"
+            class="flex rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_2243_2592)"> <mask id="path-1-inside-1_2243_2592" fill="white"> <path d="M13.75 0C10.245 0 7.5 1.6475 7.5 3.75V5.90583C7.0975 5.85833 6.67917 5.83333 6.25 5.83333C2.745 5.83333 0 7.48083 0 9.58333V16.25C0 18.3525 2.745 20 6.25 20C9.08917 20 11.43 18.9192 12.2167 17.3908C12.715 17.4633 13.2283 17.5 13.75 17.5C17.255 17.5 20 15.8525 20 13.75V3.75C20 1.6475 17.255 0 13.75 0ZM18.3333 10.4167C18.3333 11.4 16.3733 12.5 13.75 12.5C13.3233 12.5 12.905 12.4708 12.5 12.4142V10.7608C12.9083 10.8083 13.3267 10.8333 13.75 10.8333C15.5783 10.8333 17.2 10.385 18.3333 9.6575V10.4167ZM1.66667 12.1575C2.8 12.885 4.42167 13.3333 6.25 13.3333C8.07833 13.3333 9.7 12.885 10.8333 12.1575V12.9167C10.8333 13.9 8.87333 15 6.25 15C3.62667 15 1.66667 13.9 1.66667 12.9167V12.1575ZM18.3333 7.08333C18.3333 8.06667 16.3733 9.16667 13.75 9.16667C13.3042 9.16667 12.8667 9.135 12.445 9.07333C12.2842 8.33417 11.7783 7.67 11.0233 7.1375C11.8433 7.37083 12.7667 7.5 13.75 7.5C15.5783 7.5 17.2 7.05167 18.3333 6.32417V7.08333ZM13.75 1.66667C16.3733 1.66667 18.3333 2.76667 18.3333 3.75C18.3333 4.73333 16.3733 5.83333 13.75 5.83333C11.1267 5.83333 9.16667 4.73333 9.16667 3.75C9.16667 2.76667 11.1267 1.66667 13.75 1.66667ZM6.25 7.5C8.87333 7.5 10.8333 8.6 10.8333 9.58333C10.8333 10.5667 8.87333 11.6667 6.25 11.6667C3.62667 11.6667 1.66667 10.5667 1.66667 9.58333C1.66667 8.6 3.62667 7.5 6.25 7.5ZM6.25 18.3333C3.62667 18.3333 1.66667 17.2333 1.66667 16.25V15.4908C2.8 16.2183 4.42167 16.6667 6.25 16.6667C8.07833 16.6667 9.7 16.2183 10.8333 15.4908V16.25C10.8333 17.2333 8.87333 18.3333 6.25 18.3333ZM13.75 15.8333C13.3233 15.8333 12.905 15.8042 12.5 15.7475V14.0942C12.9083 14.1417 13.3267 14.1667 13.75 14.1667C15.5783 14.1667 17.2 13.7183 18.3333 12.9908V13.75C18.3333 14.7333 16.3733 15.8333 13.75 15.8333Z" /> </mask> <path d="M13.75 0C10.245 0 7.5 1.6475 7.5 3.75V5.90583C7.0975 5.85833 6.67917 5.83333 6.25 5.83333C2.745 5.83333 0 7.48083 0 9.58333V16.25C0 18.3525 2.745 20 6.25 20C9.08917 20 11.43 18.9192 12.2167 17.3908C12.715 17.4633 13.2283 17.5 13.75 17.5C17.255 17.5 20 15.8525 20 13.75V3.75C20 1.6475 17.255 0 13.75 0ZM18.3333 10.4167C18.3333 11.4 16.3733 12.5 13.75 12.5C13.3233 12.5 12.905 12.4708 12.5 12.4142V10.7608C12.9083 10.8083 13.3267 10.8333 13.75 10.8333C15.5783 10.8333 17.2 10.385 18.3333 9.6575V10.4167ZM1.66667 12.1575C2.8 12.885 4.42167 13.3333 6.25 13.3333C8.07833 13.3333 9.7 12.885 10.8333 12.1575V12.9167C10.8333 13.9 8.87333 15 6.25 15C3.62667 15 1.66667 13.9 1.66667 12.9167V12.1575ZM18.3333 7.08333C18.3333 8.06667 16.3733 9.16667 13.75 9.16667C13.3042 9.16667 12.8667 9.135 12.445 9.07333C12.2842 8.33417 11.7783 7.67 11.0233 7.1375C11.8433 7.37083 12.7667 7.5 13.75 7.5C15.5783 7.5 17.2 7.05167 18.3333 6.32417V7.08333ZM13.75 1.66667C16.3733 1.66667 18.3333 2.76667 18.3333 3.75C18.3333 4.73333 16.3733 5.83333 13.75 5.83333C11.1267 5.83333 9.16667 4.73333 9.16667 3.75C9.16667 2.76667 11.1267 1.66667 13.75 1.66667ZM6.25 7.5C8.87333 7.5 10.8333 8.6 10.8333 9.58333C10.8333 10.5667 8.87333 11.6667 6.25 11.6667C3.62667 11.6667 1.66667 10.5667 1.66667 9.58333C1.66667 8.6 3.62667 7.5 6.25 7.5ZM6.25 18.3333C3.62667 18.3333 1.66667 17.2333 1.66667 16.25V15.4908C2.8 16.2183 4.42167 16.6667 6.25 16.6667C8.07833 16.6667 9.7 16.2183 10.8333 15.4908V16.25C10.8333 17.2333 8.87333 18.3333 6.25 18.3333ZM13.75 15.8333C13.3233 15.8333 12.905 15.8042 12.5 15.7475V14.0942C12.9083 14.1417 13.3267 14.1667 13.75 14.1667C15.5783 14.1667 17.2 13.7183 18.3333 12.9908V13.75C18.3333 14.7333 16.3733 15.8333 13.75 15.8333Z" fill="currentColor" /> <path d="M7.5 5.90583L5.24978 24.9735L26.7 27.5049V5.90583H7.5ZM12.2167 17.3908L14.9809 -1.60915L1.41788 -3.58236L-4.85463 8.60386L12.2167 17.3908ZM12.5 12.4142H-6.7V29.1148L9.8395 31.4289L12.5 12.4142ZM12.5 10.7608L14.7185 -8.31056L-6.7 -10.8021V10.7608H12.5ZM18.3333 9.6575H37.5333V-25.4825L7.9616 -6.50007L18.3333 9.6575ZM1.66667 12.1575L12.0384 -4.00007L-17.5333 -22.9825V12.1575H1.66667ZM10.8333 12.1575H30.0333V-22.9825L0.461597 -4.00007L10.8333 12.1575ZM12.445 9.07333L-6.31602 13.1555L-3.48918 26.1473L9.66665 28.0712L12.445 9.07333ZM11.0233 7.1375L16.2781 -11.3294L-0.0428647 22.8276L11.0233 7.1375ZM18.3333 6.32417H37.5333V-28.8159L7.9616 -9.83341L18.3333 6.32417ZM1.66667 15.4908L12.0384 -0.666738L-17.5333 -19.6492V15.4908H1.66667ZM10.8333 15.4908H30.0333V-19.6492L0.461597 -0.666738L10.8333 15.4908ZM12.5 15.7475H-6.7V32.4481L9.8395 34.7623L12.5 15.7475ZM12.5 14.0942L14.7185 -4.97723L-6.7 -7.46877V14.0942H12.5ZM18.3333 12.9908H37.5333V-22.1492L7.9616 -3.16674L18.3333 12.9908ZM13.75 0V-19.2C9.22787 -19.2 4.09563 -18.1756 -0.568367 -15.3769C-4.99556 -12.7203 -11.7 -6.50633 -11.7 3.75H7.5H26.7C26.7 11.9038 21.3681 16.2428 19.1896 17.55C16.7744 18.9993 14.7671 19.2 13.75 19.2V0ZM7.5 3.75H-11.7V5.90583H7.5H26.7V3.75H7.5ZM7.5 5.90583L9.75022 -13.1618C8.59176 -13.2986 7.42194 -13.3667 6.25 -13.3667V5.83333V25.0333C5.9364 25.0333 5.60324 25.0152 5.24978 24.9735L7.5 5.90583ZM6.25 5.83333V-13.3667C1.72787 -13.3667 -3.40437 -12.3422 -8.06837 -9.54357C-12.4956 -6.88701 -19.2 -0.673001 -19.2 9.58333H0H19.2C19.2 17.7372 13.8681 22.0762 11.6896 23.3834C9.27437 24.8326 7.26713 25.0333 6.25 25.0333V5.83333ZM0 9.58333H-19.2V16.25H0H19.2V9.58333H0ZM0 16.25H-19.2C-19.2 26.5063 -12.4956 32.7203 -8.06837 35.3769C-3.40437 38.1756 1.72787 39.2 6.25 39.2V20V0.799999C7.26713 0.799999 9.27437 1.00069 11.6896 2.44998C13.8681 3.75716 19.2 8.09617 19.2 16.25H0ZM6.25 20V39.2C10.0007 39.2 14.0007 38.5017 17.797 36.8155C21.3553 35.2349 26.2578 32.0648 29.288 26.1778L12.2167 17.3908L-4.85463 8.60386C-2.61112 4.24517 0.727637 2.37964 2.20908 1.72162C3.92847 0.957906 5.33847 0.799999 6.25 0.799999V20ZM12.2167 17.3908L9.45246 36.3908C10.8939 36.6005 12.3318 36.7 13.75 36.7V17.5V-1.7C14.1249 -1.7 14.5361 -1.67386 14.9809 -1.60915L12.2167 17.3908ZM13.75 17.5V36.7C18.2721 36.7 23.4044 35.6756 28.0684 32.8769C32.4956 30.2203 39.2 24.0063 39.2 13.75H20H0.799999C0.799999 5.59617 6.13194 1.25716 8.31038 -0.050024C10.7256 -1.49931 12.7329 -1.7 13.75 -1.7V17.5ZM20 13.75H39.2V3.75H20H0.799999V13.75H20ZM20 3.75H39.2C39.2 -6.50633 32.4956 -12.7203 28.0684 -15.3769C23.4044 -18.1756 18.2721 -19.2 13.75 -19.2V0V19.2C12.7329 19.2 10.7256 18.9993 8.31038 17.55C6.13194 16.2428 0.799999 11.9038 0.799999 3.75H20ZM18.3333 10.4167H-0.866668C-0.866668 4.12652 2.20825 -0.0727626 3.93321 -1.92565C5.7649 -3.89317 7.58914 -4.93376 8.62588 -5.43814C10.772 -6.48224 12.5636 -6.7 13.75 -6.7V12.5V31.7C17.5597 31.7 21.643 30.9322 25.425 29.0923C27.2796 28.19 29.7578 26.69 32.039 24.2397C34.2134 21.904 37.5333 17.1985 37.5333 10.4167H18.3333ZM13.75 12.5V-6.7C14.1957 -6.7 14.6667 -6.6697 15.1605 -6.60061L12.5 12.4142L9.8395 31.4289C11.1433 31.6114 12.451 31.7 13.75 31.7V12.5ZM12.5 12.4142H31.7V10.7608H12.5H-6.7V12.4142H12.5ZM12.5 10.7608L10.2815 29.8322C11.4142 29.964 12.5732 30.0333 13.75 30.0333V10.8333V-8.36667C14.0801 -8.36667 14.4025 -8.34732 14.7185 -8.31056L12.5 10.7608ZM13.75 10.8333V30.0333C18.4342 30.0333 23.8518 28.9305 28.7051 25.8151L18.3333 9.6575L7.9616 -6.50007C9.34194 -7.38613 10.5721 -7.82871 11.4405 -8.05602C12.3395 -8.29134 13.1164 -8.36667 13.75 -8.36667V10.8333ZM18.3333 9.6575H-0.866668V10.4167H18.3333H37.5333V9.6575H18.3333ZM1.66667 12.1575L-8.70507 28.3151C-3.85177 31.4305 1.56579 32.5333 6.25 32.5333V13.3333V-5.86667C6.8836 -5.86667 7.6605 -5.79134 8.55954 -5.55602C9.42794 -5.32871 10.6581 -4.88613 12.0384 -4.00007L1.66667 12.1575ZM6.25 13.3333V32.5333C10.9342 32.5333 16.3518 31.4305 21.2051 28.3151L10.8333 12.1575L0.461597 -4.00007C1.84194 -4.88613 3.07206 -5.32871 3.94046 -5.55602C4.8395 -5.79134 5.6164 -5.86667 6.25 -5.86667V13.3333ZM10.8333 12.1575H-8.36667V12.9167H10.8333H30.0333V12.1575H10.8333ZM10.8333 12.9167H-8.36667C-8.36667 6.62652 -5.29175 2.42724 -3.56679 0.574355C-1.7351 -1.39317 0.0891421 -2.43376 1.12588 -2.93814C3.27203 -3.98224 5.06362 -4.2 6.25 -4.2V15V34.2C10.0597 34.2 14.143 33.4322 17.925 31.5923C19.7796 30.69 22.2578 29.19 24.539 26.7397C26.7134 24.404 30.0333 19.6985 30.0333 12.9167H10.8333ZM6.25 15V-4.2C7.43638 -4.2 9.22797 -3.98224 11.3741 -2.93814C12.4109 -2.43376 14.2351 -1.39317 16.0668 0.574355C17.7918 2.42724 20.8667 6.62652 20.8667 12.9167H1.66667H-17.5333C-17.5333 19.6985 -14.2134 24.404 -12.039 26.7397C-9.75781 29.19 -7.27961 30.69 -5.42495 31.5923C-1.64297 33.4322 2.44028 34.2 6.25 34.2V15ZM1.66667 12.9167H20.8667V12.1575H1.66667H-17.5333V12.9167H1.66667ZM18.3333 7.08333H-0.866668C-0.866668 0.793182 2.20825 -3.4061 3.93321 -5.25898C5.7649 -7.22651 7.58914 -8.2671 8.62588 -8.77147C10.772 -9.81557 12.5636 -10.0333 13.75 -10.0333V9.16667V28.3667C17.5597 28.3667 21.643 27.5989 25.425 25.759C27.2796 24.8567 29.7578 23.3567 32.039 20.9064C34.2134 18.5707 37.5333 13.8652 37.5333 7.08333H18.3333ZM13.75 9.16667V-10.0333C14.2083 -10.0333 14.6999 -10.0011 15.2234 -9.92458L12.445 9.07333L9.66665 28.0712C11.0334 28.2711 12.4001 28.3667 13.75 28.3667V9.16667ZM12.445 9.07333L31.206 4.99117C29.7373 -1.75877 25.513 -6.13805 22.0895 -8.5526L11.0233 7.1375L-0.0428647 22.8276C-1.95632 21.478 -5.16899 18.4271 -6.31602 13.1555L12.445 9.07333ZM11.0233 7.1375L5.76852 25.6044C8.413 26.3569 11.1135 26.7 13.75 26.7V7.5V-11.7C14.4198 -11.7 15.2737 -11.6152 16.2781 -11.3294L11.0233 7.1375ZM13.75 7.5V26.7C18.4342 26.7 23.8518 25.5971 28.7051 22.4817L18.3333 6.32417L7.9616 -9.83341C9.34195 -10.7195 10.5721 -11.162 11.4405 -11.3894C12.3395 -11.6247 13.1164 -11.7 13.75 -11.7V7.5ZM18.3333 6.32417H-0.866668V7.08333H18.3333H37.5333V6.32417H18.3333ZM13.75 1.66667V20.8667C12.5636 20.8667 10.772 20.6489 8.62588 19.6048C7.58914 19.1004 5.7649 18.0598 3.93321 16.0923C2.20825 14.2394 -0.866668 10.0402 -0.866668 3.75H18.3333H37.5333C37.5333 -3.03182 34.2134 -7.73735 32.039 -10.073C29.7578 -12.5234 27.2796 -14.0233 25.425 -14.9256C21.643 -16.7656 17.5597 -17.5333 13.75 -17.5333V1.66667ZM18.3333 3.75H-0.866668C-0.866668 -2.54015 2.20825 -6.73943 3.93321 -8.59231C5.7649 -10.5598 7.58914 -11.6004 8.62588 -12.1048C10.772 -13.1489 12.5636 -13.3667 13.75 -13.3667V5.83333V25.0333C17.5597 25.0333 21.643 24.2656 25.425 22.4256C27.2796 21.5233 29.7578 20.0234 32.039 17.573C34.2134 15.2373 37.5333 10.5318 37.5333 3.75H18.3333ZM13.75 5.83333V-13.3667C14.9364 -13.3667 16.728 -13.1489 18.8741 -12.1048C19.9109 -11.6004 21.7351 -10.5598 23.5668 -8.59231C25.2918 -6.73943 28.3667 -2.54015 28.3667 3.75H9.16667H-10.0333C-10.0333 10.5318 -6.71342 15.2373 -4.53898 17.573C-2.25781 20.0234 0.220392 21.5233 2.07505 22.4256C5.85703 24.2656 9.94028 25.0333 13.75 25.0333V5.83333ZM9.16667 3.75H28.3667C28.3667 10.0402 25.2918 14.2394 23.5668 16.0923C21.7351 18.0598 19.9109 19.1004 18.8741 19.6048C16.728 20.6489 14.9364 20.8667 13.75 20.8667V1.66667V-17.5333C9.94028 -17.5333 5.85703 -16.7656 2.07505 -14.9256C0.220392 -14.0233 -2.25781 -12.5234 -4.53898 -10.073C-6.71342 -7.73735 -10.0333 -3.03182 -10.0333 3.75H9.16667ZM6.25 7.5V26.7C5.06362 26.7 3.27203 26.4822 1.12588 25.4381C0.0891421 24.9338 -1.7351 23.8932 -3.56679 21.9256C-5.29175 20.0728 -8.36667 15.8735 -8.36667 9.58333H10.8333H30.0333C30.0333 2.80152 26.7134 -1.90401 24.539 -4.23971C22.2578 -6.69005 19.7796 -8.19001 17.925 -9.0923C14.143 -10.9322 10.0597 -11.7 6.25 -11.7V7.5ZM10.8333 9.58333H-8.36667C-8.36667 3.29318 -5.29175 -0.906096 -3.56679 -2.75898C-1.7351 -4.72651 0.0891421 -5.7671 1.12588 -6.27147C3.27203 -7.31557 5.06362 -7.53333 6.25 -7.53333V11.6667V30.8667C10.0597 30.8667 14.143 30.0989 17.925 28.259C19.7796 27.3567 22.2578 25.8567 24.539 23.4064C26.7134 21.0707 30.0333 16.3652 30.0333 9.58333H10.8333ZM6.25 11.6667V-7.53333C7.43638 -7.53333 9.22797 -7.31557 11.3741 -6.27147C12.4109 -5.7671 14.2351 -4.72651 16.0668 -2.75898C17.7918 -0.906096 20.8667 3.29318 20.8667 9.58333H1.66667H-17.5333C-17.5333 16.3652 -14.2134 21.0707 -12.039 23.4064C-9.75781 25.8567 -7.27961 27.3567 -5.42495 28.259C-1.64297 30.0989 2.44028 30.8667 6.25 30.8667V11.6667ZM1.66667 9.58333H20.8667C20.8667 15.8735 17.7918 20.0728 16.0668 21.9256C14.2351 23.8932 12.4109 24.9338 11.3741 25.4381C9.22797 26.4822 7.43638 26.7 6.25 26.7V7.5V-11.7C2.44028 -11.7 -1.64297 -10.9322 -5.42495 -9.0923C-7.27961 -8.19001 -9.75781 -6.69005 -12.039 -4.23971C-14.2134 -1.90401 -17.5333 2.80152 -17.5333 9.58333H1.66667ZM6.25 18.3333V-0.866668C7.43638 -0.866668 9.22797 -0.648904 11.3741 0.395195C12.4109 0.89957 14.2351 1.94016 16.0668 3.90769C17.7918 5.76057 20.8667 9.95985 20.8667 16.25H1.66667H-17.5333C-17.5333 23.0318 -14.2134 27.7373 -12.039 30.073C-9.75781 32.5234 -7.27961 34.0233 -5.42495 34.9256C-1.64297 36.7656 2.44028 37.5333 6.25 37.5333V18.3333ZM1.66667 16.25H20.8667V15.4908H1.66667H-17.5333V16.25H1.66667ZM1.66667 15.4908L-8.70507 31.6484C-3.85176 34.7638 1.5658 35.8667 6.25 35.8667V16.6667V-2.53333C6.88359 -2.53333 7.66049 -2.45801 8.55954 -2.22268C9.42794 -1.99538 10.6581 -1.5528 12.0384 -0.666738L1.66667 15.4908ZM6.25 16.6667V35.8667C10.9342 35.8667 16.3518 34.7638 21.2051 31.6484L10.8333 15.4908L0.461597 -0.666738C1.84195 -1.5528 3.07206 -1.99538 3.94046 -2.22268C4.83951 -2.45801 5.61641 -2.53333 6.25 -2.53333V16.6667ZM10.8333 15.4908H-8.36667V16.25H10.8333H30.0333V15.4908H10.8333ZM10.8333 16.25H-8.36667C-8.36667 9.95985 -5.29175 5.76057 -3.56679 3.90769C-1.7351 1.94016 0.0891421 0.89957 1.12588 0.395195C3.27203 -0.648904 5.06362 -0.866668 6.25 -0.866668V18.3333V37.5333C10.0597 37.5333 14.143 36.7656 17.925 34.9256C19.7796 34.0233 22.2578 32.5234 24.539 30.073C26.7134 27.7373 30.0333 23.0318 30.0333 16.25H10.8333ZM13.75 15.8333V-3.36667C14.1957 -3.36667 14.6667 -3.33637 15.1605 -3.26728L12.5 15.7475L9.8395 34.7623C11.1433 34.9447 12.4509 35.0333 13.75 35.0333V15.8333ZM12.5 15.7475H31.7V14.0942H12.5H-6.7V15.7475H12.5ZM12.5 14.0942L10.2815 33.1656C11.4142 33.2973 12.5732 33.3667 13.75 33.3667V14.1667V-5.03333C14.0801 -5.03333 14.4025 -5.01399 14.7185 -4.97723L12.5 14.0942ZM13.75 14.1667V33.3667C18.4342 33.3667 23.8518 32.2638 28.7051 29.1484L18.3333 12.9908L7.9616 -3.16674C9.34194 -4.0528 10.5721 -4.49538 11.4405 -4.72268C12.3395 -4.95801 13.1164 -5.03333 13.75 -5.03333V14.1667ZM18.3333 12.9908H-0.866668V13.75H18.3333H37.5333V12.9908H18.3333ZM18.3333 13.75H-0.866668C-0.866668 7.45985 2.20825 3.26057 3.93321 1.40769C5.7649 -0.55984 7.58914 -1.60043 8.62588 -2.1048C10.772 -3.1489 12.5636 -3.36667 13.75 -3.36667V15.8333V35.0333C17.5597 35.0333 21.643 34.2656 25.425 32.4256C27.2796 31.5233 29.7578 30.0234 32.039 27.573C34.2134 25.2373 37.5333 20.5318 37.5333 13.75H18.3333Z" fill="currentColor" mask="url(#path-1-inside-1_2243_2592)" /> </g> <defs> <clipPath id="clip0_2243_2592"> <rect width="20" height="20" fill="white" /> </clipPath> </defs> </svg>
+            <span class="text-16">Setup Currency</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="p-3">
+        <li class="">
+          <form class="w-full" method="POST" action="https://zaira.themedox.com/logout">
+            <input type="hidden" name="_token" value="j61B6MCL70uP0Cl6yFiKRXqFWDh09SfEgMvpGTDW" autocomplete="off">                        <button
+              class="flex w-full rounded-lg items-center gap-3.5 px-3.5 py-2 hover:bg-main/5 transition-all duration-300 hover:text-headline text-paragraph">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.36111 3.5C4.13273 3.5 3.9137 3.59072 3.75221 3.75221C3.59072 3.9137 3.5 4.13273 3.5 4.36111V15.6389C3.5 15.8673 3.59072 16.0863 3.75221 16.2478C3.9137 16.4093 4.13273 16.5 4.36111 16.5H7.58333C7.99755 16.5 8.33333 16.8358 8.33333 17.25C8.33333 17.6642 7.99755 18 7.58333 18H4.36111C3.73491 18 3.13435 17.7512 2.69155 17.3084C2.24876 16.8657 2 16.2651 2 15.6389V4.36111C2 3.73491 2.24876 3.13435 2.69155 2.69155C3.13435 2.24876 3.73491 2 4.36111 2H7.58333C7.99755 2 8.33333 2.33579 8.33333 2.75C8.33333 3.16421 7.99755 3.5 7.58333 3.5H4.36111ZM12.6919 5.4419C12.9848 5.14901 13.4597 5.14901 13.7526 5.4419L17.7803 9.46968C17.8597 9.54903 17.9175 9.64175 17.9539 9.74058C17.9765 9.80199 17.9914 9.86718 17.9972 9.93494C18.0065 10.042 17.9928 10.1507 17.9562 10.253C17.9201 10.3542 17.8614 10.4493 17.7803 10.5303L13.7526 14.5581C13.4597 14.851 12.9848 14.851 12.6919 14.5581C12.399 14.2652 12.399 13.7903 12.6919 13.4975L15.4394 10.75H7.58331C7.1691 10.75 6.83331 10.4142 6.83331 10C6.83331 9.58579 7.1691 9.25 7.58331 9.25H15.4393L12.6919 6.50256C12.399 6.20967 12.399 5.73479 12.6919 5.4419Z" fill="currentColor" /> </svg>
+              <span class="text-16">Log Out</span>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="flex-1 thin-scrollbar overflow-y-auto p-4 sm:p-8">
+        <div class="bg-white rounded-lg border border-border p-6 w-full">
+    <div class="flex flex-col lg:flex-row gap-2 lg:items-center justify-between">
+  <h2 class="text-nowrap text-xl font-semibold text-headline">All Blogs</h2>
+  <div class="flex gap-2 lg:items-center flex-col lg:flex-row">
+    <div class="flex flex-col sm:flex-row gap-2 items-start sm:items-center order-1 lg:order-none">
+      <div class="left-sides-icon-input w-full sm:w-auto">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2.29102 9.58317C2.29102 13.6102 5.55561 16.8748 9.58268 16.8748C13.6098 16.8748 16.8743 13.6102 16.8743 9.58317C16.8743 5.55609 13.6098 2.2915 9.58268 2.2915C5.55561 2.2915 2.29102 5.55609 2.29102 9.58317ZM9.58268 18.1248C4.86525 18.1248 1.04102 14.3006 1.04102 9.58317C1.04102 4.86574 4.86525 1.0415 9.58268 1.0415C14.3001 1.0415 18.1243 4.86574 18.1243 9.58317C18.1243 11.7169 17.342 13.668 16.0484 15.165L18.7746 17.8912C19.0187 18.1353 19.0187 18.531 18.7746 18.7751C18.5305 19.0192 18.1348 19.0192 17.8907 18.7751L15.1645 16.0489C13.6675 17.3424 11.7164 18.1248 9.58268 18.1248Z" fill="currentColor"/> </svg>
+        <input type="text" id="global-search" placeholder="Search blogs" class="w-full min-w-[200px]" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:flex gap-2 order-2 lg:order-none">
+              <button id="print-btn" class="btn-primary bg-success border-success py-2.5 px-3 text-14p font-medium flex items-center justify-center gap-2 min-h-[44px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.1667 14.1667H15.8333C16.2754 14.1667 16.6993 13.9911 17.0118 13.6785C17.3244 13.366 16.2754 12.942 15.8333 12.5V9.16667C17.5 8.72464 17.3244 8.30072 17.0118 7.98816C16.6993 7.6756 16.2754 7.5 15.8333 7.5H4.16667C3.72464 7.5 3.30072 7.6756 2.98816 7.98816C2.67559 8.30072 2.5 8.72464 2.5 9.16667V12.5C2.5 12.942 2.67559 13.366 2.98816 13.6785C3.30072 13.9911 3.72464 14.1667 4.16667 14.1667H5.83333" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M14.1673 7.5V4.16667C14.1673 3.72464 13.9917 3.30072 13.6792 2.98816C13.3666 2.67559 12.9427 2.5 12.5007 2.5H7.50065C7.05862 2.5 6.6347 2.67559 6.32214 2.98816C6.00958 3.30072 5.83398 3.72464 5.83398 4.16667V7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M12.5007 10.8335H7.50065C6.58018 10.8335 5.83398 11.5797 5.83398 12.5002V15.8335C5.83398 16.754 6.58018 17.5002 7.50065 17.5002H12.5007C13.4211 17.5002 14.1673 16.754 14.1673 15.8335V12.5002C14.1673 11.5797 13.4211 10.8335 12.5007 10.8335Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          <span class="hidden sm:inline">Print</span>
+        </button>
+              <button id="export-btn" class="btn-primary bg-headline border-headline py-2.5 px-3 text-14p font-medium flex items-center justify-center gap-2 min-h-[44px]">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8989 9.75503C13.1994 9.48146 13.6647 9.50325 13.9383 9.8037C14.2118 10.1041 14.1901 10.5695 13.8896 10.8431L9.99852 14.3861L6.10744 10.8431C5.80699 10.5695 5.7852 10.1041 6.05877 9.8037C6.33235 9.50325 6.79768 9.48146 7.09813 9.75503L9.26278 11.726V2.73574C9.26278 2.3294 9.59218 2 9.99852 2C10.4049 2 10.7343 2.3294 10.7343 2.73574V11.726L12.8989 9.75503ZM3.45455 14.3633C3.45455 13.9617 3.12893 13.6361 2.72727 13.6361C2.32561 13.6361 2 13.9617 2 14.3633V15.333C2 16.8058 3.19391 17.9997 4.66667 17.9997H15.3333C16.8061 17.9997 18 16.8058 18 15.333V14.3633C18 13.9617 17.6744 13.6361 17.2727 13.6361C16.8711 13.6361 16.5455 13.9617 16.5455 14.3633V15.333C16.5455 16.0025 16.0028 16.5451 15.3333 16.5451H4.66667C3.99723 16.5451 3.45455 16.0025 3.45455 15.333V14.3633Z" fill="currentColor"/> </svg>
+          <span class="hidden sm:inline">Export</span>
+        </button>
+              <div class="relative group">
+          <div class="absolute right-0 top-full mt-2 w-[280px] bg-white rounded-lg shadow-lg border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="p-4">
+              <h3 class="text-purple-600 text-lg font-medium mb-4">Column Visibility</h3>
+                <div class="check-input mb-3">
+                <input id="col-select" type="checkbox" checked class="column-toggle" data-column="select" />
+                <label for="col-select" class="text-sm">Row Select</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-image" type="checkbox" checked class="column-toggle" data-column="image" />
+                <label for="col-image" class="text-sm">Image</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-title" type="checkbox" checked class="column-toggle" data-column="title" />
+                <label for="col-title" class="text-sm">Title</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-categories" type="checkbox" checked class="column-toggle" data-column="categories" />
+                <label for="col-categories" class="text-sm">Categories</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-status" type="checkbox" checked class="column-toggle" data-column="status" />
+                <label for="col-status" class="text-sm">Status</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-created" type="checkbox" checked class="column-toggle" data-column="created" />
+                <label for="col-created" class="text-sm">Created Date</label>
+                </div>
+                <div class="check-input mb-3">
+                <input id="col-actions" type="checkbox" checked class="column-toggle" data-column="actions" />
+                <label for="col-actions" class="text-sm">Actions</label>
+                </div>
+              <button id="show-all-columns" class="w-full py-2 mt-3 text-center border-t border-border text-headline hover:text-main transition-colors text-sm">Show All Columns</button>
+            </div>
+          </div>
+        </div>
+              <button id="bulk-action-btn" class="btn-primary py-2.5 px-3 text-14p font-medium hidden flex items-center justify-center gap-2 min-h-[44px] col-span-2 sm:col-span-1">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.5 12.5L10 15L17.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M2.5 8.33334L5 10.8333L2.5 13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          <span class="hidden sm:inline">Bulk Actions</span>
+        </button>
+              <a href="https://zaira.themedox.com/admin/blog/create" class="btn-primary py-2.5 px-3 text-14p font-medium flex items-center justify-center gap-2 min-h-[44px] col-span-2 sm:col-span-1 lg:col-span-1">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10 4.16667V15.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.16669 10H15.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          <span class="hidden sm:inline">Add New Blog</span>
+        </a>
+          </div>
+  </div>
+</div>
+<style>
+/* Responsive Grid Adjustments */
+@media (max-width: 640px) {
+  .datatable-header .grid {
+    gap: 0.5rem;
+  }
+  .datatable-header button,
+  .datatable-header a {
+    font-size: 0.875rem;
+    padding: 0.625rem 0.75rem;
+    min-height: 40px;
+  }
+  .datatable-header svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .datatable-header .group:hover .absolute {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    width: 90vw;
+    max-width: 300px;
+    z-index: 9999;
+  }
+  /* Improve mobile layout */
+  .datatable-header .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .datatable-header .grid.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .datatable-header .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+}
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .datatable-header .flex {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .datatable-header .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  .datatable-header .left-sides-icon-input {
+    min-width: 250px;
+    flex: 1;
+  }
+}
+/* Desktop enhancements */
+@media (min-width: 1024px) {
+  .datatable-header .left-sides-icon-input {
+    min-width: 300px;
+  }
+  .datatable-header .grid {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .datatable-header button,
+  .datatable-header a {
+    flex-shrink: 0;
+    min-width: fit-content;
+  }
+}
+/* Mobile-first button text visibility */
+.btn-text-mobile {
+  display: none;
+}
+@media (min-width: 640px) {
+  .btn-text-mobile {
+    display: inline;
+  }
+}</style>
+    <div class="flex gap-4 sm:gap-8 flex-wrap mt-4 border-b border-border overflow-x-auto pb-1">
+      <button
+      id="filter-all"
+      class="filter-tab capitalize pb-3 text-16 whitespace-nowrap flex items-center gap-2 transition-all duration-300 relative
+         text-main before:block
+         before:w-full before:content-[''] before:absolute before:h-[1px] before:bg-main before:-bottom-[1px]"
+      data-filter="all"
+    >
+      All Blogs
+      <span class="text-[10px] text-main py-0.5 px-1 rounded bg-main/10 filter-count" id="count-all">0</span>
+    </button>
+      <button
+      id="filter-published"
+      class="filter-tab capitalize pb-3 text-16 whitespace-nowrap flex items-center gap-2 transition-all duration-300 relative
+         text-paragraph before:hidden hover:text-main hover:before:block
+         before:w-full before:content-[''] before:absolute before:h-[1px] before:bg-main before:-bottom-[1px]"
+      data-filter="published"
+    >
+      Published
+      <span class="text-[10px] text-main py-0.5 px-1 rounded bg-main/10 filter-count" id="count-published">0</span>
+    </button>
+      <button
+      id="filter-draft"
+      class="filter-tab capitalize pb-3 text-16 whitespace-nowrap flex items-center gap-2 transition-all duration-300 relative
+         text-paragraph before:hidden hover:text-main hover:before:block
+         before:w-full before:content-[''] before:absolute before:h-[1px] before:bg-main before:-bottom-[1px]"
+      data-filter="draft"
+    >
+      Draft
+      <span class="text-[10px] text-main py-0.5 px-1 rounded bg-main/10 filter-count" id="count-draft">0</span>
+    </button>
+      <button
+      id="filter-scheduled"
+      class="filter-tab capitalize pb-3 text-16 whitespace-nowrap flex items-center gap-2 transition-all duration-300 relative
+         text-paragraph before:hidden hover:text-main hover:before:block
+         before:w-full before:content-[''] before:absolute before:h-[1px] before:bg-main before:-bottom-[1px]"
+      data-filter="scheduled"
+    >
+      Scheduled
+      <span class="text-[10px] text-main py-0.5 px-1 rounded bg-main/10 filter-count" id="count-scheduled">0</span>
+    </button>
+      <button
+      id="filter-trash"
+      class="filter-tab capitalize pb-3 text-16 whitespace-nowrap flex items-center gap-2 transition-all duration-300 relative
+         text-paragraph before:hidden hover:text-main hover:before:block
+         before:w-full before:content-[''] before:absolute before:h-[1px] before:bg-main before:-bottom-[1px]"
+      data-filter="trash"
+    >
+      Trash
+      <span class="text-[10px] text-main py-0.5 px-1 rounded bg-main/10 filter-count" id="count-trash">0</span>
+    </button>
+  </div>
+<style>
+/* Mobile responsive filter tabs */
+@media (max-width: 640px) {
+  .filter-tabs-container,
+  .flex.gap-4.sm\:gap-8 {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .filter-tabs-container::-webkit-scrollbar,
+  .flex.gap-4.sm\:gap-8::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-tab {
+    font-size: 14px;
+    padding-bottom: 0.75rem;
+    min-width: fit-content;
+    flex-shrink: 0;
+  }
+  .filter-count {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 768px) {
+  .filter-tab {
+    font-size: 15px;
+    padding-bottom: 0.875rem;
+  }
+  .filter-count {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+/* Active state enhancements */
+.filter-tab.text-main::before {
+  display: block !important;
+}
+.filter-tab.text-paragraph::before {
+  display: none !important;
+}
+/* Hover states */
+.filter-tab:hover::before {
+  display: block;
+  opacity: 0.6;
+}
+.filter-tab.text-main:hover::before {
+  opacity: 1;
+}
+/* Ensure smooth scrolling on mobile */
+.filter-tabs-container {
+  scroll-behavior: smooth;
+}
+</style>
+    <div class="mt-5 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+  <div class="inline-block min-w-full align-middle">
+    <div class="overflow-hidden shadow-sm rounded-lg border border-border">
+      <table class="min-w-full responsive-table" id="blogs-table">
+        <thead>
+          <tr>
+                <th scope="col" class="col-select">
+                <div
+                class="text-headline flex  items-center py-2.5 px-3 border-y border-l rounded-l border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap w-0 overflow-hidden opacity-0">I</h3>
+                <input type="checkbox" name="" id="select-all"
+                class="border border-border bg-gray rounded text-main size-4" />
+                </div>
+              </th>
+                <th scope="col" class="col-image">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y  border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Image</h3>
+                <button class="text-headline custom-sort-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.25 3.75L6 1.5L3.75 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M8.25 8.25L6 10.5L3.75 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+                </div>
+              </th>
+                <th scope="col" class="col-title">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y  border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Title</h3>
+                <button class="text-headline custom-sort-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.25 3.75L6 1.5L3.75 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M8.25 8.25L6 10.5L3.75 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+                </div>
+              </th>
+                <th scope="col" class="col-categories">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y  border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Categories</h3>
+                <button class="text-headline custom-sort-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.25 3.75L6 1.5L3.75 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M8.25 8.25L6 10.5L3.75 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+                </div>
+              </th>
+                <th scope="col" class="col-status">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y  border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Status</h3>
+                <button class="text-headline custom-sort-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.25 3.75L6 1.5L3.75 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M8.25 8.25L6 10.5L3.75 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+                </div>
+              </th>
+                <th scope="col" class="col-created">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y  border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Created</h3>
+                <button class="text-headline custom-sort-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8.25 3.75L6 1.5L3.75 3.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M8.25 8.25L6 10.5L3.75 8.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                </button>
+                </div>
+              </th>
+                <th scope="col" class="col-actions w-[110px]">
+                <div
+                class="text-headline flex gap-2 items-center py-2.5 px-3 border-y border-r rounded-r border-[#F5F7FF] bg-[#F5F7FF]">
+                <h3 class="capitalize text-nowrap">Action</h3>
+                </div>
+              </th>
+                </tr>
+        </thead>
+        <tbody class="divide-y divide-[#F5F7FF]"> </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<style>
+  /* Responsive table enhancements */
+  .responsive-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: auto;
+  }
+  /* Desktop overflow handling */
+  @media (min-width: 1024px) {
+    .responsive-table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    .responsive-table .col-select {
+      width: 40px;
+    }
+    .responsive-table .col-image {
+      width: 60px;
+    }
+    .responsive-table .col-title {
+      width: 30%;
+    }
+    .responsive-table .col-categories {
+      width: 15%;
+    }
+    .responsive-table .col-language {
+      width: 12%;
+    }
+    .responsive-table .col-status {
+      width: 12%;
+    }
+    .responsive-table .col-created {
+      width: 15%;
+    }
+    .responsive-table .col-actions {
+      width: 160px !important;
+    }
+  }
+  /* Tablet responsive adjustments */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .responsive-table {
+      table-layout: auto;
+    }
+    .responsive-table .col-title {
+      min-width: 200px;
+    }
+    .responsive-table .col-categories,
+    .responsive-table .col-language {
+      min-width: 100px;
+    }
+    .responsive-table .col-status {
+      min-width: 80px;
+    }
+    .responsive-table .col-created {
+      min-width: 120px;
+    }
+    .responsive-table .col-actions {
+      min-width: 120px;
+    }
+  }
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .responsive-table thead {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .responsive-table th,
+    .responsive-table td {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.875rem;
+      vertical-align: middle;
+    }
+    .responsive-table .size-12 {
+      width: 2rem;
+      height: 2rem;
+    }
+    .responsive-table .size-10 {
+      width: 2rem;
+      height: 2rem;
+    }
+    .responsive-table .badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+    }
+    /* Minimize less important columns on mobile but keep headers visible */
+    .responsive-table .col-image {
+      width: 40px;
+      min-width: 40px;
+    }
+    .responsive-table .col-image .size-12 {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .responsive-table .col-categories,
+    .responsive-table .col-language {
+      max-width: 80px;
+      font-size: 0.75rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .responsive-table .col-created {
+      width: 80px;
+      font-size: 0.7rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  @media (max-width: 640px) {
+    .responsive-table th,
+    .responsive-table td {
+      padding: 0.5rem 0.2rem;
+      font-size: 0.75rem;
+    }
+    .responsive-table .max-w-xs {
+      max-width: 5rem;
+    }
+    .responsive-table .flex.gap-2\.5 {
+      gap: 0.25rem;
+    }
+    /* Very compact columns on small screens but keep all visible */
+    .responsive-table .col-select {
+      width: 30px;
+      min-width: 30px;
+    }
+    .responsive-table .col-image {
+      width: 35px;
+      min-width: 35px;
+    }
+    .responsive-table .col-image .size-12 {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    .responsive-table .col-title {
+      min-width: 120px;
+      max-width: 150px;
+    }
+    .responsive-table .col-categories {
+      width: 60px;
+      max-width: 60px;
+      font-size: 0.7rem;
+    }
+    .responsive-table .col-language {
+      width: 50px;
+      max-width: 50px;
+      font-size: 0.7rem;
+    }
+    .responsive-table .col-status {
+      width: 70px;
+      font-size: 0.7rem;
+    }
+    .responsive-table .col-created {
+      width: 70px;
+      font-size: 0.65rem;
+    }
+    .responsive-table .col-actions {
+      width: 90px;
+      min-width: 90px;
+    }
+    /* Smaller action buttons on mobile */
+    .responsive-table .col-actions .size-10 {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.25rem;
+    }
+  }
+  /* Column visibility controls */
+  .col-select.hidden,
+  .col-image.hidden,
+  .col-title.hidden,
+  .col-categories.hidden,
+  .col-language.hidden,
+  .col-status.hidden,
+  .col-created.hidden,
+  .col-actions.hidden {
+    display: none !important;
+  }
+  /* Enhanced table styling */
+  .responsive-table tbody tr:hover {
+    background-color: #F5F7FF;
+  }
+  .responsive-table tbody tr {
+    transition: background-color 0.2s ease;
+  }
+  /* Dense mode */
+  .responsive-table.dense-rows th,
+  .responsive-table.dense-rows td {
+    padding: 0.5rem 0.75rem;
+  }
+  /* Action buttons responsive */
+  @media (max-width: 480px) {
+    .responsive-table .size-10 {
+      width: 1.75rem;
+      height: 1.75rem;
+      padding: 0.375rem;
+    }
+    .responsive-table .flex.gap-2\.5 {
+      gap: 0.25rem;
+    }
+  }
+  /* Custom scrollbar styling */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+  /* Text overflow handling for table cells */
+  .responsive-table td {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    overflow: hidden;
+  }
+  /* Specific column text handling */
+  .responsive-table .col-title td,
+  .responsive-table .col-categories td {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .responsive-table .col-title td,
+    .responsive-table .col-categories td {
+      white-space: normal;
+      line-height: 1.3;
+    }
+  }
+</style>
+    <div id="empty-state" class="hidden">
+      <div class="text-center py-12 px-6">
+  <div class="flex justify-center mb-6">
+    <div class="w-20 h-20 rounded-full bg-gray/10 flex items-center justify-center">
+              <svg class="w-10 h-10 text-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /> </svg>
+          </div>
+  </div>
+  <h3 class="text-lg font-semibold text-headline mb-2">No blogs found</h3>
+  <p class="text-paragraph text-sm mb-6 max-w-sm mx-auto">No results found for your current search or filter criteria.</p>
+      <a href="https://zaira.themedox.com/admin/blog/create" class="btn-primary inline-flex items-center gap-2 py-2.5 px-4 text-14p font-medium">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10 4.16667V15.8333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.16669 10H15.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>Add New Blog</a>
+  <div class="mt-4">
+    <button
+      id="clear-filters-empty"
+      class="text-main hover:text-main/80 text-sm font-medium transition-colors"
+      onclick="clearAllFilters()"
+    >Clear all filters</button>
+  </div>
+</div>
+<style>
+/* Ensure responsive design */
+@media (max-width: 640px) {
+  .datatable-empty-state {
+    padding: 2rem 1rem;
+  }
+  .datatable-empty-state h3 {
+    font-size: 1rem;
+  }
+  .datatable-empty-state p {
+    font-size: 0.875rem;
+  }
+}
+</style>         </div>
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between pt-5 border-t border-border gap-2" id="custom-pagination">
+  <div class="flex items-center gap-3.5">
+          <div class="custom-select position-top sm-select w-fit">
+        <select name="" class="peer" id="page-length-select">
+                <option value="10" selected>10</option>
+                <option value="25" >25</option>
+                <option value="50" >50</option>
+                <option value="100" >100</option>
+                </select>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 10L12 14L7 10" stroke="#0A192F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+      </div>
+          <p class="text-paragraph text-nowrap text-sm" id="pagination-info">
+        Showing
+        <span class="text-headline font-medium" id="showing-start">0</span> -
+        <span class="text-headline font-medium" id="showing-end">0</span>
+        of
+        <span class="text-headline font-medium" id="total-records">0</span>
+      </p>
+      </div>
+      <div class="flex items-center gap-1" id="pagination-controls"> </div>
+  </div>
+<style>
+/* Responsive pagination adjustments */
+@media (max-width: 640px) {
+  #custom-pagination {
+    gap: 1rem;
+  }
+  #pagination-info {
+    font-size: 0.875rem;
+  }
+  .pagination-arrow, .pagination-number {
+    padding: 0.5rem;
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #pagination-controls {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  #pagination-controls::-webkit-scrollbar {
+    display: none;
+  }
+}
+</style>     </div>
+  <div
+  id="bulkActionsModal"
+  class="modal-overlay !hidden opacity-0 transition-opacity duration-300 w-screen h-screen bg-black/30 flex justify-center items-center fixed top-0 left-0 z-50"
+>
+  <div class="modal-content w-full max-w-[390px] h-fit max-h-[90vh] bg-white rounded-2xl px-6 sm:px-9 pt-12 sm:pt-16 pb-8 sm:pb-10 overflow-y-auto relative mx-4">
+    <button class="modal-close size-8 sm:size-10 rounded-lg bg-gray hover:bg-error text-headline hover:text-white flex justify-center items-center absolute top-3 sm:top-4 right-3 sm:right-4 transition-all duration-300">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"> <path d="M16.9531 7.05029L7.05363 16.9498" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> <path d="M7.05078 7.05029L16.9503 16.9498" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /> </svg>
+    </button>
+    <div class="w-24 sm:w-[144px] aspect-square sm:aspect-[144/106] mx-auto mb-4 sm:mb-6 flex items-center justify-center bg-main/10 rounded-2xl">
+      <svg width="48" height="48" class="text-main" viewBox="0 0 24 24" fill="none"> <path d="M7.5 12.5L10 15L17.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M2.5 8.33334L5 10.8333L2.5 13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+    </div>
+    <h2 class="font-medium text-center text-lg sm:text-xl mb-3 sm:mb-4 text-headline">Bulk Actions</h2>
+    <p class="text-center text-sm sm:text-base text-paragraph mb-6">Select an action to apply to the selected items.</p>
+    <form id="bulk-actions-form" class="space-y-4">
+      <input type="hidden" name="_token" value="j61B6MCL70uP0Cl6yFiKRXqFWDh09SfEgMvpGTDW" autocomplete="off">            <div>
+        <label class="form-label block text-headline text-base sm:text-lg mb-2">Select Action</label>
+        <div class="custom-select w-full">
+          <select class="peer w-full" name="action" required>
+            <option value="" disabled selected>Choose action...</option>
+                <option value="publish">Publish</option>
+                <option value="draft">Move to Draft</option>
+                <option value="trash">Move to Trash</option>
+                <option value="permanent_delete">Delete Permanently</option>
+                </select>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" > <path d="M17 10L12 14L7 10" stroke="#0A192F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+        </div>
+      </div>
+      <input type="hidden" name="ids" id="selected-ids">
+    </form>
+    <div class="flex flex-col sm:flex-row justify-center mt-6 sm:mt-8 gap-3 sm:gap-4">
+      <button class="btn-primary modal-close cursor-pointer bg-error/5 border-error/5 text-headline w-full sm:max-w-[140px] text-center order-2 sm:order-1">Cancel</button>
+      <button id="execute-bulk-action" class="btn-primary cursor-pointer bg-error border-error text-white w-full sm:max-w-[140px] text-center order-1 sm:order-2">Execute</button>
+    </div>
+  </div>
+</div>
+<style>
+/* Modal responsive adjustments */
+@media (max-width: 640px) {
+  .modal-content {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    max-height: calc(100vh - 2rem);
+  }
+  .modal-content h2 {
+    font-size: 1.125rem;
+  }
+  .modal-content p {
+    font-size: 0.875rem;
+  }
+  .custom-select select {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+  .btn-primary {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    min-height: 44px; /* Better touch targets */
+  }
+}
+/* Modal animation improvements */
+.modal-overlay {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.modal-overlay.opacity-100 {
+  animation: modalFadeIn 0.3s ease-out;
+}
+.modal-overlay .modal-content {
+  animation: modalSlideIn 0.3s ease-out;
+}
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+/* Enhanced form styling */
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  appearance: none;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  color: #1a202c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.custom-select select:focus {
+  outline: none;
+  border-color: var(--color-main, #3b82f6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+.custom-select svg {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+.custom-select:hover svg {
+  transform: translateY(-50%) rotate(180deg);
+}
+/* Loading state */
+.modal-content[data-loading="true"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.modal-content[data-loading="true"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #f3f4f6;
+  border-top-color: var(--color-main, #3b82f6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .modal-overlay.opacity-100,
+  .modal-overlay .modal-content {
+    animation: none;
+  }
+}
+/* Focus management */
+.modal-overlay:focus-within .modal-close:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-main, #3b82f6);
+}
+</style>        </div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/js/zaira-lite.js"></script>
+</body>
+</html>
