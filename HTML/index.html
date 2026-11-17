@@ -1,0 +1,2124 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="https://zaira.themedox.com/uploads/logo/favicon-2025-09-29-02-37-20-4293.png"
+      type="image/x-icon"
+    />
+    <meta name="language" content="en" />
+    <meta name="direction" content="ltr" />
+    <title>Zaira - News Magazine Laravel Script</title>
+    <meta name="title" content="Zaira - News Magazine Laravel Script" />
+    <meta
+      name="description"
+      content="Zaira is a modern and responsive News Magazine Laravel Script make for online newspapers, blogs, magazines, publishers, and content-rich websites. Featuring clean layouts, fast performance, and easy customization, it’s perfect for showcasing trending stories and breaking news with style."
+    />
+    <meta
+      name="keywords"
+      content="Zaira, news Laravel Script, magazine Laravel Script, newspaper website Script, responsive news Script."
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      :root {
+        --tg-primary-color: #f4796c;
+        --tg-secondary-color: #183354;
+      }
+    </style>
+    <style>
+      /* Theme-specific styles */
+      .theme-section {
+        padding: 60px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .theme-section-title {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .theme-section-title h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--primary-color, #007bff);
+      }
+      .theme-section-title p {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .theme-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+      .theme-card:hover {
+        transform: translateY(-5px);
+      }
+      .theme-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 30px;
+        background: var(--primary-color, #007bff);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+      .theme-btn:hover {
+        background: var(--primary-hover-color, #0056b3);
+        color: #fff;
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .theme-hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+      .theme-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      .theme-hero .container {
+        position: relative;
+        z-index: 2;
+      }
+      .hero-content h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      .hero-content p {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+        .hero-content p {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="theme_1">
+    <div id="preloader">
+      <div class="loader-inner">
+        <div id="loader">
+          <h2 id="bg-loader">Zaira<span>.</span></h2>
+          <h2 id="fg-loader">Zaira<span>.</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="darkmode-trigger">
+      <label class="modeSwitch">
+        <input type="checkbox" />
+        <span class="icon"></span>
+      </label>
+    </div>
+    <button class="scroll-top scroll-to-target" data-target="html">
+      <i class="fas fa-angle-up"></i>
+    </button>
+    <header>
+      <div id="header-fixed-height"></div>
+      <div class="header-top-wrap">
+        <div class="container-fluid p-0">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="header-top-menu">
+                <ul id="menu-header-top-menu" class="list-wrap">
+                  <li><a href="pages/contact.html" target="_self">Forum</a></li>
+                  <li><a href="pages/about.html" target="_self">About</a></li>
+                  <li>
+                    <a href="blog/blogs.html" target="_self">All Recipes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="header-top-social">
+                <h5 class="title">Follow Us</h5>
+                <ul class="list-wrap">
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.x.com" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="header-language ms-3">
+                  <div
+                    class="language-switcher language-switcher-dropdown position-right"
+                    dir="ltr"
+                  >
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-link dropdown-toggle language-current p-1"
+                        type="button"
+                        id="languageDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        title="Switch Language"
+                      >
+                        <i
+                          class="flag-icon flag-icon-en"
+                          style="
+                            width: 20px;
+                            height: 15px;
+                            background-size: cover;
+                          "
+                        ></i>
+                        <span class="lang-name">English</span>
+                        <i class="fas fa-chevron-down ms-1"></i>
+                      </button>
+                      <ul
+                        class="dropdown-menu language-dropdown"
+                        aria-labelledby="languageDropdown"
+                      >
+                        <li>
+                          <a
+                            class="dropdown-item language-item"
+                            href="https://zaira.themedox.com/language/switch/ar"
+                            data-language="ar"
+                            dir="rtl"
+                          >
+                            <i
+                              class="flag-icon flag-icon-ar"
+                              style="
+                                width: 20px;
+                                height: 15px;
+                                background-size: cover;
+                                margin-right: 8px;
+                              "
+                            ></i>
+                            <span class="lang-name">Arabic</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item language-item active"
+                            href="https://zaira.themedox.com/language/switch/en"
+                            data-language="en"
+                            dir="ltr"
+                          >
+                            <i
+                              class="flag-icon flag-icon-en"
+                              style="
+                                width: 20px;
+                                height: 15px;
+                                background-size: cover;
+                                margin-right: 8px;
+                              "
+                            ></i>
+                            <span class="lang-name">English</span>
+                            <i class="fas fa-check ms-auto text-white"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <style>
+                    .language-switcher {
+                      font-size: 14px;
+                      line-height: 1.4;
+                    }
+                    .language-current {
+                      display: flex;
+                      align-items: center;
+                      gap: 5px;
+                      text-decoration: none;
+                      color: white;
+                      border: none;
+                      background: none;
+                      padding: 5px 10px;
+                      border-radius: 4px;
+                      transition: all 0.3s ease;
+                    }
+                    .language-current:hover {
+                      background-color: rgba(0, 0, 0, 0.05);
+                      color: inherit;
+                      text-decoration: none;
+                    }
+                    .language-dropdown {
+                      min-width: 140px;
+                      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                      border: 1px solid rgba(0, 0, 0, 0.1);
+                      border-radius: 8px;
+                      padding: 8px 0;
+                    }
+                    .language-item {
+                      display: flex;
+                      align-items: center;
+                      padding: 8px 16px;
+                      transition: all 0.2s ease;
+                      text-decoration: none;
+                      gap: 10px;
+                      justify-content: left;
+                    }
+                    .language-item:hover {
+                      background-color: rgba(0, 0, 0, 0.05);
+                    }
+                    .language-item.active {
+                      background-color: var(--tg-primary-color);
+                      color: white;
+                    }
+                    .language-item.active:hover {
+                      background-color: var(--tg-primary-color);
+                      color: white;
+                    }
+                    .language-inline {
+                      gap: 8px;
+                    }
+                    .language-link {
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+                      padding: 4px 8px;
+                      text-decoration: none;
+                      color: inherit;
+                      border-radius: 4px;
+                      transition: all 0.3s ease;
+                    }
+                    .language-link:hover {
+                      background-color: rgba(0, 0, 0, 0.05);
+                      color: inherit;
+                      text-decoration: none;
+                    }
+                    .language-link.active {
+                      background-color: var(--bs-primary, #007bff);
+                      color: white;
+                    }
+                    .language-separator {
+                      color: rgba(0, 0, 0, 0.3);
+                      margin: 0 4px;
+                    }
+                    .flag-icon {
+                      width: 20px;
+                      height: 15px;
+                      background-size: cover;
+                      background-position: center;
+                      border-radius: 2px;
+                      display: none;
+                    }
+                    /* Flag backgrounds - Basic implementation */
+                    .flag-icon-en {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjMDA1MkI0Ii8+CjxwYXRoIGQ9Ik0wIDBoNDBsLTQwIDMweiIgZmlsbD0iI0ZGRiIvPgo8cGF0aCBkPSJNNDAgMEwwIDMwaDQwVjB6IiBmaWxsPSIjRkZGIi8+CjxwYXRoIGQ9Ik0wIDBoNDBsLTQwIDMweiIgZmlsbD0iI0ZGRiIvPgo8cGF0aCBkPSJNMCAxNWg0MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHA+");
+                    }
+                    .flag-icon-es {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjRkY0NTQ1Ii8+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSIxNSIgeT0iNy41IiBmaWxsPSIjRkZEQjAwIi8+Cjwvc3ZnPg==");
+                    }
+                    .flag-icon-fr {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEzLjMzIiBoZWlnaHQ9IjMwIiBmaWxsPSIjMDA1MkI0Ii8+CjxyZWN0IHg9IjEzLjMzIiB3aWR0aD0iMTMuMzMiIGhlaWdodD0iMzAiIGZpbGw9IiNGRkYiLz4KPHJlY3QgeD0iMjYuNjciIHdpZHRoPSIxMy4zMyIgaGVpZ2h0PSIzMCIgZmlsbD0iI0ZGNDU0NSIvPgo8L3N2Zz4=");
+                    }
+                    .flag-icon-ar {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjRkY0NTQ1Ii8+CjxyZWN0IHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMTAiIGZpbGw9IiNGRkYiLz4KPHJlY3QgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzAwMCIvPgo8L3N2Zz4=");
+                    }
+                    /* Position variations */
+                    .position-right {
+                      margin-left: auto;
+                    }
+                    .position-left {
+                      margin-right: auto;
+                    }
+                    .position-center {
+                      margin: 0 auto;
+                    }
+                    /* RTL Support */
+                    [dir="rtl"] .language-switcher {
+                      direction: ltr; /* Keep switcher itself LTR for consistency */
+                    }
+                    [dir="rtl"] .language-current {
+                      flex-direction: row-reverse;
+                    }
+                    [dir="rtl"] .language-item {
+                      flex-direction: row-reverse;
+                    }
+                    /* Dark mode support */
+                    @media (prefers-color-scheme: dark) {
+                      .language-current:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                      }
+                      .language-item:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                      }
+                      .language-link:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                      }
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sticky-header" class="menu-area">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12">
+              <div class="menu-wrap">
+                <div class="row align-items-center g-0">
+                  <div class="col-xl-6">
+                    <div class="header-left-side">
+                      <div class="offcanvas-toggle">
+                        <a href="javascript:void(0)" class="menu-tigger">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                      </div>
+                      <div class="navbar-wrap main-menu d-none d-xl-flex">
+                        <ul id="menu-primary-menu" class="navigation">
+                          <li
+                            class="menu-item-has-children current-menu-item active"
+                          >
+                            <a
+                              href="index.html"
+                              target="_self"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >Home</a
+                            >
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 01 - Default</a
+                                >
+                              </li>
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 02 - Gaming</a
+                                >
+                              </li>
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 03 - Technology</a
+                                >
+                              </li>
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 04 - Travel</a
+                                >
+                              </li>
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 05 - Crypto</a
+                                >
+                              </li>
+                              <li>
+                                <a href="index.html" target="_self"
+                                  >Home 06 - Newspaper</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="pages/about.html" target="_self">About</a>
+                          </li>
+                          <li class="menu-item-has-children">
+                            <a
+                              href="blog/blogs.html"
+                              target="_self"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >Blog</a
+                            >
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="blog/blogs.html" target="_self"
+                                  >Blog Default</a
+                                >
+                              </li>
+                              <li>
+                                <a href="blog/blogs.html" target="_self"
+                                  >Blog Layout 02</a
+                                >
+                              </li>
+                              <li>
+                                <a href="blog/blogs.html" target="_self"
+                                  >Blog Layout 03</a
+                                >
+                              </li>
+                              <li>
+                                <a href="blog/blog-details.html" target="_self"
+                                  >Single Post Layout 1</a
+                                >
+                              </li>
+                              <li>
+                                <a href="blog/blog-details.html" target="_self"
+                                  >Single Post Layout 2</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                            <a
+                              href="#"
+                              target="_self"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >Pages</a
+                            >
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="blog/author.html" target="_self"
+                                  >Team Member</a
+                                >
+                              </li>
+                              <li>
+                                <a href="blog/author.html" target="_self"
+                                  >Team Member Details</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="pages/privacy-policy.html"
+                                  target="_self"
+                                  >Privacy policy</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="pages/contact.html" target="_self"
+                              >Contact</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-7">
+                    <div class="logo">
+                      <a href="index.html">
+                        <img
+                          src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                          alt="Zaira"
+                        />
+                      </a>
+                    </div>
+                    <div class="logo d-none">
+                      <a href="index.html">
+                        <img
+                          src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png"
+                          alt="Zaira"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-9 col-md-8 col-5">
+                    <div class="header-right-side">
+                      <div class="header-search-wrap">
+                        <form action="https://zaira.themedox.com/blogs">
+                          <input
+                            value=""
+                            name="search"
+                            type="text"
+                            placeholder="Search . . ."
+                          />
+                          <button type="submit">
+                            <i class="flaticon-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                      <div class="header-action">
+                        <ul class="list-wrap">
+                          <li class="header-sine-in">
+                            <a href="user/login.html">
+                              <i class="flaticon-user"></i> Sign In
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-nav-toggler">
+                  <i class="fas fa-bars"></i>
+                </div>
+              </div>
+              <div class="mobile-menu">
+                <nav class="menu-box">
+                  <div class="close-btn"><i class="fas fa-times"></i></div>
+                  <div class="nav-logo">
+                    <a href="index.html"
+                      ><img
+                        src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                        alt="Zaira"
+                    /></a>
+                  </div>
+                  <div class="nav-logo d-none">
+                    <a href="index.html"
+                      ><img
+                        src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                        alt="Zaira"
+                    /></a>
+                  </div>
+                  <div class="mobile-search">
+                    <form action="https://zaira.themedox.com/blogs">
+                      <input
+                        value=""
+                        name="search"
+                        type="text"
+                        placeholder="Search . . ."
+                      />
+                      <button type="submit">
+                        <i class="flaticon-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="menu-outer"></div>
+                  <div class="social-links">
+                    <ul class="clearfix list-wrap">
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.x.com" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="menu-backdrop"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offCanvas-wrap">
+        <div class="offCanvas-body">
+          <div class="offCanvas-toggle">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="offCanvas-content">
+            <div class="offCanvas-logo logo">
+              <a href="index.html" class="logo-dark"
+                ><img
+                  src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                  alt="Zaira"
+              /></a>
+              <a href="index.html" class="logo-light"
+                ><img
+                  src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png"
+                  alt="Zaira"
+              /></a>
+            </div>
+            <p>
+              Browned butter and brown sugar caramelly goodness, crispy edges
+              thick and soft centers and melty little puddles of chocolate.
+            </p>
+            <ul class="offCanvas-instagram list-wrap">
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5841.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5841.jpg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8398.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8398.jpg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-1541.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-1541.jpg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-6516.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-6516.jpg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5398.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5398.jpg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8908.jpg"
+                  class="popup-image"
+                >
+                  <img
+                    src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8908.jpg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="offCanvas-contact">
+            <h4 class="title">Get In Touch</h4>
+            <ul class="offCanvas-contact-list list-wrap">
+              <li>
+                <i class="fas fa-envelope-open"></i
+                ><a href="mailto:info@webmail.com">info@webmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i
+                ><a href="tel:888 999 888 77">888 999 888 77</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 12/A, New Booston, NYC
+              </li>
+            </ul>
+            <ul class="offCanvas-social list-wrap">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.x.com" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="offCanvas-overlay"></div>
+    </header>
+    <main class="fix">
+      <section class="featured-post-area pt-60 pb-30">
+        <div class="container">
+          <div class="featured-post-wrap">
+            <div class="row featured-post-active">
+              <div class="col-lg-3">
+                <div class="featured-post-item">
+                  <div class="featured-post-thumb">
+                    <a href="blog/blog-details.html">
+                      <img
+                        src="https://zaira.themedox.com//uploads/media/202/30466.jpg"
+                        alt="Favorite Browned Butter Chocolate Cookies"
+                      />
+                    </a>
+                  </div>
+                  <div class="featured-post-content">
+                    <a href="blog/blogs.html" class="post-tag">Community</a>
+                    <h2 class="post-title">
+                      <a href="blog/blog-details.html"
+                        >Favorite Browned Butter Chocolate Cookies</a
+                      >
+                    </h2>
+                    <div class="blog-post-meta">
+                      <ul class="list-wrap">
+                        <li>
+                          <i class="flaticon-user"></i>by<a
+                            href="blog/author.html"
+                            >Admin</a
+                          >
+                        </li>
+                        <li><i class="flaticon-calendar"></i>30 Sep, 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="featured-post-item">
+                  <div class="featured-post-thumb">
+                    <a href="blog/blog-details.html">
+                      <img
+                        src="https://zaira.themedox.com//uploads/media/205/2088.jpg"
+                        alt="Announcing the Spring Bucket List"
+                      />
+                    </a>
+                  </div>
+                  <div class="featured-post-content">
+                    <a href="blog/blogs.html" class="post-tag">Trending</a>
+                    <h2 class="post-title">
+                      <a href="blog/blog-details.html"
+                        >Announcing the Spring Bucket List</a
+                      >
+                    </h2>
+                    <div class="blog-post-meta">
+                      <ul class="list-wrap">
+                        <li>
+                          <i class="flaticon-user"></i>by<a
+                            href="blog/author.html"
+                            >Admin</a
+                          >
+                        </li>
+                        <li><i class="flaticon-calendar"></i>30 Sep, 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="featured-post-item">
+                  <div class="featured-post-thumb">
+                    <a href="blog/blog-details.html">
+                      <img
+                        src="https://zaira.themedox.com//uploads/media/204/39927.jpg"
+                        alt="How to Make Cappuccino without a Machine"
+                      />
+                    </a>
+                  </div>
+                  <div class="featured-post-content">
+                    <a href="blog/blogs.html" class="post-tag">Featured</a>
+                    <h2 class="post-title">
+                      <a href="blog/blog-details.html"
+                        >How to Make Cappuccino without a</a
+                      >
+                    </h2>
+                    <div class="blog-post-meta">
+                      <ul class="list-wrap">
+                        <li>
+                          <i class="flaticon-user"></i>by<a
+                            href="blog/author.html"
+                            >Author</a
+                          >
+                        </li>
+                        <li><i class="flaticon-calendar"></i>30 Sep, 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="featured-post-item">
+                  <div class="featured-post-thumb">
+                    <a href="blog/blog-details.html">
+                      <img
+                        src="https://zaira.themedox.com//uploads/media/85/2.jpg"
+                        alt="Really quick broccoli pasta Cheese Mikhail"
+                      />
+                    </a>
+                  </div>
+                  <div class="featured-post-content">
+                    <a href="blog/blogs.html" class="post-tag">Community</a>
+                    <h2 class="post-title">
+                      <a href="blog/blog-details.html"
+                        >Really quick broccoli pasta Cheese Mikhail</a
+                      >
+                    </h2>
+                    <div class="blog-post-meta">
+                      <ul class="list-wrap">
+                        <li>
+                          <i class="flaticon-user"></i>by<a
+                            href="blog/author.html"
+                            >Author</a
+                          >
+                        </li>
+                        <li><i class="flaticon-calendar"></i>30 Sep, 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="featured-post-item">
+                  <div class="featured-post-thumb">
+                    <a href="blog/blog-details.html">
+                      <img
+                        src="https://zaira.themedox.com//uploads/media/203/154887.jpg"
+                        alt="Favorite Browned Butter Chocolate Cookies Daily Breakfast"
+                      />
+                    </a>
+                  </div>
+                  <div class="featured-post-content">
+                    <a href="blog/blogs.html" class="post-tag">Trending</a>
+                    <h2 class="post-title">
+                      <a href="blog/blog-details.html"
+                        >Favorite Browned Butter Chocolate Cookies Daily</a
+                      >
+                    </h2>
+                    <div class="blog-post-meta">
+                      <ul class="list-wrap">
+                        <li>
+                          <i class="flaticon-user"></i>by<a
+                            href="blog/author.html"
+                            >Author</a
+                          >
+                        </li>
+                        <li><i class="flaticon-calendar"></i>29 Sep, 2025</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="newsletter-wrap">
+                <div class="newsletter-content">
+                  <h2 class="title">Want to Get New Food New Daily?</h2>
+                </div>
+                <div class="newsletter-form">
+                  <form>
+                    <div class="form-grp">
+                      <input type="text" placeholder="Name" />
+                    </div>
+                    <div class="form-grp">
+                      <input type="email" placeholder="E-mail" />
+                    </div>
+                    <button type="submit" class="btn">
+                      <span>Submit Now</span>
+                      <span>Please wait...</span>
+                    </button>
+                  </form>
+                </div>
+                <div class="newsletter-shape-wrap">
+                  <img
+                    src="https://zaira.themedox.com/frontend/assets/img/images/newsletter_shape01.png"
+                    alt=""
+                  />
+                  <img
+                    src="https://zaira.themedox.com/frontend/assets/img/images/newsletter_shape02.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="latest-post-area pt-60 pb-60">
+        <div class="container">
+          <div class="latest-post-inner-wrap">
+            <div class="row">
+              <div class="col-70">
+                <div class="section-title-wrap mb-30">
+                  <div class="section-title">
+                    <h2 class="title">Latest</h2>
+                  </div>
+                  <div class="view-all-btn">
+                    <a href="blog/blogs.html" class="link-btn"
+                      >View All
+                      <span class="svg-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 10 10"
+                          fill="none"
+                        >
+                          <path
+                            d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="section-title-line"></div>
+                </div>
+                <div class="latest-post-item-wrap">
+                  <div class="row">
+                    <div class="col-66">
+                      <div class="featured-post-item latest-post-item big-post">
+                        <div class="featured-post-thumb">
+                          <a href="blog/blog-details.html">
+                            <img
+                              src="https://zaira.themedox.com//uploads/media/206/85017-(1).jpg"
+                              alt="Easy Fluid Typography With clamp() Using Sass Functions"
+                            />
+                          </a>
+                        </div>
+                        <div class="featured-post-content">
+                          <a href="blog/blogs.html" class="post-tag"
+                            >Insights</a
+                          >
+                          <h2 class="post-title bold-underline">
+                            <a href="blog/blog-details.html"
+                              >Easy Fluid Typography With clamp()</a
+                            >
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-user"></i>by
+                                <a href="blog/author.html">Admin</a>
+                              </li>
+                              <li>
+                                <i class="flaticon-calendar"></i>30 Sep, 2025
+                              </li>
+                              <li><i class="flaticon-history"></i>12</li>
+                            </ul>
+                          </div>
+                          <p></p>
+                          <p>
+                            Browned butter and brown sugar caramelly oodness
+                            crispy edgesthick and soft centers andey melty
+                            little puddles of cho...
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-34">
+                      <div class="latest-post-wrap">
+                        <div
+                          class="featured-post-item latest-post-item small-post"
+                        >
+                          <div class="featured-post-thumb">
+                            <a href="blog/blog-details.html">
+                              <img
+                                src="https://zaira.themedox.com//uploads/media/230/7709366.jpg"
+                                alt="The Potentially Dangerous Non-Accessibility Of Cookie"
+                              />
+                            </a>
+                          </div>
+                          <div class="featured-post-content">
+                            <a href="blog/blogs.html" class="post-tag"
+                              >Opinion</a
+                            >
+                            <h2 class="post-title">
+                              <a href="blog/blog-details.html"
+                                >The Potentially Dangerous Non-Accessibility Of
+                                Cookie</a
+                              >
+                            </h2>
+                            <div class="blog-post-meta">
+                              <ul class="list-wrap">
+                                <li>
+                                  <i class="flaticon-user"></i>by
+                                  <a href="blog/author.html">Admin</a>
+                                </li>
+                                <li>
+                                  <i class="flaticon-calendar"></i>30 Sep, 2025
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="featured-post-item latest-post-item small-post"
+                        >
+                          <div class="featured-post-thumb">
+                            <a href="blog/blog-details.html">
+                              <img
+                                src="https://zaira.themedox.com//uploads/media/231/3920644.jpg"
+                                alt="One-pan baked sausage and lentils"
+                              />
+                            </a>
+                          </div>
+                          <div class="featured-post-content">
+                            <a href="blog/blogs.html" class="post-tag"
+                              >Community</a
+                            >
+                            <h2 class="post-title">
+                              <a href="blog/blog-details.html"
+                                >One-pan baked sausage and lentils</a
+                              >
+                            </h2>
+                            <div class="blog-post-meta">
+                              <ul class="list-wrap">
+                                <li>
+                                  <i class="flaticon-user"></i>by
+                                  <a href="blog/author.html">Admin</a>
+                                </li>
+                                <li>
+                                  <i class="flaticon-calendar"></i>30 Sep, 2025
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-30">
+                <div class="sidebar-wrap">
+                  <div class="sidebar-widget">
+                    <div class="sidebar-avatar">
+                      <div class="sidebar-avatar-thumb">
+                        <img
+                          src="https://zaira.themedox.com//uploads/media/12/profile_image_2025-09-29_16-42-06_783fd6bc.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="sidebar-avatar-content">
+                        <h2 class="title">Hi, I’m Jenny!</h2>
+                        <p>
+                          when an unknown printer took a galley of type and
+                          scrambled it to make a type specimen book.
+                        </p>
+                        <div class="avatar-social">
+                          <ul class="list-wrap">
+                            <li>
+                              <a href="https://www.facebook.com/"
+                                ><i class="fab fa-facebook-f"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="https://x.com/"
+                                ><i class="fab fa-twitter"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="https://www.instagram.com/"
+                                ><i class="fab fa-instagram"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="https://www.youtube.com/"
+                                ><i class="fab fa-youtube"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="sidebar-avatar-shape">
+                        <img
+                          src="https://zaira.themedox.com/frontend/assets/img/images/avatar_shape01.png"
+                          alt=""
+                        />
+                        <img
+                          src="https://zaira.themedox.com/frontend/assets/img/images/avatar_shape02.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-widget">
+                    <div class="widget-title mb-25">
+                      <h2 class="title">Subscribe and Followers</h2>
+                      <div class="section-title-line"></div>
+                    </div>
+                    <div class="sidebar-social-wrap">
+                      <ul class="list-wrap">
+                        <li>
+                          <a href="https://www.facebook.com/"
+                            ><i class="fab fa-facebook-f"></i>facebook</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://x.com/"
+                            ><i class="fab fa-twitter"></i>twitter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/"
+                            ><i class="fab fa-instagram"></i>instagram</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/"
+                            ><i class="fab fa-youtube"></i>youtube</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/"
+                            ><i class="fab fa-linkedin-in"></i>LinkedIn</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://www.pinterest.com/"
+                            ><i class="fab fa-pinterest-p"></i>Pinterest</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories-area">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="section-title section-title-two text-center mb-30">
+                <h2 class="title">Our Top Categories</h2>
+                <p>
+                  Browned butter and brown sugar caramelly goodness, crispy
+                  edges thick and soft centers and melty little puddles
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="categories-item-wrap">
+            <div class="row justify-content-center">
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/3/categories_img02.png"
+                        alt="Community"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Community</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/6/categories_img05.png"
+                        alt="Featured"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Featured</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/7/categories_img06.png"
+                        alt="Insights"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Insights</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/5/categories_img04.png"
+                        alt="Opinion"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Opinion</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/208/50085-1.png"
+                        alt="Trending"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Trending</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                <div class="categories-item">
+                  <div class="categories-img">
+                    <a href="blog/blogs.html">
+                      <img
+                        height="180"
+                        width="180"
+                        src="https://zaira.themedox.com//uploads/media/4/categories_img03.png"
+                        alt="Updates"
+                      />
+                    </a>
+                  </div>
+                  <div class="categories-content">
+                    <a href="blog/blogs.html">Updates</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories-shape-wrap">
+          <img
+            src="https://zaira.themedox.com/frontend/assets/img/images/categories_shape01.png"
+            alt=""
+          />
+          <img
+            src="https://zaira.themedox.com/frontend/assets/img/images/categories_shape02.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="recipe-area pt-70 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title-wrap mb-30">
+                <div class="section-title">
+                  <h2 class="title">Weekly</h2>
+                </div>
+                <div class="view-all-btn">
+                  <a href="blog/blogs.html" class="link-btn"
+                    >View All
+                    <span class="svg-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="section-title-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="ta-overlay-post">
+                <div class="overlay-post-thumb">
+                  <a href="blog/blog-details.html">
+                    <img
+                      src="https://zaira.themedox.com//uploads/media/92/10.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="overlay-post-content">
+                  <a href="blog/blogs.html" class="post-tag">Opinion</a>
+                  <h2 class="post-title">
+                    <a href="blog/blog-details.html"
+                      >Podcast Appetizer The Potentially Dangerous Non
+                      sibility</a
+                    >
+                  </h2>
+                  <div class="blog-post-meta">
+                    <ul class="list-wrap">
+                      <li>
+                        <i class="flaticon-user"></i>by<a
+                          href="blog/author.html"
+                          >Admin</a
+                        >
+                      </li>
+                      <li>
+                        <i class="flaticon-calendar"></i>30 September, 2025
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="ta-horizontal-post">
+                <div class="horizontal-post-thumb">
+                  <a href="blog/blog-details.html">
+                    <img
+                      src="https://zaira.themedox.com//uploads/media/91/5.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="horizontal-post-content">
+                  <a href="blog/blogs.html" class="post-tag">Community</a>
+                  <h2 class="post-title">
+                    <a href="blog/blog-details.html"
+                      >Browned Butter Chocolate Cookies Daily Breakfast</a
+                    >
+                  </h2>
+                  <div class="blog-post-meta">
+                    <ul class="list-wrap">
+                      <li>
+                        <i class="flaticon-user"></i>by<a
+                          href="blog/author.html"
+                          >Admin</a
+                        >
+                      </li>
+                      <li>
+                        <i class="flaticon-calendar"></i>30 September, 2025
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ta-horizontal-post">
+                <div class="horizontal-post-thumb">
+                  <a href="blog/blog-details.html">
+                    <img
+                      src="https://zaira.themedox.com//uploads/media/90/8.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="horizontal-post-content">
+                  <a href="blog/blogs.html" class="post-tag">Updates</a>
+                  <h2 class="post-title">
+                    <a href="blog/blog-details.html"
+                      >Exploring The Potential Of Web Workers</a
+                    >
+                  </h2>
+                  <div class="blog-post-meta">
+                    <ul class="list-wrap">
+                      <li>
+                        <i class="flaticon-user"></i>by<a
+                          href="blog/author.html"
+                          >Admin</a
+                        >
+                      </li>
+                      <li>
+                        <i class="flaticon-calendar"></i>30 September, 2025
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ta-horizontal-post">
+                <div class="horizontal-post-thumb">
+                  <a href="blog/blog-details.html">
+                    <img
+                      src="https://zaira.themedox.com//uploads/media/89/7.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="horizontal-post-content">
+                  <a href="blog/blogs.html" class="post-tag">Trending</a>
+                  <h2 class="post-title">
+                    <a href="blog/blog-details.html"
+                      >Breakfast How To Design An Effective User</a
+                    >
+                  </h2>
+                  <div class="blog-post-meta">
+                    <ul class="list-wrap">
+                      <li>
+                        <i class="flaticon-user"></i>by<a
+                          href="blog/author.html"
+                          >Admin</a
+                        >
+                      </li>
+                      <li>
+                        <i class="flaticon-calendar"></i>30 September, 2025
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ad-banner-area">
+        <div class="container">
+          <div class="ad-banner-img">
+            <a href="#">
+              <img
+                src="https://zaira.themedox.com//uploads/media/9/banner_image_2025-09-29_16-29-00_dfe3f762.jpg"
+                alt="Ad Banner One Image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="healthy-area pt-60 pb-30">
+        <div class="container">
+          <div class="healthy-inner-wrap">
+            <div class="row">
+              <div class="col-70">
+                <div class="section-title-wrap mb-30">
+                  <div class="section-title">
+                    <h2 class="title">Trending</h2>
+                  </div>
+                  <div class="section-title-line"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/233/406.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Opinion</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >How To Create Dynamic Donut Charts</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/97/14.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Featured</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >Why Food Creators Should Start Using</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/239/6661.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Insights</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >What is Gift Cards and Teach</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/95/9.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Community</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >Internationalization With React Server</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/94/12.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Trending</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >The Best Handoff Is No Handoff</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="featured-post-item healthy-post">
+                      <div class="featured-post-thumb">
+                        <a href="blog/blog-details.html"
+                          ><img
+                            src="https://zaira.themedox.com//uploads/media/93/11.jpg"
+                            alt=""
+                        /></a>
+                      </div>
+                      <div class="featured-post-content">
+                        <a href="blog/blogs.html" class="post-tag">Updates</a>
+                        <h2 class="post-title">
+                          <a href="blog/blog-details.html"
+                            >Rom prehensive Checklist Running Workshops</a
+                          >
+                        </h2>
+                        <div class="blog-post-meta">
+                          <ul class="list-wrap">
+                            <li>
+                              <i class="flaticon-user"></i>by<a
+                                href="blog/author.html"
+                                >Admin</a
+                              >
+                            </li>
+                            <li>
+                              <i class="flaticon-calendar"></i>30 Sep, 2025
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-30">
+                <div class="sidebar-wrap no-sticky">
+                  <div class="sidebar-widget">
+                    <div class="widget-title mb-25">
+                      <h2 class="title">Popular</h2>
+                      <div class="section-title-line"></div>
+                    </div>
+                    <div class="popular-post-wrap">
+                      <div class="popular-post">
+                        <div class="thumb">
+                          <a href="blog/blog-details.html"
+                            ><img
+                              src="https://zaira.themedox.com//uploads/media/105/9.jpg"
+                              alt="Five Steps To Design Your Product"
+                          /></a>
+                        </div>
+                        <div class="content">
+                          <a href="blog/blogs.html" class="post-tag-two"
+                            >Trending</a
+                          >
+                          <h2 class="post-title">
+                            <a href="blog/blog-details.html"
+                              >Five Steps To Design Your Product
+                            </a>
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-calendar"></i>30 September,
+                                2025
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular-post">
+                        <div class="thumb">
+                          <a href="blog/blog-details.html"
+                            ><img
+                              src="https://zaira.themedox.com//uploads/media/104/14.jpg"
+                              alt="The Butter Chocolate Cookies Recipes"
+                          /></a>
+                        </div>
+                        <div class="content">
+                          <a href="blog/blogs.html" class="post-tag-two"
+                            >Insights</a
+                          >
+                          <h2 class="post-title">
+                            <a href="blog/blog-details.html"
+                              >The Butter Chocolate Cookies Recipes
+                            </a>
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-calendar"></i>30 September,
+                                2025
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular-post">
+                        <div class="thumb">
+                          <a href="blog/blog-details.html"
+                            ><img
+                              src="https://zaira.themedox.com//uploads/media/101/18.jpg"
+                              alt="A Step-By-Step Guide To Building Accessible"
+                          /></a>
+                        </div>
+                        <div class="content">
+                          <a href="blog/blogs.html" class="post-tag-two"
+                            >Featured</a
+                          >
+                          <h2 class="post-title">
+                            <a href="blog/blog-details.html"
+                              >A Step-By-Step Guide To Building Accessible
+                            </a>
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-calendar"></i>30 September,
+                                2025
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular-post">
+                        <div class="thumb">
+                          <a href="blog/blog-details.html"
+                            ><img
+                              src="https://zaira.themedox.com//uploads/media/100/17.jpg"
+                              alt="A Guide To Accessible Form Validation"
+                          /></a>
+                        </div>
+                        <div class="content">
+                          <a href="blog/blogs.html" class="post-tag-two"
+                            >Updates</a
+                          >
+                          <h2 class="post-title">
+                            <a href="blog/blog-details.html"
+                              >A Guide To Accessible Form Validation
+                            </a>
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-calendar"></i>30 September,
+                                2025
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular-post">
+                        <div class="thumb">
+                          <a href="blog/blog-details.html"
+                            ><img
+                              src="https://zaira.themedox.com//uploads/media/238/7709366-1.png"
+                              alt="Inspiring Web Design And UX Showcases"
+                          /></a>
+                        </div>
+                        <div class="content">
+                          <a href="blog/blogs.html" class="post-tag-two"
+                            >Community</a
+                          >
+                          <h2 class="post-title">
+                            <a href="blog/blog-details.html"
+                              >Inspiring Web Design And UX Showcases
+                            </a>
+                          </h2>
+                          <div class="blog-post-meta">
+                            <ul class="list-wrap">
+                              <li>
+                                <i class="flaticon-calendar"></i>30 September,
+                                2025
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ad-banner-area pb-90">
+        <div class="container">
+          <div class="ad-banner-img">
+            <a href="#">
+              <img
+                src="https://zaira.themedox.com//uploads/media/10/banner_image_2025-09-29_16-30-57_43935468.jpg"
+                alt="Ad Banner Two Image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-area">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-7">
+                <div class="footer-widget">
+                  <div class="fw-logo">
+                    <a href="index.html"
+                      ><img
+                        src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png"
+                        alt="Zaira"
+                    /></a>
+                  </div>
+                  <div class="footer-content">
+                    <p>
+                      Browned butter and brown sugar caramelly goodness, crispy
+                      edges thick and soft centers and melty little puddles of
+                      chocolate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-5 col-sm-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Company</h4>
+                  <div class="footer-link-wrap">
+                    <ul id="menu-footer-menu-1" class="list-wrap">
+                      <li>
+                        <a href="pages/about.html" target="_self">About Us</a>
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Why You Should</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Podcast</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Events</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self">Warn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Get Help</h4>
+                  <div class="footer-link-wrap">
+                    <ul id="menu-footer-menu-2" class="list-wrap">
+                      <li>
+                        <a href="pages/contact.html" target="_self">Contact</a>
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Gift Cards</a
+                        >
+                      </li>
+                      <li>
+                        <a href="user/register.html" target="_self">Register</a>
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Catalog</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Explore</h4>
+                  <div class="footer-link-wrap">
+                    <ul id="menu-footer-menu-3" class="list-wrap">
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Recipes</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self">Food</a>
+                      </li>
+                      <li>
+                        <a href="blog/blog-details.html" target="_self"
+                          >Travel</a
+                        >
+                      </li>
+                      <li>
+                        <a href="pages/contact.html" target="_self">Hotline</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Follow Us On</h4>
+                  <div class="footer-link-wrap">
+                    <ul class="list-wrap">
+                      <li>
+                        <a href="https://www.facebook.com/" target="_blank"
+                          >Facebook</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.x.com" target="_blank">Twitter</a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank"
+                          >Instagram</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/" target="_blank"
+                          >YouTube</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com" target="_blank"
+                          >LinkedIn</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-shape"
+            data-background="https://zaira.themedox.com/frontend/assets/img/images/footer_shape.png"
+          ></div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-bottom-menu">
+                  <ul id="menu-footer-menu-4" class="list-wrap">
+                    <li>
+                      <a href="pages/privacy-policy.html" target="_self"
+                        >Privacy Policy And Terms</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog/blog-details.html" target="_self"
+                        >Site Credits</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="copyright-text">
+                  <p>© 2025 All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="cookieModal"
+      tabindex="-1"
+      aria-labelledby="cookieModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center p-4">
+            <h4>Cookie Policy</h4>
+            <p class="mb-3">
+              Cookies are small text files that are placed on your device
+              (computer, tablet, or mobile) when you visit a website.
+            </p>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn btn-sm cookie_accept_btn"
+                data-bs-dismiss="modal"
+              >
+                Accept
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/zaira-lite.js"></script>
+  </body>
+</html>

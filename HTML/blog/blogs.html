@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://zaira.themedox.com/uploads/logo/favicon-2025-09-29-02-37-20-4293.png" type="image/x-icon">
+  <meta name="language" content="en">
+  <meta name="direction" content="ltr">
+    <title>Blog | Zaira - News Magazine Laravel Script</title>
+  <meta name="title" content="Blog | Zaira - News Magazine Laravel Script" />
+  <meta name="description" content="Zaira is a modern and responsive News Magazine Laravel Script make for online newspapers, blogs, magazines, publishers, and content-rich websites. Featuring clean layouts, fast performance, and easy customization, it’s perfect for showcasing trending stories and breaking news with style." />
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../assets/css/flaticon.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="../assets/css/default.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <style>
+    :root {
+      --tg-primary-color: #F4796C;
+      --tg-secondary-color: #183354;
+    }
+  </style> </head>
+<body class="inner-page ">
+  <div id="preloader">
+    <div class="loader-inner">
+      <div id="loader">
+        <h2 id="bg-loader">Zaira<span>.</span></h2>
+        <h2 id="fg-loader">Zaira<span>.</span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="darkmode-trigger">
+    <label class="modeSwitch">
+      <input type="checkbox">
+      <span class="icon"></span>
+    </label>
+  </div>
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <header>
+    <div id="header-fixed-height"></div>
+    <div class="header-top-wrap">
+      <div class="container-fluid p-0">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="header-top-menu">
+              <ul class="list-wrap">
+                <ul id="menu-header-top-menu" class="list-wrap"><li><a href="../pages/contact.html" target="_self">Forum</a></li><li><a href="../pages/about.html" target="_self">About</a></li><li class="current-menu-item active"><a href="../blog/blogs.html" target="_self">All Recipes</a></li></ul>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-4 justify-content-end align-items-center">
+                <div class="header-top-social">
+                <h5 class="title">Follow Us:</h5>
+                <ul class="list-wrap">
+                <li>
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.x.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.youtube.com/" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+                </ul>
+                </div>
+                <div class="header-language">
+                <div class="language-switcher language-switcher-dropdown position-right" dir="ltr">
+          <div class="dropdown">
+        <button class="btn btn-link dropdown-toggle language-current p-1" type="button"
+            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+            title="Switch Language">
+                <i class="flag-icon flag-icon-en"
+             style="width: 20px; height: 15px; background-size: cover;"></i>
+                <span class="lang-name">English</span>
+                <i class="fas fa-chevron-down ms-1"></i>
+        </button>
+        <ul class="dropdown-menu language-dropdown" aria-labelledby="languageDropdown">
+                <li>
+              <a class="dropdown-item language-item "
+               href="https://zaira.themedox.com/language/switch/ar"
+               data-language="ar"
+               dir="rtl">
+                <i class="flag-icon flag-icon-ar"
+                style="width: 20px; height: 15px; background-size: cover; margin-right: 8px;"></i>
+                <span class="lang-name">Arabic</span>
+                </a>
+            </li>
+                <li>
+              <a class="dropdown-item language-item active"
+               href="https://zaira.themedox.com/language/switch/en"
+               data-language="en"
+               dir="ltr">
+                <i class="flag-icon flag-icon-en"
+                style="width: 20px; height: 15px; background-size: cover; margin-right: 8px;"></i>
+                <span class="lang-name">English</span>
+                <i class="fas fa-check ms-auto text-white"></i>
+                </a>
+            </li>
+                </ul>
+      </div>
+      </div>
+  <style>
+    .language-switcher {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .language-current {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      color: white;
+      border: none;
+      background: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .language-current:hover {
+      background-color: rgba(0,0,0,0.05);
+      color: inherit;
+      text-decoration: none;
+    }
+    .language-dropdown {
+      min-width: 140px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 8px 0;
+    }
+    .language-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      gap: 10px;
+      justify-content: left;
+    }
+    .language-item:hover {
+      background-color: rgba(0,0,0,0.05);
+    }
+    .language-item.active {
+      background-color: var(--tg-primary-color);
+      color: white;
+    }
+    .language-item.active:hover {
+      background-color: var(--tg-primary-color);
+      color: white;
+    }
+    .language-inline {
+      gap: 8px;
+    }
+    .language-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    .language-link:hover {
+      background-color: rgba(0,0,0,0.05);
+      color: inherit;
+      text-decoration: none;
+    }
+    .language-link.active {
+      background-color: var(--bs-primary, #007bff);
+      color: white;
+    }
+    .language-separator {
+      color: rgba(0,0,0,0.3);
+      margin: 0 4px;
+    }
+    .flag-icon {
+      width: 20px;
+      height: 15px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 2px;
+      display: none;
+    }
+    /* Flag backgrounds - Basic implementation */
+    .flag-icon-en { background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjMDA1MkI0Ii8+CjxwYXRoIGQ9Ik0wIDBoNDBsLTQwIDMweiIgZmlsbD0iI0ZGRiIvPgo8cGF0aCBkPSJNNDAgMEwwIDMwaDQwVjB6IiBmaWxsPSIjRkZGIi8+CjxwYXRoIGQ9Ik0wIDBoNDBsLTQwIDMweiIgZmlsbD0iI0ZGRiIvPgo8cGF0aCBkPSJNMCAxNWg0MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjYiLz4KPHA+"); }
+    .flag-icon-es { background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjRkY0NTQ1Ii8+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSIxNSIgeT0iNy41IiBmaWxsPSIjRkZEQjAwIi8+Cjwvc3ZnPg=="); }
+    .flag-icon-fr { background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEzLjMzIiBoZWlnaHQ9IjMwIiBmaWxsPSIjMDA1MkI0Ii8+CjxyZWN0IHg9IjEzLjMzIiB3aWR0aD0iMTMuMzMiIGhlaWdodD0iMzAiIGZpbGw9IiNGRkYiLz4KPHJlY3QgeD0iMjYuNjciIHdpZHRoPSIxMy4zMyIgaGVpZ2h0PSIzMCIgZmlsbD0iI0ZGNDU0NSIvPgo8L3N2Zz4="); }
+    .flag-icon-ar { background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0MCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjRkY0NTQ1Ii8+CjxyZWN0IHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMTAiIGZpbGw9IiNGRkYiLz4KPHJlY3QgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzAwMCIvPgo8L3N2Zz4="); }
+    /* Position variations */
+    .position-right {
+      margin-left: auto;
+    }
+    .position-left {
+      margin-right: auto;
+    }
+    .position-center {
+      margin: 0 auto;
+    }
+    /* RTL Support */
+    [dir="rtl"] .language-switcher {
+      direction: ltr; /* Keep switcher itself LTR for consistency */
+    }
+    [dir="rtl"] .language-current {
+      flex-direction: row-reverse;
+    }
+    [dir="rtl"] .language-item {
+      flex-direction: row-reverse;
+    }
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      .language-current:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+      .language-item:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+      .language-link:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+    }
+  </style> </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-header" class="menu-area">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="menu-wrap">
+              <div class="row align-items-center g-0">
+                <div class="col-xl-5">
+                <div class="header-left-side">
+                <div class="offcanvas-toggle">
+                <a href="javascript:void(0)" class="menu-tigger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </a>
+                </div>
+                <div class="navbar-wrap main-menu d-none d-xl-flex">
+                <ul id="menu-primary-menu" class="navigation"><li class="menu-item-has-children"><a href="../index.html" target="_self" data-bs-toggle="dropdown" aria-expanded="false">Home</a><ul class="sub-menu"><li><a href="../index.html" target="_self">Home 01 - Default</a></li><li><a href="../index.html" target="_self">Home 02 - Gaming</a></li><li><a href="../index.html" target="_self">Home 03 - Technology</a></li><li><a href="../index.html" target="_self">Home 04 - Travel</a></li><li><a href="../index.html" target="_self">Home 05 - Crypto</a></li><li><a href="../index.html" target="_self">Home 06 - Newspaper</a></li></ul></li><li><a href="../pages/about.html" target="_self">About</a></li><li class="menu-item-has-children current-menu-item active"><a href="../blog/blogs.html" target="_self" data-bs-toggle="dropdown" aria-expanded="false">Blog</a><ul class="sub-menu"><li class="current-menu-item active"><a href="../blog/blogs.html" target="_self">Blog Default</a></li><li><a href="../blog/blogs.html" target="_self">Blog Layout 02</a></li><li><a href="../blog/blogs.html" target="_self">Blog Layout 03</a></li><li><a href="../blog/blog-details.html" target="_self">Single Post Layout 1</a></li><li><a href="../blog/blog-details.html" target="_self">Single Post Layout 2</a></li></ul></li><li class="menu-item-has-children"><a href="#" target="_self" data-bs-toggle="dropdown" aria-expanded="false">Pages</a><ul class="sub-menu"><li><a href="../blog/author.html" target="_self">Team Member</a></li><li><a href="../blog/author.html" target="_self">Team Member Details</a></li><li><a href="../pages/privacy-policy.html" target="_self">Privacy policy</a></li></ul></li><li><a href="../pages/contact.html" target="_self">Contact</a></li></ul>
+                </div>
+                </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-7">
+                <div class="logo text-center">
+                <a href="../index.html">
+                <img src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png" alt="Zaira">
+                </a>
+                </div>
+                <div class="logo d-none text-center">
+                <a href="../index.html">
+                <img src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png" alt="Zaira">
+                </a>
+                </div>
+                </div>
+                <div class="col-xl-5 col-lg-9 col-md-8 col-5">
+                <div class="header-right-side">
+                <div class="header-search-wrap">
+                <form action="https://zaira.themedox.com/blogs">
+                <input value="" name="search"
+                type="text"
+                placeholder="Search . . .">
+                <button type="submit"><i class="flaticon-search"></i></button>
+                </form>
+                </div>
+                <div class="header-action">
+                <ul class="list-wrap">
+                <li class="header-sine-in">
+                <a href="../user/login.html">
+                <i class="flaticon-user"></i>
+                Sign In</a>
+                </li>
+                </ul>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="mobile-menu">
+              <nav class="menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                <a href="../index.html"><img src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                alt="Zaira"></a>
+                </div>
+                <div class="mobile-search">
+                <form action="https://zaira.themedox.com/blogs">
+                <input value="" name="search" type="text"
+                placeholder="Search . . .">
+                <button type="submit"><i class="flaticon-search"></i></button>
+                </form>
+                </div>
+                <div class="menu-outer"> </div>
+                <div class="social-links">
+                <ul class="clearfix list-wrap">
+                </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="menu-backdrop"></div> </div>
+        </div>
+      </div>
+    </div>
+    <div class="offCanvas-wrap">
+      <div class="offCanvas-body">
+        <div class="offCanvas-toggle">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="offCanvas-content">
+          <div class="offCanvas-logo logo">
+            <a href="../index.html" class="logo-dark"><img src="https://zaira.themedox.com/uploads/logo/logo-2025-09-29-02-07-21-4566.png"
+                alt="Zaira"></a>
+            <a href="../index.html" class="logo-light"><img src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png"
+                alt="Zaira"></a>
+          </div>
+                <p>
+              Browned butter and brown sugar caramelly goodness, crispy edges thick and soft centers and melty little puddles of chocolate.
+            </p>
+                <ul class="offCanvas-instagram list-wrap">
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5841.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5841.jpg" />
+                </a>
+                </li>
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8398.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8398.jpg" />
+                </a>
+                </li>
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-1541.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-1541.jpg" />
+                </a>
+                </li>
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-6516.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-6516.jpg" />
+                </a>
+                </li>
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5398.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-5398.jpg" />
+                </a>
+                </li>
+                <li><a href="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8908.jpg" class="popup-image">
+                <img src="https://zaira.themedox.com/uploads/gallery/gallery-2025-09-30-10-43-21-8908.jpg" />
+                </a>
+                </li>
+                </ul>
+                </div>
+        <div class="offCanvas-contact">
+          <h4 class="title">Get In Touch</h4>
+          <ul class="offCanvas-contact-list list-wrap">
+                <li><i class="fas fa-envelope-open"></i><a
+                href="mailto:info@webmail.com">info@webmail.com</a>
+              </li>
+                <li><i class="fas fa-phone"></i><a
+                href="tel:888 999 888 77">888 999 888 77</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> 12/A, New Booston, NYC</li>
+                </ul>
+          <ul class="offCanvas-social list-wrap">
+                </ul>
+        </div>
+      </div>
+    </div>
+    <div class="offCanvas-overlay"></div> </header>
+  <main class="fix">
+<div class="breadcrumb-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb-content">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+      </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="blog-area pt-60 pb-60">
+      <div class="container">
+        <div class="author-inner-wrap blog-inner-wrap">
+          <div class="row justify-content-center">
+            <div class="col-70 order-0 order-xl-2">
+              <div class="weekly-post-item-wrap">
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/324/cr_trending_post05.jpg"
+                alt="Target Sizes Cheatsheet Coins">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Featured</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">Target Sizes Cheatsheet Coins</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>12 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/317/45.jpg"
+                alt="The Building Your Security Strategy">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Trending</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">The Building Your Security Strategy</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/316/44.jpg"
+                alt="Communication For Meetings-Bitcoins">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Featured</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">Communication For Meetings-Bitcoins</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/315/43.jpg"
+                alt="The Butter Chocolate Cookies Daily Coins">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Opinion</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">The Butter Chocolate Cookies Daily Coins</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/314/42.jpg"
+                alt="Phone Numbers For Web Designers Coins">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Trending</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">Phone Numbers For Web Designers Coins</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80"
+                alt="Checklists For Interface Designers Nesw">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Featured</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">Checklists For Interface Designers Nesw</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+                alt="WAI-ARIA A Comprehensive Guide">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Featured</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">WAI-ARIA A Comprehensive Guide</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="weekly-post-item weekly-post-four">
+                <div class="weekly-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                alt="Implementing Okta Authentication In">
+                </a>
+                </div>
+                <div class="weekly-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html"
+                class="post-tag">Featured</a>
+                </div>
+                <h2 class="post-title">
+                <a href="../blog/blog-details.html">Implementing Okta Authentication In</a>
+                </h2>
+                <div class="blog-post-meta">
+                <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                <li><i
+                class="flaticon-history"></i>12
+                </li>
+                </ul>
+                </div>
+                <div>
+                <p>Browned butter and brown sugar caramelly oodness crispy edgesthick and soft centers andey melty little puddles of chocolate y first favor...
+                </div>
+                <div class="view-all-btn">
+                <a href="../blog/blog-details.html" class="link-btn">
+                Read More
+                <span class="svg-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="none"> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> <path d="M1.07692 10L0 8.92308L7.38462 1.53846H0.769231V0H10V9.23077H8.46154V2.61538L1.07692 10Z" fill="currentColor" /> </svg>
+                </span>
+                </a>
+                </div>
+                </div>
+                </div>
+                </div>
+              <div class="pagination-wrap mt-60">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination list-wrap">
+        <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item "><a class="page-link" href="../blog/blogs.html">2</a></li>
+                <li class="page-item "><a class="page-link" href="../blog/blogs.html">3</a></li>
+                <li class="page-item "><a class="page-link" href="../blog/blogs.html">4</a></li>
+                <li class="page-item "><a class="page-link" href="../blog/blogs.html">5</a></li>
+                <li class="page-item"><span class="page-link">...</span></li>
+                <li class="page-item"><a class="page-link" href="../blog/blogs.html">21</a></li>
+        <li class="page-item "><a class="page-link next" href="../blog/blogs.html">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+            </div>
+            <div class="col-30">
+              <div class="sidebar-wrap">
+  <div class="sidebar-widget">
+    <div class="sidebar-search">
+      <form action="https://zaira.themedox.com/blogs">
+  <input value="" name="search" type="text" placeholder="Search . . .">
+  <button type="submit"><i class="flaticon-search"></i></button>
+</form>
+    </div>
+  </div>
+  <div class="sidebar-widget sidebar-widget-two">
+    <div class="widget-title mb-30">
+      <h6 class="title">Hot Categories</h6>
+      <div class="section-title-line"></div>
+    </div>
+    <div class="sidebar-categories">
+      <ul class="list-wrap">
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/7/categories_img06.png">
+              <span class="post-tag post-tag-three">Insights</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/6/categories_img05.png">
+              <span class="post-tag post-tag-three">Featured</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/5/categories_img04.png">
+              <span class="post-tag post-tag-three">Opinion</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/4/categories_img03.png">
+              <span class="post-tag post-tag-three">Updates</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/3/categories_img02.png">
+              <span class="post-tag post-tag-three">Community</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+                <li>
+            <a href="../blog/blogs.html"
+              data-background="https://zaira.themedox.com//uploads/media/208/50085-1.png">
+              <span class="post-tag post-tag-three">Trending</span>
+              <span class="right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> <path d="M1.72308 16L0 14.2769L11.8154 2.46154H1.23077V0H16V14.7692H13.5385V4.18462L1.72308 16Z" fill="currentcolor"></path> </svg>
+              </span>
+            </a>
+          </li>
+              </ul>
+    </div>
+  </div>
+  <div class="sidebar-widget sidebar-widget-two">
+  <div class="widget-title mb-25">
+    <h2 class="title">Subscribe &amp; Followers</h2>
+    <div class="section-title-line"></div>
+  </div>
+  <div class="sidebar-social-wrap">
+    <ul class="list-wrap">
+      <ul class="list-wrap">
+            <li>
+        <a href="https://www.facebook.com/" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+      </li>
+                <li>
+        <a href="https://www.x.com" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+      </li>
+                <li>
+        <a href="https://www.instagram.com/" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </li>
+                <li>
+        <a href="https://www.youtube.com/" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+      </li>
+                <li>
+        <a href="https://www.linkedin.com" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+      </li>
+                </ul>
+    </ul>
+  </div>
+</div>
+  <div class="sidebar-widget sidebar-widget-two">
+    <div class="widget-title mb-30">
+      <h6 class="title">Recent News</h6>
+      <div class="section-title-line"></div>
+    </div>
+    <div class="hot-post-wrap">
+              <div class="hot-post-item">
+                <div class="hot-post-thumb">
+                <a href="../blog/blog-details.html">
+                <img src="https://zaira.themedox.com//uploads/media/324/cr_trending_post05.jpg"
+                alt="Target Sizes Cheatsheet Coins">
+                </a>
+              </div>
+                <div class="hot-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html" class="post-tag">Featured</a>
+                </div>
+            <h4 class="post-title">
+              <a href="../blog/blog-details.html">Target Sizes Cheatsheet Coins</a>
+            </h4>
+            <div class="blog-post-meta">
+              <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>12 Oct 2025</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+              <div class="hot-post-item">
+                <div class="hot-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html" class="post-tag">Trending</a>
+                </div>
+            <h4 class="post-title">
+              <a href="../blog/blog-details.html">The Building Your Security Strategy</a>
+            </h4>
+            <div class="blog-post-meta">
+              <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+              <div class="hot-post-item">
+                <div class="hot-post-content">
+                <div class="d-flex flex-wrap gap-3">
+                <a href="../blog/blogs.html" class="post-tag">Featured</a>
+                </div>
+            <h4 class="post-title">
+              <a href="../blog/blog-details.html">Communication For Meetings-Bitcoins</a>
+            </h4>
+            <div class="blog-post-meta">
+              <ul class="list-wrap">
+                <li>
+                <i class="flaticon-calendar"></i>08 Oct 2025</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+          </div>
+  </div>
+  <div class="sidebar-widget sidebar-widget-two">
+  <div class="sidebar-newsletter">
+    <div class="icon"><i class="flaticon-envelope"></i></div>
+    <h4 class="title">Daily Newsletter</h4>
+    <p>Get all the top stories from Blogs to keep track.</p>
+    <div class="sidebar-newsletter-form-two">
+      <form>
+        <div class="form-grp">
+          <input type="text" placeholder="Enter your e-mail">
+          <button type="submit" class="btn">
+            <span>Subscribe Now</span>
+            <span>Please wait...</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-area-three">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="newsletter-wrap-three">
+          <div class="newsletter-content">
+            <h2 class="title">Get Our Latest News &amp; Update</h2>
+          </div>
+          <div class="newsletter-form">
+            <form>
+              <div class="form-grp">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="form-grp">
+                <input type="email" placeholder="E-mail">
+              </div>
+              <button type="submit" class="btn">
+                <span>Submit Now</span>
+                <span>Please wait...</span>
+              </button>
+            </form>
+          </div>
+                <div class="newsletter-social">
+              <h4 class="title">Follow Us:</h4>
+              <ul class="list-wrap">
+                <li>
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.x.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+        <li>
+      <a href="https://www.youtube.com/" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+                </ul>
+            </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</section> </main>
+  <footer>
+    <div class="footer-area">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7">
+              <div class="footer-widget">
+                <div class="fw-logo">
+                <a href="../index.html">
+                <img src="https://zaira.themedox.com/uploads/logo/white_logo-2025-09-29-02-37-20-1285.png" alt="Zaira">
+                </a>
+                </div>
+                <div class="footer-content">
+                <p>
+                Browned butter and brown sugar caramelly goodness, crispy edges thick and soft centers and melty little puddles of chocolate.
+                </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-5 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="fw-title">Company</h4>
+                <div class="footer-link-wrap">
+                <ul id="menu-footer-menu-1" class="list-wrap"><li><a href="../pages/about.html" target="_self">About Us</a></li><li><a href="../blog/blog-details.html" target="_self">Why You Should</a></li><li><a href="../blog/blog-details.html" target="_self">Podcast</a></li><li><a href="../blog/blog-details.html" target="_self">Events</a></li><li><a href="../blog/blog-details.html" target="_self">Warn</a></li></ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="fw-title">Get Help</h4>
+                <div class="footer-link-wrap">
+                <ul id="menu-footer-menu-2" class="list-wrap"><li><a href="../pages/contact.html" target="_self">Contact</a></li><li><a href="../blog/blog-details.html" target="_self">Gift Cards</a></li><li><a href="../user/register.html" target="_self">Register</a></li><li><a href="../blog/blog-details.html" target="_self">Catalog</a></li></ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="fw-title">Explore</h4>
+                <div class="footer-link-wrap">
+                <ul id="menu-footer-menu-3" class="list-wrap"><li><a href="../blog/blog-details.html" target="_self">Recipes</a></li><li><a href="../blog/blog-details.html" target="_self">Food</a></li><li><a href="../blog/blog-details.html" target="_self">Travel</a></li><li><a href="../pages/contact.html" target="_self">Hotline</a></li></ul>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="footer-widget">
+                <h4 class="fw-title">Follow Us On</h4>
+                <div class="footer-link-wrap">
+                <ul class="list-wrap">
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.x.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+                </div>
+                </div>
+              </div>
+                </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer-bottom-menu">
+                <ul id="menu-footer-menu-4" class="list-wrap"><li><a href="../pages/privacy-policy.html" target="_self">Privacy Policy And Terms</a></li><li><a href="../blog/blog-details.html" target="_self">Site Credits</a></li></ul>
+              </div>
+            </div>
+                <div class="col-md-6">
+                <div class="copyright-text">
+                <p>© 2025 All Rights Reserved</p>
+                </div>
+              </div>
+                </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center p-4">
+            <h4>Cookie Policy</h4>
+            <p class="mb-3">Cookies are small text files that are placed on your device (computer, tablet, or mobile) when you visit a website.</p>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-sm cookie_accept_btn"
+                data-bs-dismiss="modal">Accept</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/js/zaira-lite.js"></script>
+</body>
+</html>
