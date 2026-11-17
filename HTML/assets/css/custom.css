@@ -1,0 +1,345 @@
+.form-check-input:checked {
+    background-color: var(--tg-primary-color);
+    border-color: var(--tg-primary-color);
+}
+
+.login-form {
+    border-radius: 8px;
+    background: var(--tg-gray-three);
+    padding: 100px 80px;
+}
+
+.login-form .form-grp textarea,
+.login-form .form-grp input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    background: var(--tg-white);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--tg-secondary-color);
+    padding: 12px 15px;
+    height: 50px;
+    display: block;
+}
+
+.login-form .form-grp textarea::placeholder,
+.login-form .form-grp input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--tg-icon-color);
+}
+
+.login-form .form-check .form-check-input {
+    background-color: transparent;
+    border: 1px solid #7a7a7a;
+}
+
+.login-form .form-check .form-check-input:checked {
+    background-color: var(--tg-primary-color);
+    border-color: var(--tg-primary-color);
+}
+
+.login-form .divider {
+    text-align: center;
+    margin: 24px 0;
+    position: relative;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.login-form .divider span {
+    background-color: var(--tg-gray-three);
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-form .divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    height: 1px;
+    background-color: #dadce0;
+}
+
+.social-login-item a {
+    color: var(--tg-secondary-color);
+    font-weight: 500;
+}
+
+
+.password-input-wrapper {
+    position: relative;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    inset-inline-end: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6c757d;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.password-toggle-btn:hover {
+    color: #495057;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.password-toggle-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form-grp input[type="password"],
+.form-grp input[type="text"] {
+    padding-inline-end: 45px;
+}
+
+.form-grp input:focus {
+    border-color: var(--tg-primary-color);
+}
+
+
+/* blog css  */
+.blog-content img {
+    margin-bottom: 10px;
+}
+
+.blog-content table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+.pagination-wrap .pagination .page-item.active {
+    color: var(--tg-white);
+    background-color: var(--tg-primary-color);
+    border-color: var(--tg-primary-color);
+    border-radius: 3px;
+    cursor: not-allowed;
+}
+
+.pagination-wrap .pagination .page-link {
+    width: auto;
+    padding-inline-start: 13px;
+    padding-inline-end: 13px;
+}
+
+.comments-avatar img {
+    height: 115px;
+    width: 115px;
+}
+
+select#language {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+
+select#language option {
+    color: black;
+}
+
+.display-price {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--tg-primary-color);
+}
+
+.display-price span {
+    font-size: 15px;
+}
+
+.display-price .line-through{
+    text-decoration: line-through;
+    color: gray;
+    margin-inline-end: 7px;
+}
+
+.btn.btn-two.btn-transparent {
+    background: #f4797d5a;
+    color: rgb(0, 0, 0);
+}
+
+.btn.btn-two.btn-transparent::before {
+    background: transparent;
+}
+
+.btn.btn-two.btn-sm {
+    padding: 14px 43px;
+}
+
+.rating-icon i {
+    color: #dadada;
+    font-size: 16px;
+    margin-inline-end: 3px;
+}
+
+.rating-icon i.active {
+    color: #ff9901;
+}
+
+.tg-shop-ratting-wrapper i {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-inline-end: 3px;
+}
+
+.tg-shop-ratting-wrapper i.active {
+    color: #ff9901;
+}
+
+.tg-tour-about-border {
+    border-top: 1px solid #e4e4e4;
+}
+
+a.add_to_cart.added {
+    color: var(--tg-primary-color)
+}
+
+.add_to_wishlist.added {
+    background: var(--tg-primary-color);
+    color: #fff;
+}
+.max-h-300 {
+    max-height: 300px;
+}
+.max-h-600 {
+    max-height: 600px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.popular-post .thumb {
+    height: 110px;
+}
+.popular-post .thumb img {
+    height: 100%;
+}
+.video-thumb{
+    position: relative;
+}
+.video-thumb .play-btn {
+    position: absolute;
+    inset-inline-start: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 50%;
+    color: var(--tg-white);
+    font-size: 18px;
+    z-index: 1;
+}
+.logo img {
+    max-width: 150px;
+}
+p.payment-description {
+    line-height: 1.4;
+    font-size: 14px;
+}
+.ttn{
+    text-transform: normal;
+}
+/* dark mode css  */
+
+[tg-theme=dark] .login-form,
+[tg-theme=dark] .tg-product-details-share a {
+    background: var(--tg-teal);
+}
+
+[tg-theme=dark] .login-form .form-grp textarea,
+[tg-theme=dark] .login-form .form-grp input {
+    border-color: var(--tg-gray);
+    background: var(--tg-gray);
+    color: var(--tg-white);
+}
+
+[tg-theme=dark] .login-form .divider::before {
+    background-color: #65656587;
+}
+
+[tg-theme=dark] .social-login-item a {
+    border-color: #aaaaaa87 !important;
+    color: var(--tg-white) !important;
+}
+
+[tg-theme=dark] .login-form .divider span {
+    background: var(--tg-teal);
+}
+
+[tg-theme=dark] .tg-shop-ratting-wrapper i {
+    color: #a6a1a1;
+}
+
+[tg-theme=dark] .tg-shop-ratting-wrapper i.active {
+    color: #ff9901;
+}
+
+[tg-theme=dark] .tg-shop-product-ratings span,
+[tg-theme=dark] .tg-product-details-rating-count span,
+[tg-theme=dark] .tg-product-details-rating-count a,
+[tg-theme=dark] .tg-product-details-availability span,
+[tg-theme=dark] .tg-product-details-quantity .quantity,
+[tg-theme=dark] .tg-tour-about-rating-category ul li label {
+    color: #dcdcdc;
+}
+
+[tg-theme=dark] .display-price span {
+    color: #dedede;
+}
+
+[tg-theme=dark] .tg-booking-quantity-item .tg-quantity-input {
+    background-color: var(--tg-teal);
+    border-color: var(--tg-gray);
+}
+
+[tg-theme=dark] .tg-booking-quantity-item span::before {
+    background-color: var(--tg-gray);
+}
+
+[tg-theme=dark] .tg-product-details-quantity .tg-booking-quantity-item span,
+[tg-theme=dark] .tg-product-details-tab-nav-inner button {
+    color: var(--tg-white);
+}
+
+[tg-theme=dark] .btn.btn-two.btn-transparent {
+    background: #f4797d5a;
+    color: rgb(255 255 255);
+}
+
+[tg-theme=dark] .btn.btn-two.btn-transparent svg path {
+    stroke: #fff;
+}
+
+[tg-theme=dark] .tg-product-details-tab-nav,
+[tg-theme=dark] .tg-tour-about-border {
+    border-color: var(--tg-gray);
+}
+
+
+
+@media (max-width: 991px) {
+    .login-form {
+        padding: 80px 30px;
+    }
+}
+
+/* Hide Alpine loading states when running static HTML */
+[x-show="loading"] { display: none !important; }
