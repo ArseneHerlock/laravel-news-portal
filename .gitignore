@@ -1,0 +1,30 @@
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Laravel Backend (Src/NewsWebsite)
+Src/NewsWebsite/vendor/
+Src/NewsWebsite/node_modules/
+Src/NewsWebsite/public/build/
+Src/NewsWebsite/public/hot
+Src/NewsWebsite/public/storage
+Src/NewsWebsite/storage/*.key
+Src/NewsWebsite/storage/logs/*.log
+Src/NewsWebsite/storage/framework/cache/*
+Src/NewsWebsite/storage/framework/sessions/*
+Src/NewsWebsite/storage/framework/views/*
+!Src/NewsWebsite/storage/framework/cache/.gitignore
+!Src/NewsWebsite/storage/framework/sessions/.gitignore
+!Src/NewsWebsite/storage/framework/views/.gitignore
+Src/NewsWebsite/bootstrap/cache/*.php
+!Src/NewsWebsite/bootstrap/cache/.gitignore
+Src/NewsWebsite/database/*.sqlite
+Src/NewsWebsite/database/*.sqlite-journal
+Src/NewsWebsite/.env
+Src/NewsWebsite/.env.backup
+Src/NewsWebsite/.env.production
+Src/NewsWebsite/.phpunit.result.cache
+Src/NewsWebsite/auth.json
