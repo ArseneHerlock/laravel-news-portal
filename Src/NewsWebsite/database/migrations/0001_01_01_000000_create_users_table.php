@@ -11,12 +11,26 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::create('roles', function (Blueprint $table) {
+            $table->id();
+            $table->string('name', 50)->unique();
+            $table->string('display_name', 100);
+            $table->longText('permissions')->nullable();
+            $table->timestamps();
+        });
+
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->foreignId('role_id')->default(3)->constrained('roles')->cascadeOnDelete();
+            $table->string('name', 150);
+            $table->string('username', 100)->unique();
+            $table->string('email', 150)->unique();
             $table->string('password');
+            $table->string('phone', 20)->nullable();
+            $table->string('avatar')->nullable();
+            $table->text('bio')->nullable();
+            $table->enum('status', ['active', 'pending', 'banned'])->default('active');
+            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
@@ -42,8 +56,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
-        Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
+        Schema::dropIfExists('password_reset_tokens');
+        Schema::dropIfExists('users');
+        Schema::dropIfExists('roles');
     }
 };

@@ -157,6 +157,7 @@ CREATE TABLE `posts` (
     `is_slider` TINYINT(1) NOT NULL DEFAULT 0,
     `is_recommended` TINYINT(1) NOT NULL DEFAULT 0,
     `status` ENUM('draft', 'pending', 'published', 'rejected') NOT NULL DEFAULT 'pending',
+    `rejection_reason` TEXT NULL,
     `published_at` TIMESTAMP NULL DEFAULT NULL,
     `meta_title` VARCHAR(255) NULL,
     `meta_description` TEXT NULL,
@@ -164,6 +165,7 @@ CREATE TABLE `posts` (
     `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`),
+    KEY `idx_posts_feed` (`status`, `language_id`, `published_at`),
     CONSTRAINT `fk_posts_language` FOREIGN KEY (`language_id`) REFERENCES `languages` (`id`) ON DELETE CASCADE,
     CONSTRAINT `fk_posts_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
     CONSTRAINT `fk_posts_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE
