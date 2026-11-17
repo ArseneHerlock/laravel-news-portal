@@ -2,12 +2,12 @@
 
 # 📰 Zaira — News & Magazine Web System
 
-**A modern, multi-role News & Magazine publishing platform built with PHP / Laravel, MySQL, and Bootstrap 5 (with Dark Mode & RTL support).**
+**A modern, multi-role News & Magazine publishing platform built with PHP / Laravel, TiDB Cloud (MySQL-compatible), and Bootstrap 5.**
 
 ![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-Backend-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![TiDB Cloud](https://img.shields.io/badge/TiDB%20Cloud-NewsDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-**Zaira** is a university team project implementing a full-featured online news & magazine management system. The platform separates **Public Readers**, **Authors**, and **Administrators** into dedicated portals, allowing seamless article publishing, editorial moderation, category/tag discovery, and reader engagement.
+**Zaira** is a university team project implementing a full-featured online news & magazine management system. The platform separates **Public Readers**, **Authors**, and **Administrators** into dedicated portals, backed by a shared **TiDB Cloud (`NewsDB`)** database so all team members work against live synchronized data.
 
 ---
 
@@ -24,13 +24,13 @@
 - **Public News Portal (`HTML/`):**
   - Editorial homepage with Featured, Latest, Weekly, Trending, and Popular sections.
   - Article archive filtering by category, tag, and keyword search (`blog/blogs.html`).
-  - Full article reader view with author bio and comment section (`blog/blog-details.html`).
+  - Full article reader view with author bio and comments (`blog/blog-details.html`).
   - Public author profile & article feed (`blog/author.html`).
-  - Dark / Light mode switch & RTL/LTR layout support.
+  - Dark / Light mode toggle & RTL/LTR layout support.
 - **User Portal (`HTML/user/`):**
   - User registration, login, and personal account dashboard.
 - **Author Studio (`HTML/author/`):**
-  - Dedicated author dashboard, post management (`Published`, `Pending`, `Draft`), and full article creation form (Title, Slug, Excerpt, Rich Content, SEO metadata, Categories, Tags, Featured Image).
+  - Dedicated author dashboard, post management (`Published`, `Pending`, `Draft`), and article creation form (Title, Slug, Excerpt, Content, SEO metadata, Categories, Tags, Featured Image).
 - **Admin Console (`HTML/admin/`):**
   - System-wide dashboard and article moderation panel.
 
@@ -40,10 +40,13 @@
 
 ```text
 PHP-Project/
+├── Cloude/
+│   └── TiDB CLoud/
+│       ├── isrgrootx1.pem      # SSL/TLS CA certificate for TiDB Cloud
+│       └── password.txt        # Database access credentials (team use)
 ├── Database/
-│   └── zaira_schema.sql        # MySQL database schema
+│   └── zaira_schema.sql        # MySQL / TiDB database schema
 ├── Diagram/                    # System architecture & ERD diagrams
-├── Cloude/                     # Project planning & documentation notes
 ├── HTML/                       # 17 static HTML/CSS/Bootstrap 5 templates
 │   ├── index.html              # Public homepage
 │   ├── blog/                   # blogs.html, blog-details.html, author.html
@@ -63,7 +66,7 @@ PHP-Project/
 | Layer | Technology |
 |---|---|
 | **Backend** | PHP 8.2+, Laravel Framework |
-| **Database** | MySQL (`Database/zaira_schema.sql`) |
+| **Database** | TiDB Cloud (`NewsDB`, MySQL-compatible over TLS) |
 | **Frontend** | HTML5, CSS3, Bootstrap 5, Font Awesome, Minimal Vanilla JS |
 | **Version Control** | Git & GitHub |
 
@@ -77,35 +80,37 @@ git clone https://github.com/<your-username>/zaira-news-laravel.git
 cd zaira-news-laravel
 ```
 
-### 2. Setup the Database
-1. Start **MySQL** (via XAMPP, Laragon, or Docker).
-2. Create a database (e.g., `zaira_news`).
-3. Import `Database/zaira_schema.sql` into your database.
-
-### 3. Setup the Laravel Backend
+### 2. Install Laravel dependencies
 ```bash
 cd Src/NewsWebsite
 composer install
 cp .env.example .env
 php artisan key:generate
 ```
-Update your database credentials in `Src/NewsWebsite/.env`:
+
+### 3. Configure TiDB Cloud (`NewsDB`) Connection
+Update `Src/NewsWebsite/.env` with the shared **TiDB Cloud** parameters (TLS is required):
+
 ```env
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=zaira_news
-DB_USERNAME=root
-DB_PASSWORD=
+DB_HOST=gateway01.ap-southeast-1.prod.aws.tidbcloud.com
+DB_PORT=4000
+DB_DATABASE=NewsDB
+DB_USERNAME=3AnYdBThXPvmUxi.root
+DB_PASSWORD=<see Cloude/TiDB CLoud/password.txt>
+
 ```
-Then run the local server:
+
+> **Note:** Replace `<your-local-path>` with the absolute path to your cloned repository (e.g., `F:/University/Nam_04/PHP/PHP-Project/Cloude/TiDB CLoud/isrgrootx1.pem`). If your IP is not yet allowlisted on TiDB Cloud, ask the team lead to allow your IP or connect via the local schema `Database/zaira_schema.sql`.
+
+### 4. Run the Laravel Server
 ```bash
 php artisan serve
 ```
-Visit `http://127.0.0.1:8000` in your browser.
+Open `http://127.0.0.1:8000` in your browser.
 
-### 4. Preview Static UI Templates
-Open `HTML/index.html` directly in any modern browser (or via VS Code Live Server) to preview all 17 frontend and portal templates.
+### 5. Preview Static UI Templates
+Open `HTML/index.html` directly in your browser (or via VS Code Live Server) to preview all 17 frontend and portal templates.
 
 ---
 
