@@ -63,24 +63,26 @@ PHP-Project/
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| **Backend** | PHP 8.2+, Laravel Framework |
-| **Database** | TiDB Cloud (`NewsDB`, MySQL-compatible over TLS) |
-| **Frontend** | HTML5, CSS3, Bootstrap 5, Font Awesome, Minimal Vanilla JS |
-| **Version Control** | Git & GitHub |
+| Layer               | Technology                                                 |
+| ------------------- | ---------------------------------------------------------- |
+| **Backend**         | PHP 8.2+, Laravel Framework                                |
+| **Database**        | TiDB Cloud (`NewsDB`, MySQL-compatible over TLS)           |
+| **Frontend**        | HTML5, CSS3, Bootstrap 5, Font Awesome, Minimal Vanilla JS |
+| **Version Control** | Git & GitHub                                               |
 
 ---
 
 ## 🚀 Getting Started (Local Setup)
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/<your-username>/zaira-news-laravel.git
 cd zaira-news-laravel
 ```
 
 ### 2. Install Laravel dependencies
+
 ```bash
 cd Src/NewsWebsite
 composer install
@@ -89,6 +91,7 @@ php artisan key:generate
 ```
 
 ### 3. Configure TiDB Cloud (`NewsDB`) Connection
+
 Update `Src/NewsWebsite/.env` with the shared **TiDB Cloud** parameters (TLS is required):
 
 ```env
@@ -101,33 +104,37 @@ DB_PASSWORD=<see Cloude/TiDB CLoud/password.txt>
 
 ```
 
-> **Note:** Replace `<your-local-path>` with the absolute path to your cloned repository (e.g., `F:/University/Nam_04/PHP/PHP-Project/Cloude/TiDB CLoud/isrgrootx1.pem`). If your IP is not yet allowlisted on TiDB Cloud, ask the team lead to allow your IP or connect via the local schema `Database/zaira_schema.sql`.
+> **Note:** Replace `<your-local-path>` with the absolute path to your cloned repository (e.g., `Cloude/TiDB CLoud/isrgrootx1.pem`). If your IP is not yet allowlisted on TiDB Cloud, ask the team lead to allow your IP or connect via the local schema `Database/zaira_schema.sql`.
 
 ### 4. Run the Laravel Server
+
 ```bash
 php artisan serve
 ```
+
 Open `http://127.0.0.1:8000` in your browser.
 
 ### 5. Preview Static UI Templates
+
 Open `HTML/index.html` directly in your browser (or via VS Code Live Server) to preview all 17 frontend and portal templates.
 
 ---
 
 ## 👥 Team Division (4-Member Backend Workflow)
 
-| Member | Module | Scope |
-|---|---|---|
-| **Member 1** | Auth & User Portal | Login, Register, Role Middleware (`admin`, `author`, `user`), User Dashboard |
-| **Member 2** | Public News & Search | Homepage blocks, Blog listing, Search, Category/Tag filter, Article detail |
-| **Member 3** | Author Studio & Comments | Author Dashboard, CRUD Articles, Image Upload, Article Comments |
-| **Member 4** | Admin & Site Pages | Admin Dashboard, Post Moderation, Categories/Tags, Contact & Newsletter |
+| Member       | Git Branch           | Module                   | Scope                                                                        |
+| ------------ | -------------------- | ------------------------ | ---------------------------------------------------------------------------- |
+| **Member 1** | `feat/auth-user`     | Auth & User Portal       | Login, Register, Role Middleware (`admin`, `author`, `user`), User Dashboard |
+| **Member 2** | `feat/public-news`   | Public News & Search     | Homepage blocks, Blog listing, Search, Category/Tag filter, Article detail   |
+| **Member 3** | `feat/author-studio` | Author Studio & Comments | Author Dashboard, CRUD Articles, Image Upload, Article Comments              |
+| **Member 4** | `feat/admin-cms`     | Admin & Site Pages       | Admin Dashboard, Post Moderation, Categories/Tags, Contact & Newsletter      |
 
 ---
 
 ## 📝 Commit Convention
 
 We follow [Conventional Commits](https://www.conventionalcommits.org/):
+
 - `feat(...)`: New feature
 - `fix(...)`: Bug fix
 - `docs(...)`: Documentation & diagrams
